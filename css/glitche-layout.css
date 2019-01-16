@@ -251,10 +251,10 @@ header .head-top .top-menu ul li.active .btn {
   -moz-transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  box-shadow: inset 0 -6px 0px #ede574;
-  -moz-box-shadow: inset 0 -6px 0px #ede574;
-  -webkit-box-shadow: inset 0 -6px 0px #ede574;
-  -khtml-box-shadow: inset 0 -6px 0px #ede574;
+  box-shadow: inset 0 -6px 0px #ff99cc;
+  -moz-box-shadow: inset 0 -6px 0px #ff99cc;
+  -webkit-box-shadow: inset 0 -6px 0px #ff99cc;
+  -khtml-box-shadow: inset 0 -6px 0px #ff99cc;
 }
 
 /* 3. Started */
@@ -840,10 +840,10 @@ header .head-top .top-menu ul li.active .btn {
   color: #363636;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  box-shadow: inset 0 -6px 0px #ede574;
-  -moz-box-shadow: inset 0 -6px 0px #ede574;
-  -webkit-box-shadow: inset 0 -6px 0px #ede574;
-  -khtml-box-shadow: inset 0 -6px 0px #ede574;
+  box-shadow: inset 0 -6px 0px #ff99cc;
+  -moz-box-shadow: inset 0 -6px 0px #ff99cc;
+  -webkit-box-shadow: inset 0 -6px 0px #ff99cc;
+  -khtml-box-shadow: inset 0 -6px 0px #ff99cc;
 }
 
 /* 10. Contacts */
