@@ -40,7 +40,7 @@ body {
   margin: 0;
   padding: 0;
   border: none;
-  font-family: 'Roboto Mono','Microsoft JhengHei';
+  font-family: 'Roboto Mono', 'Noto Sans TC';
   font-size: 13px;
   color: #363636;
   background: #fff;
@@ -89,7 +89,7 @@ body.loaded .section {
 .container .line {
   content: '';
   position: fixed;
-  background: #303f9f;
+  background: #315ed7;
   z-index: 105;
 }
 
@@ -213,7 +213,7 @@ h4,
 h5,
 h6 {
   font-weight: 500;
-  font-family: 'Roboto Mono';
+  font-family: 'Roboto Mono', 'Noto Sans TC';
   margin: 0;
   margin-bottom: 30px;
   color: #141414;
@@ -264,7 +264,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #303f9f;
+  color: #315ed7;
 }
 
 /* 6. Buttons */
@@ -292,15 +292,15 @@ a.btn,
 a.btn.fill,
 .btn.fill {
   color: #ffffff;
-  background: #303f9f;
-  border: 1px solid #303f9f;
+  background: #315ed7;
+  border: 1px solid #315ed7;
 }
 
 a.btn:hover,
 .btn:hover {
   color: #ffffff;
-  background: #303f9f;
-  border: 1px solid #303f9f;
+  background: #315ed7;
+  border: 1px solid #315ed7;
 }
 
 /* 7. Preloader */
@@ -315,13 +315,13 @@ a.btn:hover,
 }
 
 .preloader .load {
-  color: #303f9f;
+  color: #315ed7;
   font-size: 12px;
 }
 
 .preloader .typed-load,
 .preloader .typed-cursor {
-  color: #303f9f;
+  color: #315ed7;
   font-size: 12px;
 }
 
@@ -331,7 +331,7 @@ textarea,
 button {
   display: block;
   background: none;
-  font-family: 'Roboto Mono';
+  font-family: 'Roboto Mono', 'Noto Sans TC';
   font-size: 12px;
   height: 60px;
   width: 100%;
@@ -357,7 +357,7 @@ input:focus,
 textarea:focus,
 button:focus {
   color: #141414;
-  border-bottom: 1px solid #303f9f;
+  border-bottom: 1px solid #315ed7;
 }
 
 textarea {
@@ -377,14 +377,14 @@ button {
 }
 
 button:hover {
-  border-bottom: 1px solid #303f9f;
+  border-bottom: 1px solid #315ed7;
 }
 
 label,
 legend {
   display: block;
   padding-bottom: 10px;
-  font-family: 'Roboto Mono';
+  font-family: 'Roboto Mono', 'Noto Sans TC';
   font-size: 13px;
 }
 
@@ -487,7 +487,7 @@ li {
 code {
   background: #dddddd;
   font-size: 16px;
-  font-family: 'Roboto Mono';
+  font-family: 'Roboto Mono', 'Noto Sans TC';
   margin: 20px 0;
   padding: 10px 20px;
 }
@@ -591,7 +591,7 @@ td {
 
 /* 14. Blockquote */
 blockquote {
-  font-family: 'Roboto Mono';
+  font-family: 'Roboto Mono', 'Noto Sans TC';
 }
 
 /* Animations */
@@ -617,20 +617,20 @@ blockquote {
 
   .glitch-effect-white:before,
   .glitch-effect-white:after {
-    background: #303f9f;
+    background: #315ed7;
   }
 
   .glitch-effect:after,
   .glitch-effect-white:after {
     left: 2px;
-    text-shadow: -1px 0 #303f9f;
+    text-shadow: -1px 0 #315ed7;
     animation: glitch-1 2s infinite linear alternate-reverse;
   }
 
   .glitch-effect:before,
   .glitch-effect-white:before {
     left: -2px;
-    text-shadow: 2px 0 #303f9f;
+    text-shadow: 2px 0 #315ed7;
     animation: glitch-2 2s infinite linear alternate-reverse;
   }
 
