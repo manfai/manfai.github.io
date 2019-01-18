@@ -118,11 +118,12 @@ $(function () {
 				
 				},
 				complete: function() {
-				
-				},
-				success: function(data) {
+					console.log('complete');
 					$('#cform').fadeOut();
 					$('.alert-success').delay(1000).fadeIn();
+				},
+				success: function(data) {
+					console.log('success');					
 				}
 			});
 		}
