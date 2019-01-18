@@ -109,7 +109,8 @@ $(function () {
 		success: "valid",
 		submitHandler: function() {
 			$.ajax({
-				url: 'mailer/feedback.php',
+				// url: 'mailer/feedback.php',
+				url: 'https://getform.io/f/f8549304-160d-4948-bd45-a1082c4e458a',
 				type: 'post',
 				dataType: 'json',
 				data: 'name='+ $("#cform").find('input[name="name"]').val() + '&email='+ $("#cform").find('input[name="email"]').val() + '&message=' + $("#cform").find('textarea[name="message"]').val(),
