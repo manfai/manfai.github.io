@@ -45,7 +45,7 @@ body {
   margin: 0;
   padding: 0;
   border: none;
-  font-family: 'Segoe UI','Roboto Mono', 'Noto Sans TC';
+  font-family: 'Roboto Mono', 'Noto Sans TC';
   font-size: 13px;
   color: #363636;
   background: #fff;
@@ -218,7 +218,7 @@ h4,
 h5,
 h6 {
   font-weight: 500;
-  font-family: 'Segoe UI', 'Roboto Mono', 'Noto Sans TC';
+  font-family:  'Roboto Mono', 'Noto Sans TC';
   margin: 0;
   margin-bottom: 30px;
   color: #141414;

@@ -112,9 +112,9 @@
 	const DOM = {};
 	DOM.svg = document.querySelector('.morph');
 	DOM.shapeEl = DOM.svg.querySelector('polygon');
-	DOM.contentElems = Array.from(document.querySelectorAll('.content-wrap'));
+	DOM.contentElems = Array.from(document.querySelectorAll('.section'));
 	DOM.contentLinks = Array.from(document.querySelectorAll('.content__link'));
-	DOM.footer = document.querySelector('.content--related');
+	DOM.footer = document.querySelector('.works');
 	const contentElemsTotal = DOM.contentElems.length;
 	const shapes = [
 		{
@@ -145,7 +145,7 @@
 			scaleX: .7,
 			scaleY: .7,
 			rotate: 90,
-			tx: -100,
+			tx: -300,
 			ty: 100,
 			fill: {
 				color: 'none',
@@ -168,7 +168,7 @@
 			scaleX: 1,
 			scaleY: 1,
 			rotate: -45,
-			tx: 0,
+			tx: 300,
 			ty: -50,
 			fill: {
 				color: 'none',
@@ -191,7 +191,7 @@
 			scaleX: 1,
 			scaleY: 1,
 			rotate: 145,
-			tx: 100,
+			tx: 400,
 			ty: -50,
 			fill: {
 				color: 'none',
@@ -346,11 +346,11 @@
 
 	const init = function() {
 		imagesLoaded(document.body, () => {
-			initShapeEl();
-			createScrollWatchers();
+			// initShapeEl();
+			// createScrollWatchers();
 			Array.from(document.querySelectorAll('.content--layout')).forEach(el => new TiltObj(el));
 			// Remove loading class from body
-			document.body.classList.remove('loading');
+			// document.body.classList.remove('loading');
 		});
 	}
 
