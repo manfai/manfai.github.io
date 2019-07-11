@@ -33,11 +33,11 @@
 header {
   position: fixed;
   left: 0;
-  top: 30px;
+  top: 10px;
   width: 100%;
   z-index: 100;
   text-align: right;
-  background: #ffffff;
+  background: rgba(255,255,255,0.9);
   opacity: 1;
   visibility: visible;
   transition: all 0.6s ease 0s;
@@ -89,7 +89,7 @@ header.active .head-top .top-menu ul li {
 
 @media (max-width: 840px) {
   header {
-    top: 15px;
+    top: 5px;
   }
 
 }
@@ -925,9 +925,9 @@ header .head-top .top-menu ul li.active .btn {
 /* 12. Footer */
 footer {
   position: fixed;
-  bottom: 25px;
+  bottom: 10px;
   left: 0;
-  padding: 15px 60px 30px 60px;
+  padding: 20px 60px 20px 60px;
   width: 100%;
   background: #ffffff;
   z-index: 100;
@@ -941,7 +941,7 @@ footer {
 
 @media (max-width: 840px) {
   footer {
-    bottom: 15px;
+    bottom: 5px;
   }
 
 }

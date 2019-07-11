@@ -36,6 +36,11 @@ html {
   margin-right: 0!important;
 }
 
+.soc .feather{
+  height:19px;
+  width:19px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -97,12 +102,12 @@ body.loaded .section {
   left: 0;
   top: 0;
   width: 100%;
-  height: 30px;
+  height: 10px;
 }
 
 @media (max-width: 840px) {
   .container .line.top {
-    height: 15px;
+    height: 5px;
   }
 
 }
@@ -112,12 +117,12 @@ body.loaded .section {
   top: auto;
   bottom: 0;
   width: 100%;
-  height: 30px;
+  height: 10px;
 }
 
 @media (max-width: 840px) {
   .container .line.bottom {
-    height: 15px;
+    height: 5px;
   }
 
 }
@@ -125,13 +130,13 @@ body.loaded .section {
 .container .line.left {
   left: 0;
   top: 0;
-  width: 30px;
+  width: 10px;
   height: 200%;
 }
 
 @media (max-width: 840px) {
   .container .line.left {
-    width: 15px;
+    width: 5px;
   }
 
 }
@@ -140,13 +145,13 @@ body.loaded .section {
   left: auto;
   right: 0;
   top: 0;
-  width: 30px;
+  width: 10px;
   height: 200%;
 }
 
 @media (max-width: 840px) {
   .container .line.right {
-    width: 15px;
+    width: 5px;
   }
 
 }
@@ -611,7 +616,7 @@ blockquote {
     top: 0;
     left: 0;
     width: 100%;
-    background: #ffffff;
+    background: #ff79ff;
     clip: rect(0, 0, 0, 0);
   }
 
