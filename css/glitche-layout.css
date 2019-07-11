@@ -91,7 +91,11 @@ header.active .head-top .top-menu ul li {
   header {
     top: 5px;
   }
-
+  .lnk{
+    background:rgba(220,220,220,.6);
+    padding: 8px 0!important;
+    font-weight: 900;
+  }
 }
 
 header .head-top {
