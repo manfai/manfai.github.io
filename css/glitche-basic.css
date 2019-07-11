@@ -45,7 +45,7 @@ body {
   margin: 0;
   padding: 0;
   border: none;
-  font-family: 'Roboto Mono', 'Noto Sans TC';
+  font-family: 'Segoe UI','Roboto Mono', 'Noto Sans TC';
   font-size: 13px;
   color: #363636;
   background: #fff;
@@ -218,7 +218,7 @@ h4,
 h5,
 h6 {
   font-weight: 500;
-  font-family: 'Roboto Mono', 'Noto Sans TC';
+  font-family: 'Segoe UI', 'Roboto Mono', 'Noto Sans TC';
   margin: 0;
   margin-bottom: 30px;
   color: #141414;
@@ -616,19 +616,19 @@ blockquote {
     top: 0;
     left: 0;
     width: 100%;
-    background: #ff79ff;
+    background: #ffffff;
     clip: rect(0, 0, 0, 0);
   }
 
   .glitch-effect-white:before,
   .glitch-effect-white:after {
-    background: #315ed7;
+    background: #ffffff;
   }
 
   .glitch-effect:after,
   .glitch-effect-white:after {
     left: 2px;
-    text-shadow: -1px 0 #315ed7;
+    text-shadow: -1px 0 #ffffff;
     animation: glitch-1 2s infinite linear alternate-reverse;
   }
 
