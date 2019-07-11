@@ -24,6 +24,7 @@ $(function () {
 		$(".preloader .pre-inner").fadeOut(800, function(){
 			/* Preload hide */
 			$('.preloader').fadeOut();
+			$('.morph-wrap').fadeIn();
 			$('body').addClass('loaded');
 			
 			/* Typed subtitle */

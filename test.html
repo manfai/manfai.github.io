@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<!-- Basic -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>ManFai - Portfolio</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Load Fonts -->
+	<!-- <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,300italic,300,100italic,400italic,500,500italic,700,700italic&amp;subset=latin,cyrillic' rel='stylesheet'> -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i&amp;subset=chinese-traditional,cyrillic"
+		rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/glitche-basic.css" />
+	<link rel="stylesheet" href="css/glitche-layout.css" />
+	<!-- <link rel="stylesheet" href="css/ionicons.css" /> -->
+	<link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="images/favicons/favicon.ico">
+	<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+
+	<style>
+		.started-content {
+			align-items: center;
+			width: 100%;
+		}
+
+		.content {
+			position: relative;
+			display: grid;
+		}
+
+		.content__title {
+			grid-area: title;
+			font-weight: bold;
+			letter-spacing: -0.025em;
+			font-size: 7em;
+			line-height: 160px;
+			margin: 0;
+			text-transform: uppercase;
+			z-index: 10;
+			cursor: default;
+			box-shadow: inset 0 -40px 0px #ff99cc;
+			-moz-box-shadow: inset 0 -40px 0px #ff99cc;
+			-webkit-box-shadow: inset 0 -40px 0px #ff99cc;
+		}
+
+		.content__img {
+			grid-column: 1 / 3;
+			grid-row: 1 / 3;
+			opacity: 0.8;
+			width: 300px;
+			height: 300px;
+		}
+
+		.content__desc {
+			text-align: left;
+			grid-area: desc;
+			margin: 0;
+			z-index: 10;
+			padding: 0 1em;
+			cursor: default;
+		}
+
+		.content__author {
+			grid-area: author;
+			margin: 0;
+			-webkit-writing-mode: vertical-lr;
+			writing-mode: vertical-lr;
+			padding: 1em;
+			text-align: right;
+			z-index: 10;
+			cursor: default;
+		}
+
+		.content--layout {
+			pointer-events: auto;
+			justify-content: center;
+			align-content: center;
+			grid-template-columns: 150px 150px 150px 150px;
+			grid-template-rows: 150px 75px 75px;
+			grid-template-areas: "... title title title"
+				"author ... desc desc"
+				"author ... link link";
+		}
+
+		.content__link {
+			pointer-events: auto;
+			grid-area: link;
+			align-self: end;
+			justify-self: start;
+			z-index: 10;
+			padding: 0 1em 0.15em;
+		}
+
+		@media screen and (max-width: 40em) {
+			.content--layout {
+				transform: scale3d(0.8, 0.8, 1);
+			}
+		}
+
+		@media screen and (max-width: 36em) {
+			.content--layout {
+				transform: scale3d(0.7, 0.7, 1);
+			}
+		}
+
+		@media screen and (max-width: 32em) {
+			.content--layout {
+				transform: scale3d(0.6, 0.6, 1);
+			}
+
+			.content__author,
+			.content__desc,
+			.content__link {
+				font-size: 1.35em;
+			}
+		}
+
+		@media screen and (max-width: 28em) {
+			.content--layout {
+				transform: scale3d(0.5, 0.5, 1);
+			}
+		}
+
+		.morph-wrap {
+			position: fixed;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			pointer-events: none;
+			z-index: 1;
+		}
+
+		.morph {
+			fill: none;
+			stroke-width: 15px;
+			stroke: #315ed7;
+		}
+
+		.section {
+			position: relative;
+			z-index: 2;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="centrize full-width">
+			<div class="vertical-center">
+				<div class="pre-inner">
+					<div class="load typing-load">
+						<p>loading...</p>
+					</div>
+					<span class="typed-load"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Container -->
+	<div class="container">
+
+		<!-- Header -->
+		<header>
+			<div class="head-top">
+				<a href="#" class="menu-btn"><span></span></a>
+				<div class="top-menu">
+					<ul>
+						<li><a href="portfolio" class="lnk">Portfolio</a></li>
+						<li><a href="resume" class="lnk">Resume</a></li>
+						<li><a href="contacts" class="btn">Contacts</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<!-- Wrapper -->
+		<div class="wrapper">
+
+			<div class="morph-wrap" style="display: none">
+				<svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
+					<polygon points="700,84.4 1047.1,685.6 352.9,685.6 352.9,685.6 352.9,685.6 352.9,685.6" />
+				</svg>
+			</div>
+
+
+			<!-- Started -->
+			<div class="section started">
+				<div class="centrize full-width">
+					<div class="vertical-center">
+						<div class="started-content content-wrap">
+							<div class="content content--layout content--layout-1">
+								<img class="content__img"
+									src="https://tympanus.net/Development/TextTrailEffect/img/15.jpeg"
+									style="object-fit:cover;box-shadow: 0px 2px 8px rgba(0,0,0,.3);opacity: 1;" />
+								<h3 class="content__title"><span style="color:white">We</span>lcome</h3>
+								<p class="content__author">Based in Hong Kong.</p>
+								<p class="content__desc">I'm Man Wing Fai</p>
+								<a href="#" class="content__link">Read More</a>
+							</div>
+							<span class="typed-bread"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- About -->
+			<div class="section about">
+				<div class="content">
+					<div class="title">
+						<div class="title_inner">About Me</div>
+					</div>
+					<div class="image">
+						<img src="images/man.webp" alt="" />
+					</div>
+					<div class="desc">
+						<p>
+							I pursued my Bachelors in Multimedia Computing from Coventry University. As part of my
+							curriculum, I particularly found the subjects of Programming and Deep learning highly
+							intriguing, as these articles created in me a passion to study the computer related courses
+							in much more detail. Talking about my profession, now I am web programmer where I work on
+							various programming languages ​​such as PHP, JavaScript , Jquery, Vue.js, Node.js, Python,
+							Objective-C and Swift.
+						</p>
+						<div class="info-list">
+							<ul>
+								<li><strong>Name:</strong> ManFai</li>
+								<li><strong>Age:</strong>
+									<script>
+										var dob = new Date(1993, 10, 6);
+										var diff_ms = Date.now() - dob.getTime();
+										var age_dt = new Date(diff_ms);
+										document.write(Math.abs(age_dt.getUTCFullYear() - 1970));
+									</script> Years
+								</li>
+								<li><strong>Job:</strong> Web Developer</li>
+								<li><strong>Citizenship:</strong> China/PRC</li>
+								<li><strong>Residence: </strong> Hong Kong</li>
+								<li><strong>E-mail:</strong> m4nfa1@gmail.com</li>
+							</ul>
+						</div>
+						<div class="bts"><a href="#" class="btn fill" data-text="Download CV">Download CV</a></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+
+			<!-- Resume -->
+			<div class="section resume">
+				<div class="content">
+					<div class="cols">
+						<div class="col col-md">
+							<div class="title">
+								<div class="title_inner">Experience</div>
+							</div>
+							<div class="resume-items">
+								<div class="resume-item active">
+									<div class="date">2019 - Present</div>
+									<div class="name">Front-end Developer - HKICTech Ltd.</div>
+									<p>
+										Morbi nulla arcu, pellentesque sed egestas in, tempor eget felis. Nullam
+										tincidunt augue in leo feugiat,
+										quis interdum nisi sollicitudin.
+									</p>
+								</div>
+								<div class="resume-item active">
+									<div class="date">2016 - 2019</div>
+									<div class="name">Senior Web Programmer - HKICTech Ltd.</div>
+									<p>
+										Morbi nulla arcu, pellentesque sed egestas in, tempor eget felis. Nullam
+										tincidunt augue in leo feugiat,
+										quis interdum nisi sollicitudin.
+									</p>
+								</div>
+								<div class="resume-item">
+									<div class="date">2015 - 2016 (Part Time)</div>
+									<div class="name">Web Programmer - TeamBrain Creative Ltd.</div>
+									<p>
+										Freelance
+									</p>
+								</div>
+								<div class="resume-item">
+									<div class="date">2015 - 2016</div>
+									<div class="name">Technical Support - Speedy Group Corp. Limited</div>
+									<p>Provided technical assistance to customers on website and hosting. <br>
+										Used remote access to perform troubleshooting when needed.<br>
+										Walked customers through step-by-step process for troubleshooting hardware
+										issues.</p>
+								</div>
+								<div class="resume-item">
+									<div class="date">2014 - 2015 (Internship)</div>
+									<div class="name">Web Programmer - Wismart Ltd.</div>
+									<p>Designing, building, and maintaining customer's website. <br>
+										Performing quality assurance and troubleshooting code rendering acrossmultiple
+										desktop and mobile devices.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col col-md">
+							<div class="title">
+								<div class="title_inner">Education</div>
+							</div>
+							<div class="resume-items">
+								<div class="resume-item">
+									<div class="date">2015 - 2016</div>
+									<div class="name">Coventry University</div>
+									<p>
+										Morbi nulla arcu, pellentesque sed egestas in, tempor eget felis. Nullam
+										tincidunt augue in leo feugiat, quis
+										interdum nisi sollicitudin.
+									</p>
+								</div>
+								<div class="resume-item">
+									<div class="date">2013 - 2015</div>
+									<div class="name">Hong Kong Institute of Vocational Education</div>
+									<p>
+										Morbi nulla arcu, pellentesque sed egestas in, tempor eget felis. Nullam
+										tincidunt augue in leo feugiat, quis
+										interdum nisi sollicitudin.
+									</p>
+								</div>
+								<div class="resume-item">
+									<div class="date">2012 - 2013</div>
+									<div class="name">Hong Kong Institute of Vocational Education</div>
+									<p>
+										Morbi nulla arcu, pellentesque sed egestas in, tempor eget felis. Nullam
+										tincidunt augue in leo feugiat, quis
+										interdum nisi sollicitudin.
+									</p>
+								</div>
+								<!-- <div class="resume-item">
+							<div class="date">2006 - 2012</div>
+							<div class="name">Christian Alliance SW Chan Memorial College</div>
+							<p>
+								Duis ipsum ligula, feugiat nec auctor vitae, porta sit amet urna. Praesent ex lorem, porta nec aliquet eu, 
+								ullamcorper eget nibh.
+							</p>
+						</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Skills -->
+			<div class="section skills">
+				<div class="content">
+					<div class="title">
+						<div class="title_inner">My Skills</div>
+					</div>
+					<div class="skills">
+						<ul>
+							<li>
+								<div class="name">Laravel</div>
+								<div class="progress">
+									<div class="percentage" style="width:74%;">
+										<span class="percent">74%</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="name">Wordpress</div>
+								<div class="progress">
+									<div class="percentage" style="width:60%;">
+										<span class="percent">60%</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="name">HTML5 & CSS3</div>
+								<div class="progress">
+									<div class="percentage" style="width:95%;">
+										<span class="percent">95%</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="name">PHP</div>
+								<div class="progress">
+									<div class="percentage" style="width:75%;">
+										<span class="percent">75%</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="name">jQuery</div>
+								<div class="progress">
+									<div class="percentage" style="width:82%;">
+										<span class="percent">82%</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="name">React Native</div>
+								<div class="progress">
+									<div class="percentage" style="width:50%;">
+										<span class="percent">50%</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="name">Vue.js</div>
+								<div class="progress">
+									<div class="percentage" style="width:90%;">
+										<span class="percent">90%</span>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="name">Adobe Illustrator</div>
+								<div class="progress">
+									<div class="percentage" style="width:80%;">
+										<span class="percent">80%</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Works -->
+			<div class="section works">
+				<div class="content">
+					<div class="title">
+						<div class="title_inner">Recent Works</div>
+					</div>
+					<div class="filter-menu">
+						<div class="filters">
+							<div class="btn-group">
+								<label data-text="Website"><input type="checkbox" value="f-graphic" />Website</label>
+								<label data-text="Backend"><input type="checkbox" value="f-photo" />Backend</label>
+								<label data-text="Illustration"><input type="checkbox"
+										value="f-illustration" />Illustration</label>
+								<label data-text="Mockups"><input type="checkbox" value="f-mockups" />Mockups</label>
+							</div>
+						</div>
+					</div>
+					<div class="box-items">
+						<div class="box-item f-graphic">
+							<div class="image">
+								<a href="#popup-1" class="has-popup">
+									<img src="images/works/vrace24.png" alt="" />
+									<span class="info">
+										<span class="centrize full-width">
+											<span class="vertical-center">
+												<span class="ion ion-md-add"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="desc">
+								<div class="category">Website</div>
+								<a href="#popup-1" class="name has-popup">Vrace24.com</a>
+							</div>
+							<div id="popup-1" class="popup-box mfp-fade mfp-hide">
+								<div class="content">
+									<div class="image">
+										<img src="images/works/vrace24.png" alt="">
+									</div>
+									<div class="desc">
+										<div class="category">Website</div>
+										<h4>全新虛擬體育平台</h4>
+										<p>
+											VRace24.com是一個虛擬體育平台。一個全新的比賽概念讓你與更多同路人同步，以運動感染身邊人加入健康生活模式。希望鼓勵市民動起來，大家可以在任何時間、任何地點，用自己的步伐去完成各適其適的挑戰和賽事。在忙碌生活節奏下，增添一份靈活性！
+										</p>
+										<a href="#" class="btn" data-text="查看項目">查看項目</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="box-item f-photo">
+							<div class="image">
+								<a href="#popup-2" class="has-popup">
+									<img src="images/works/ngc-knowledge.png" alt="" />
+									<span class="info">
+										<span class="centrize full-width">
+											<span class="vertical-center">
+												<span class="ion ion-md-add"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="desc">
+								<div class="category">Website</div>
+								<a href="#popup-2" class="name has-popup">NGC KnowledgeLink</a>
+							</div>
+							<div id="popup-2" class="popup-box mfp-fade mfp-hide">
+								<div class="content">
+									<div class="image">
+										<img src="images/works/ngc-knowledge.png" alt="">
+									</div>
+									<div class="desc">
+										<div class="category">Website</div>
+										<h4>NGC KnowledgeLink</h4>
+										<p> NGC KnowledgeLink is comprised of organization development experts, seasoned
+											trainers and business strategists with diverse backgrounds in various
+											sectors, in particular, banking & finance, insurance, fast moving consumer
+											goods, retail, multi-media, information technology and public organizations.
+										</p>
+										<a href="http://www.ngc-knowledge.com/" class="btn" data-text="查看項目">查看項目</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="box-item f-illustration">
+							<div class="image">
+								<a href="#popup-3" class="has-popup">
+									<img src="images/works/focus-learning.png" alt="" />
+									<span class="info">
+										<span class="centrize full-width">
+											<span class="vertical-center">
+												<span class="ion ion-md-add"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="desc">
+								<div class="category">Website</div>
+								<a href="#popup-3" class="name has-popup">Focus-Learning</a>
+							</div>
+							<div id="popup-3" class="popup-box mfp-fade mfp-hide">
+								<div class="content">
+									<div class="image">
+										<img src="images/works/focus-learning.png" alt="">
+									</div>
+									<div class="desc">
+										<div class="category">Website</div>
+										<h4>Focus-Learning</h4>
+										<p>
+											Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu
+											volumus explicari sed. Mel mutat vituperata
+											suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod
+											vis. Cu vim quem quod cibo.
+										</p>
+										<a href="#" class="btn" data-text="查看項目"><del>查看項目</del></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="box-item f-photo">
+							<div class="image">
+								<a href="#popup-4" class="has-popup">
+									<img src="images/works/gnz.png" alt="" />
+									<span class="info">
+										<span class="centrize full-width">
+											<span class="vertical-center">
+												<span class="ion ion-md-add"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="desc">
+								<div class="category">Website</div>
+								<a href="#popup-4" class="name has-popup">官字蔘網站</a>
+							</div>
+							<div id="popup-4" class="popup-box mfp-fade mfp-hide">
+								<div class="content">
+									<div class="image">
+										<img src="images/gnz.png" alt="">
+									</div>
+									<div class="desc">
+										<div class="category">Website</div>
+										<h4>官字蔘網站</h4>
+										<p>
+											Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu
+											volumus explicari sed. Mel mutat vituperata
+											suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod
+											vis. Cu vim quem quod cibo.
+										</p>
+										<a href="#" class="btn" data-text="View Project">View Project</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="box-item f-mockups">
+							<div class="image">
+								<a href="#popup-5" class="has-popup">
+									<img src="images/works/work5.jpg" alt="" />
+									<span class="info">
+										<span class="centrize full-width">
+											<span class="vertical-center">
+												<span class="ion ion-md-add"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="desc">
+								<div class="category">Mockups</div>
+								<a href="#popup-5" class="name has-popup">Amore Mio Three Cups</a>
+							</div>
+							<div id="popup-5" class="popup-box mfp-fade mfp-hide">
+								<div class="content">
+									<div class="image">
+										<img src="images/works/work5.jpg" alt="">
+									</div>
+									<div class="desc">
+										<div class="category">Mockups</div>
+										<h4>Amore Mio Three Cups</h4>
+										<p>
+											Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu
+											volumus explicari sed. Mel mutat vituperata
+											suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod
+											vis. Cu vim quem quod cibo.
+										</p>
+										<a href="#" class="btn" data-text="View Project">View Project</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="box-item f-illustration">
+							<div class="image">
+								<a href="#popup-6" class="has-popup">
+									<img src="images/works/work6.jpg" alt="" />
+									<span class="info">
+										<span class="centrize full-width">
+											<span class="vertical-center">
+												<span class="ion ion-md-add"></span>
+											</span>
+										</span>
+									</span>
+								</a>
+							</div>
+							<div class="desc">
+								<div class="category">Illustration</div>
+								<a href="#popup-6" class="name has-popup">Marta Veludo Beautiful Poster</a>
+							</div>
+							<div id="popup-6" class="popup-box mfp-fade mfp-hide">
+								<div class="content">
+									<div class="image">
+										<img src="images/works/work6.jpg" alt="">
+									</div>
+									<div class="desc">
+										<div class="category">Illustration</div>
+										<h4>Marta Veludo Beautiful Poster</h4>
+										<p>
+											Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu
+											volumus explicari sed. Mel mutat vituperata
+											suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod
+											vis. Cu vim quem quod cibo.
+										</p>
+										<a href="#" class="btn" data-text="View Project">View Project</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<div class="soc">
+				<a target="_blank" href="https://linkedin.com/wingfai-man"><span data-feather="linkedin"></span></a>
+				<a target="_blank" href="https://twitter.com/manfai106"><span data-feather="twitter"></span></a>
+				<a target="_blank" href="https://github.com/manfai"><span data-feather="github"></span></a>
+			</div>
+			<div class="copy">© 2019 M.W.F. All rights reserved.</div>
+			<div class="clr"></div>
+		</footer>
+
+		<!-- Lines -->
+		<div class="line top"></div>
+		<div class="line bottom"></div>
+		<div class="line left"></div>
+		<div class="line right"></div>
+
+	</div>
+
+	<!-- jQuery Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/typed.js"></script>
+	<script src="js/magnific-popup.js"></script>
+	<script src="js/masonry.pkgd.js"></script>
+	<script src="js/imagesloaded.pkgd.js"></script>
+	<script src="js/masonry-filter.js"></script>
+
+	<!-- Main Scripts -->
+	<script src="js/glitche-scripts.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/anime.min.js"></script>
+	<script src="js/scrollMonitor.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script>
+		feather.replace({
+			class: 'icon icon-soc'
+		})
+	</script>
+	<script>
+		const DOM = {};
+		DOM.svg = document.querySelector('.morph');
+		DOM.shapeEl = DOM.svg.querySelector('polygon');
+		DOM.contentElems = Array.from(document.querySelectorAll('.section'));
+		DOM.contentLinks = Array.from(document.querySelectorAll('.content__link'));
+		DOM.footer = document.querySelector('.works');
+		console.log(DOM.contentElems.length);
+		const contentElemsTotal = DOM.contentElems.length;
+		const shapes = [{
+				points: '700,84.4 1047.1,685.6 352.9,685.6 352.9,685.6 352.9,685.6 352.9,685.6',
+				scaleX: 1,
+				scaleY: 1,
+				rotate: 0,
+				tx: 0,
+				ty: 0,
+				fill: {
+					color: 'none',
+					duration: 500,
+					easing: 'linear'
+				},
+				animation: {
+					points: {
+						duration: 500,
+						easing: 'easeOutExpo'
+					},
+					svg: {
+						duration: 1500,
+						easing: 'easeOutElastic'
+					}
+				}
+			},
+			{
+				points: '983.4,101.6 983.4,668.4 416.6,668.4 416.6,101.9 416.6,101.9 416.6,101.9',
+				scaleX: .7,
+				scaleY: .7,
+				rotate: 90,
+				tx: -100,
+				ty: 100,
+				fill: {
+					color: 'none',
+					duration: 500,
+					easing: 'linear'
+				},
+				animation: {
+					points: {
+						duration: 500,
+						easing: 'easeOutExpo'
+					},
+					svg: {
+						duration: 1500,
+						easing: 'easeOutElastic'
+					}
+				}
+			},
+			{
+				points: '890.9,54.3 1081.8,385 890.9,715.7 509.1,715.7 318.2,385 509.1,54.3',
+				scaleX: 1,
+				scaleY: 1,
+				rotate: -45,
+				tx: 0,
+				ty: -50,
+				fill: {
+					color: 'none',
+					duration: 500,
+					easing: 'linear'
+				},
+				animation: {
+					points: {
+						duration: 500,
+						easing: 'easeOutExpo'
+					},
+					svg: {
+						duration: 1500,
+						easing: 'easeOutElastic'
+					}
+				}
+			},
+			{
+				points: '983.4,101.6 779,385 983.4,668.4 416.6,668.4 611,388 416.6,101.9',
+				scaleX: 1,
+				scaleY: 1,
+				rotate: 145,
+				tx: 100,
+				ty: -50,
+				fill: {
+					color: 'none',
+					duration: 500,
+					easing: 'linear'
+				},
+				animation: {
+					points: {
+						duration: 500,
+						easing: 'easeOutExpo'
+					},
+					svg: {
+						duration: 1500,
+						easing: 'easeOutElastic'
+					}
+				}
+			},
+			{
+				points: '983.4,101.6 1255,385 983.4,668.4 416.6,668.4 157,368 416.6,101.9',
+				scaleX: .7,
+				scaleY: .7,
+				rotate: -70,
+				tx: -50,
+				ty: 50,
+				fill: {
+					color: 'none',
+					duration: 500,
+					easing: 'linear'
+				},
+				animation: {
+					points: {
+						duration: 500,
+						easing: 'easeOutExpo'
+					},
+					svg: {
+						duration: 1500,
+						easing: 'easeOutElastic'
+					}
+				}
+			},
+			{
+				points: '983.4,101.6 983.4,668.4 416.6,668.4 416.6,101.9 416.6,101.9 416.6,101.9',
+				scaleX: 1.2,
+				scaleY: 1.2,
+				rotate: 20,
+				tx: 0,
+				ty: 0,
+				fill: {
+					color: 'none',
+					duration: 500,
+					easing: 'linear'
+				},
+				animation: {
+					points: {
+						duration: 500,
+						easing: 'easeOutExpo'
+					},
+					svg: {
+						duration: 1500,
+						easing: 'easeOutElastic'
+					}
+				}
+			}
+		];
+		let step;
+		const initShapeEl = function () {
+			anime.remove(DOM.svg);
+			anime({
+				targets: DOM.svg,
+				duration: 1,
+				easing: 'linear',
+				scaleX: shapes[0].scaleX,
+				scaleY: shapes[0].scaleY,
+				translateX: shapes[0].tx + 'px',
+				translateY: shapes[0].ty + 'px',
+				rotate: shapes[0].rotate + 'deg'
+			});
+		};
+
+		const createScrollWatchers = function () {
+			DOM.contentElems.forEach((el, pos) => {
+				const scrollElemToWatch = pos ? DOM.contentElems[pos] : DOM.footer;
+				pos = pos ? pos : contentElemsTotal;
+				const watcher = scrollMonitor.create(scrollElemToWatch, -150);
+
+				watcher.enterViewport(function () {
+					step = pos;
+					anime.remove(DOM.shapeEl);
+					anime({
+						targets: DOM.shapeEl,
+						duration: shapes[pos].animation.points.duration,
+						easing: shapes[pos].animation.points.easing,
+						elasticity: shapes[pos].animation.points.elasticity || 0,
+						points: shapes[pos].points,
+						fill: {
+							value: shapes[pos].fill.color,
+							duration: shapes[pos].fill.duration,
+							easing: shapes[pos].fill.easing
+						}
+					});
+
+					anime.remove(DOM.svg);
+					anime({
+						targets: DOM.svg,
+						duration: shapes[pos].animation.svg.duration,
+						easing: shapes[pos].animation.svg.easing,
+						elasticity: shapes[pos].animation.svg.elasticity || 0,
+						scaleX: shapes[pos].scaleX,
+						scaleY: shapes[pos].scaleY,
+						translateX: shapes[pos].tx + 'px',
+						translateY: shapes[pos].ty + 'px',
+						rotate: shapes[pos].rotate + 'deg'
+					});
+				});
+
+				watcher.exitViewport(function () {
+					const idx = !watcher.isAboveViewport ? pos - 1 : pos + 1;
+
+					if (idx <= contentElemsTotal && step !== idx) {
+						step = idx;
+						anime.remove(DOM.shapeEl);
+						anime({
+							targets: DOM.shapeEl,
+							duration: shapes[idx].animation.points.duration,
+							easing: shapes[idx].animation.points.easing,
+							elasticity: shapes[idx].animation.points.elasticity || 0,
+							points: shapes[idx].points,
+							fill: {
+								value: shapes[idx].fill.color,
+								duration: shapes[idx].fill.duration,
+								easing: shapes[idx].fill.easing
+							}
+						});
+
+						anime.remove(DOM.svg);
+						anime({
+							targets: DOM.svg,
+							duration: shapes[idx].animation.svg.duration,
+							easing: shapes[idx].animation.svg.easing,
+							elasticity: shapes[idx].animation.svg.elasticity || 0,
+							scaleX: shapes[idx].scaleX,
+							scaleY: shapes[idx].scaleY,
+							translateX: shapes[idx].tx + 'px',
+							translateY: shapes[idx].ty + 'px',
+							rotate: shapes[idx].rotate + 'deg'
+						});
+					}
+				});
+			});
+		};
+
+		const init = function () {
+			imagesLoaded(document.body, () => {
+				initShapeEl();
+				createScrollWatchers();
+				// Array.from(document.querySelectorAll('.content--layout')).forEach(el => new TiltObj(el));
+				// Remove loading class from body
+				// document.body.classList.remove('loading');
+			});
+		}
+
+		init();
+	</script>
+	<!-- <script src="js/demo3.js"></script> -->
+</body>
+
+</html>
