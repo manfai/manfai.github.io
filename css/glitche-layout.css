@@ -146,7 +146,7 @@ header .head-top .menu-btn span {
 header .head-top .menu-btn:hover:before,
 header .head-top .menu-btn:hover:after,
 header .head-top .menu-btn:hover span {
-  background: #315ed7;
+  background: #304ffe;
 }
 
 @media (max-width: 840px) {
@@ -189,13 +189,13 @@ header .head-top .top-menu ul li a.btn {
 }
 
 header .head-top .top-menu ul li.active a {
-  color: #315ed7;
+  color: #304ffe;
 }
 
 header .head-top .top-menu ul li.active .btn {
   color: #ffffff;
-  background: #315ed7;
-  border: 1px solid #315ed7;
+  background: #304ffe;
+  border: 1px solid #304ffe;
 }
 
 /* 2. Section */
@@ -334,7 +334,7 @@ header .head-top .top-menu ul li.active .btn {
 
 .section.started .mouse_btn {
   font-size: 24px;
-  color: #315ed7;
+  color: #304ffe;
   text-align: center;
   position: absolute;
   width: 20px;
@@ -445,7 +445,7 @@ header .head-top .top-menu ul li.active .btn {
 
 .info-list ul li strong {
   font-weight: 400;
-  color: #315ed7;
+  color: #304ffe;
 }
 
 /* 5. Resume */
@@ -475,7 +475,7 @@ header .head-top .top-menu ul li.active .btn {
   top: 0;
   width: 1px;
   height: 100%;
-  background: #315ed7;
+  background: #304ffe;
 }
 
 .resume-items .resume-item:first-child {
@@ -501,8 +501,8 @@ header .head-top .top-menu ul li.active .btn {
   line-height: 18px;
   font-weight: 500;
   font-size: 11px;
-  color: #315ed7;
-  border: 1px solid #315ed7;
+  color: #304ffe;
+  border: 1px solid #304ffe;
 }
 
 .resume-items .resume-item .date:before {
@@ -512,7 +512,7 @@ header .head-top .top-menu ul li.active .btn {
   position: absolute;
   left: -30px;
   top: 9px;
-  background: #315ed7;
+  background: #304ffe;
 }
 
 .resume-items .resume-item .name {
@@ -558,7 +558,7 @@ header .head-top .top-menu ul li.active .btn {
   position: absolute;
   height: 3px;
   width: 0%;
-  background: #315ed7;
+  background: #304ffe;
   transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
@@ -626,7 +626,7 @@ header .head-top .top-menu ul li.active .btn {
   width: 36px;
   text-align: center;
   font-size: 30px;
-  color: #315ed7;
+  color: #304ffe;
 }
 
 @media (max-width: 400px) {
@@ -683,7 +683,7 @@ header .head-top .top-menu ul li.active .btn {
 }
 
 .section.works .filters label.glitch-effect {
-  color: #315ed7;
+  color: #304ffe;
 }
 
 @media (max-width: 580px) {
@@ -746,7 +746,7 @@ header .head-top .top-menu ul li.active .btn {
 }
 
 .box-items .box-item:hover .desc .name {
-  color: #315ed7;
+  color: #304ffe;
 }
 
 .box-items .box-item .image {
@@ -786,7 +786,7 @@ header .head-top .top-menu ul li.active .btn {
 }
 
 .box-items .box-item .image .info .centrize {
-  background: #315ed7;
+  background: #304ffe;
 }
 
 .box-items .box-item .image .info .ion {
@@ -833,8 +833,8 @@ header .head-top .top-menu ul li.active .btn {
   line-height: 18px;
   font-weight: 500;
   font-size: 11px;
-  color: #315ed7;
-  border: 1px solid #315ed7;
+  color: #304ffe;
+  border: 1px solid #304ffe;
 }
 
 .category {
@@ -970,7 +970,7 @@ footer .soc a .ion {
 }
 
 footer .soc a:hover .ion {
-  color: #315ed7;
+  color: #304ffe;
 }
 
 @media (max-width: 840px) {

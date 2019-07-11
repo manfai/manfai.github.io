@@ -42,9 +42,9 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
 
 	<style>
-		html,body,a,h1,h2,h3,h4,h5,h6,p,label{
+		/* html,body,a,h1,h2,h3,h4,h5,h6,p,label{
 			font-family: 'Russo One';
-		}
+		} */
 
 		.box-item img{
 			box-shadow: 0px 2px 8px rgba(0,0,0,.3);
@@ -73,7 +73,7 @@
 			text-transform: lowercase;
 			z-index: 10;
 			cursor: default;
-			color:#ff4081;
+			/* color:#304ffe; */
 			/* background: #ff4081; */
 			/* box-shadow: inset 0 -60px 0px #ff4081;
 			-moz-box-shadow: inset 0 -60px 0px #ff4081;
@@ -116,7 +116,7 @@
 			align-content: center;
 			grid-template-columns: 150px 150px 150px 150px;
 			grid-template-rows: 150px 75px 75px;
-			grid-template-areas: " ...   ... title title"
+			grid-template-areas: " ...   title title title"
 								 "author ... desc desc"
 								 "author ... link link";
 		}
@@ -178,8 +178,7 @@
 			fill: none;
 			stroke-width: 15px;
 			stroke: #304ffe;
-			opacity: 1;
-			transform: scaleX(1.1) scaleY(1.2);
+			opacity: 0.1;
 		}
 
 		.section {
@@ -244,7 +243,7 @@
 					<ul>
 						<li><a href="portfolio" class="lnk">Portfolio</a></li>
 						<li><a href="resume" class="lnk">Resume</a></li>
-						<li><a href="contacts" class="btn">Contacts</a></li>
+						<li><a href="contacts" class="lnk">Contacts</a></li>
 					</ul>
 				</div>
 			</div>
@@ -256,9 +255,9 @@
 	
 			<!-- Started -->
 			<div class="section started">
-				<div class="morph-wrap" style="z-index:1">
+				<div class="morph-wrap" style="display: none">
 					<svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
-						<polygon points="700,84.4 1047.1,685.6 352.9,685.6 352.9,685.6 352.9,685.6 352.9,685.6" />
+						<polygon points="983.4,101.6 983.4,668.4 416.6,668.4 416.6,101.9 416.6,101.9 416.6,101.9" />
 					</svg>
 				</div>
 			
@@ -266,13 +265,13 @@
 					<div class="vertical-center">
 						<div class="started-content content-wrap">
 							<div class="content content--layout content--layout-1">
-								<img class="content__img"
-									src="images/14.jpeg"
-									style="object-fit:cover;box-shadow: 0px 2px 8px rgba(0,0,0,.3);" />
-								<h3 class="content__title">projects</h3>
+								<div class="content__img" style="box-shadow: 0px 2px 8px rgba(0,0,0,.3);background:#304ffe;filter: sepia(100%) hue-rotate(190deg) saturate(500%);">
+									<img src="images/19.jpeg" style="width:100%;height:100%;object-fit:cover;opacity: .9;">
+								</div>
+								<h3  data-text="projects" class="content__title h-title glitch-effect">projects</h3>
 								<p class="content__author">Based in HK.</p>
 								<p class="content__desc">Finding the heart when paradise is lost.</p>
-								<a href="#" class="content__link">Read More</a>
+								<a href="/" class="content__link">Read More</a>
 							</div>
 							<span class="typed-bread"></span>
 						</div>
@@ -301,11 +300,11 @@
 						<div class="box-item f-graphic">
 							<div class="image">
 								<a href="#popup-1" class="has-popup">
-									<img src="images/14.jpeg" alt="" />
+									<img src="images/11.jpeg" alt="" />
 									<span class="info">
 										<span class="centrize full-width">
 											<span class="vertical-center">
-												<span data-feather="align-center"></span>
+												<span data-feather="archive"></span>
 											</span>
 										</span>
 									</span>
@@ -338,7 +337,7 @@
 									<span class="info">
 										<span class="centrize full-width">
 											<span class="vertical-center">
-												<span data-feather="align-center"></span>
+												<span data-feather="archive"></span>
 											</span>
 										</span>
 									</span>
@@ -373,7 +372,7 @@
 									<span class="info">
 										<span class="centrize full-width">
 											<span class="vertical-center">
-												<span data-feather="align-center"></span>
+												<span data-feather="archive"></span>
 											</span>
 										</span>
 									</span>
@@ -409,7 +408,7 @@
 									<span class="info">
 										<span class="centrize full-width">
 											<span class="vertical-center">
-												<span data-feather="align-center"></span>
+												<span data-feather="archive"></span>
 											</span>
 										</span>
 									</span>
@@ -445,7 +444,7 @@
 									<span class="info">
 										<span class="centrize full-width">
 											<span class="vertical-center">
-												<span data-feather="align-center"></span>
+												<span data-feather="archive"></span>
 											</span>
 										</span>
 									</span>
@@ -481,7 +480,7 @@
 									<span class="info">
 										<span class="centrize full-width">
 											<span class="vertical-center">
-												<span data-feather="align-center"></span>
+												<span data-feather="archive"></span>
 											</span>
 										</span>
 									</span>
@@ -554,262 +553,9 @@
 	<script src="js/demo3.js"></script>
 	<script>
 		feather.replace({
-			class: 'icon icon-soc'
+			class: 'ion icon'
 		})
-		//TODO: add animation for .morph
-		// $("html" ).scroll(function() {
-		// 	console.log('123');
-		// 	$( ".morph" ).css("transition","rotate(180deg)");
-		// });
 	</script>
-	<!-- <script>
-		const DOM = {};
-		DOM.svg = document.querySelector('.morph');
-		DOM.shapeEl = DOM.svg.querySelector('polygon');
-		DOM.contentElems = Array.from(document.querySelectorAll('.section'));
-		DOM.contentLinks = Array.from(document.querySelectorAll('.content__link'));
-		DOM.footer = document.querySelector('.works');
-		console.log(DOM.contentElems.length);
-		const contentElemsTotal = DOM.contentElems.length;
-		const shapes = [{
-				points: '700,84.4 1047.1,685.6 352.9,685.6 352.9,685.6 352.9,685.6 352.9,685.6',
-				scaleX: 1,
-				scaleY: 1.2,
-				rotate: 0,
-				tx: 0,
-				ty: 0,
-				fill: {
-					color: 'none',
-					duration: 500,
-					easing: 'linear'
-				},
-				animation: {
-					points: {
-						duration: 500,
-						easing: 'easeOutExpo'
-					},
-					svg: {
-						duration: 1500,
-						easing: 'easeOutElastic'
-					}
-				}
-			},
-			{
-				points: '983.4,101.6 983.4,668.4 416.6,668.4 416.6,101.9 416.6,101.9 416.6,101.9',
-				scaleX: .7,
-				scaleY: .7,
-				rotate: 90,
-				tx: -100,
-				ty: 100,
-				fill: {
-					color: 'none',
-					duration: 500,
-					easing: 'linear'
-				},
-				animation: {
-					points: {
-						duration: 500,
-						easing: 'easeOutExpo'
-					},
-					svg: {
-						duration: 1500,
-						easing: 'easeOutElastic'
-					}
-				}
-			},
-			{
-				points: '890.9,54.3 1081.8,385 890.9,715.7 509.1,715.7 318.2,385 509.1,54.3',
-				scaleX: 1,
-				scaleY: 1,
-				rotate: -45,
-				tx: 0,
-				ty: -50,
-				fill: {
-					color: 'none',
-					duration: 500,
-					easing: 'linear'
-				},
-				animation: {
-					points: {
-						duration: 500,
-						easing: 'easeOutExpo'
-					},
-					svg: {
-						duration: 1500,
-						easing: 'easeOutElastic'
-					}
-				}
-			},
-			{
-				points: '983.4,101.6 779,385 983.4,668.4 416.6,668.4 611,388 416.6,101.9',
-				scaleX: 1,
-				scaleY: 1,
-				rotate: 145,
-				tx: 100,
-				ty: -50,
-				fill: {
-					color: 'none',
-					duration: 500,
-					easing: 'linear'
-				},
-				animation: {
-					points: {
-						duration: 500,
-						easing: 'easeOutExpo'
-					},
-					svg: {
-						duration: 1500,
-						easing: 'easeOutElastic'
-					}
-				}
-			},
-			{
-				points: '983.4,101.6 1255,385 983.4,668.4 416.6,668.4 157,368 416.6,101.9',
-				scaleX: .7,
-				scaleY: .7,
-				rotate: -70,
-				tx: -50,
-				ty: 50,
-				fill: {
-					color: 'none',
-					duration: 500,
-					easing: 'linear'
-				},
-				animation: {
-					points: {
-						duration: 500,
-						easing: 'easeOutExpo'
-					},
-					svg: {
-						duration: 1500,
-						easing: 'easeOutElastic'
-					}
-				}
-			},
-			{
-				points: '983.4,101.6 983.4,668.4 416.6,668.4 416.6,101.9 416.6,101.9 416.6,101.9',
-				scaleX: 1.2,
-				scaleY: 1.2,
-				rotate: 20,
-				tx: 0,
-				ty: 0,
-				fill: {
-					color: 'none',
-					duration: 500,
-					easing: 'linear'
-				},
-				animation: {
-					points: {
-						duration: 500,
-						easing: 'easeOutExpo'
-					},
-					svg: {
-						duration: 1500,
-						easing: 'easeOutElastic'
-					}
-				}
-			}
-		];
-		let step;
-		const initShapeEl = function () {
-			anime.remove(DOM.svg);
-			anime({
-				targets: DOM.svg,
-				duration: 1,
-				easing: 'linear',
-				scaleX: shapes[0].scaleX,
-				scaleY: shapes[0].scaleY,
-				translateX: shapes[0].tx + 'px',
-				translateY: shapes[0].ty + 'px',
-				rotate: shapes[0].rotate + 'deg'
-			});
-		};
-
-		const createScrollWatchers = function () {
-			DOM.contentElems.forEach((el, pos) => {
-				const scrollElemToWatch = pos ? DOM.contentElems[pos] : DOM.footer;
-				pos = pos ? pos : contentElemsTotal;
-				const watcher = scrollMonitor.create(scrollElemToWatch, -150);
-
-				watcher.enterViewport(function () {
-					step = pos;
-					anime.remove(DOM.shapeEl);
-					anime({
-						targets: DOM.shapeEl,
-						duration: shapes[pos].animation.points.duration,
-						easing: shapes[pos].animation.points.easing,
-						elasticity: shapes[pos].animation.points.elasticity || 0,
-						points: shapes[pos].points,
-						fill: {
-							value: shapes[pos].fill.color,
-							duration: shapes[pos].fill.duration,
-							easing: shapes[pos].fill.easing
-						}
-					});
-
-					anime.remove(DOM.svg);
-					anime({
-						targets: DOM.svg,
-						duration: shapes[pos].animation.svg.duration,
-						easing: shapes[pos].animation.svg.easing,
-						elasticity: shapes[pos].animation.svg.elasticity || 0,
-						scaleX: shapes[pos].scaleX,
-						scaleY: shapes[pos].scaleY,
-						translateX: shapes[pos].tx + 'px',
-						translateY: shapes[pos].ty + 'px',
-						rotate: shapes[pos].rotate + 'deg'
-					});
-				});
-
-				watcher.exitViewport(function () {
-					const idx = !watcher.isAboveViewport ? pos - 1 : pos + 1;
-
-					if (idx <= contentElemsTotal && step !== idx) {
-						step = idx;
-						anime.remove(DOM.shapeEl);
-						anime({
-							targets: DOM.shapeEl,
-							duration: shapes[idx].animation.points.duration,
-							easing: shapes[idx].animation.points.easing,
-							elasticity: shapes[idx].animation.points.elasticity || 0,
-							points: shapes[idx].points,
-							fill: {
-								value: shapes[idx].fill.color,
-								duration: shapes[idx].fill.duration,
-								easing: shapes[idx].fill.easing
-							}
-						});
-
-						anime.remove(DOM.svg);
-						anime({
-							targets: DOM.svg,
-							duration: shapes[idx].animation.svg.duration,
-							easing: shapes[idx].animation.svg.easing,
-							elasticity: shapes[idx].animation.svg.elasticity || 0,
-							scaleX: shapes[idx].scaleX,
-							scaleY: shapes[idx].scaleY,
-							translateX: shapes[idx].tx + 'px',
-							translateY: shapes[idx].ty + 'px',
-							rotate: shapes[idx].rotate + 'deg'
-						});
-					}
-				});
-			});
-		};
-
-		const init = function () {
-			imagesLoaded(document.body, () => {
-				initShapeEl();
-				createScrollWatchers();
-				// Array.from(document.querySelectorAll('.content--layout')).forEach(el => new TiltObj(el));
-				// Remove loading class from body
-				// document.body.classList.remove('loading');
-			});
-		}
-
-		init();
-	</script> -->
-	<!-- <script src="js/demo3.js"></script> -->
 </body>
 
 </html>
