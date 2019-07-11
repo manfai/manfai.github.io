@@ -44,8 +44,8 @@
 <body>	
 	
 	<!-- Preloader -->
-	<div class="preloader">
-		<div class="centrize full-width">
+	<div class="preloader container" style="margin:0px">
+		<div class="centrize full-width" style="background:white;">
 			<div class="vertical-center">
 				<div class="pre-inner">
 					<div class="load typing-load"><p>loading...</p></div>
@@ -53,11 +53,17 @@
 				</div>
 			</div>
 		</div>
+		<!-- Lines -->
+		<div class="line top"></div>
+		<div class="line bottom"></div>
+		<div class="line left"></div>
+		<div class="line right"></div>
 	</div>
 	
 	<!-- Container -->
 	<div class="container"  style="background: url(images/14.jpeg) no-repeat center;background-size:cover;margin:0px;height:100vh;">
 		
+
 		<!-- Header -->
 		<header style="background:transparent">
 			<div class="head-top">
@@ -101,7 +107,7 @@
 				<a target="_blank" href="https://github.com/manfai"><span data-feather="github"></span></a>
 				<a target="_blank" href="mailto:m4nfa1@gmail.com"><span data-feather="mail"></span></a>
 			</div>
-			<div class="copy">© 2019 M.W.F. All rights reserved.</div>
+			<div class="copy" style="color:white">© 2019 M.W.F. All rights reserved.</div>
 			<div class="clr"></div>
 		</footer>
 		
@@ -124,6 +130,11 @@
 	
 	<!-- Main Scripts -->
 	<script src="js/glitche-scripts.js"></script>
-	
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script>
+		feather.replace({
+			class: 'icon icon-soc'
+		})
+	</script>
 </body>
 </html>
