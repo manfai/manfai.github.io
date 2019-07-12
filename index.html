@@ -1,75 +1,149 @@
----
-layout: default
-title: Home
----
-<!-- Started -->
-<div class="section started bg-img">
-    <div class="centrize full-width">
-        <div class="vertical-center">
-            <div class="started-content">
-                <div class="h-title glitch-effect" style="color:#fff" data-text="I'm ManFai">I'm <span>ManFai</span></div>
-                <div class="h-subtitle typing-subtitle">
-                    <p>Web Developer.</p>
-                    <p>Based in Hong Kong.</p>
-                </div>
-                <span class="typed-subtitle" style="color:#fff"></span>
-            </div>
-        </div>
-    </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<!-- Basic -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>ManFai - CV/Resume</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<!-- Load Fonts -->
+	<!-- <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,300italic,300,100italic,400italic,500,500italic,700,700italic&amp;subset=latin,cyrillic' rel='stylesheet'> -->
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i&amp;subset=chinese-traditional,cyrillic" rel="stylesheet">
 
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/glitche-basic.css" />
+	<link rel="stylesheet" href="css/glitche-layout.css" />
+	<!-- <link rel="stylesheet" href="css/ionicons.css" /> -->
+	<link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet">
 
-<!-- Started -->
-<div class="section started">
-    <div class="morph-wrap" style="display: none">
-        <svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
-            <polygon points="983.4,101.6 983.4,668.4 416.6,668.4 416.6,101.9 416.6,101.9 416.6,101.9" />
-        </svg>
-    </div>
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="images/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+	<style>
+	footerfooter .soc span{
+		color:white;
+	}
+	.menu-btn span,
+	header .head-top .menu-btn:before, header .head-top .menu-btn:after {
+		background:white!important;
+	}
+	.typed-subtitle{
+		font-size:1.2em!important;
+	}
+	.typed-cursor{
+		color:#ffffff;
+	}
+	.lnk{
+		color:#ffffff;
+	}
+	.copy, .soc .feather{
+		color:#ffffff;
+	}
+	</style>
+</head>
 
-    <div class="centrize full-width" style="z-index: 2">
-        <div class="vertical-center">
-            <div class="started-content content-wrap">
-                <div class="content content--layout content--layout-1">
-                    <div class="content__img" style="box-shadow: 0px 2px 8px rgba(0,0,0,.3);background:#000;filter: sepia(100%) hue-rotate(190deg) saturate(500%);">
-                        <img src="/assets/img/man.webp" style="width:100%;height:100%;object-fit:cover;opacity: .7;">
-                    </div>
-                    <h3  data-text="About" class="content__title h-title glitch-effect">About</h3>
-                    <p class="content__author">Based in HK.</p>
-                    <p class="content__desc">Making developers happy.</p>
-                    <a href="/" class="content__link">Download CV</a>
-                </div>
-                <span class="typed-bread"></span>
-            </div>
-        </div>
-    </div>
-</div>
+<body>	
+	
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="centrize full-width" style="background:black;">
+			<div class="vertical-center">
+				<div class="pre-inner">
+					<div class="load typing-load"><p>loading...</p></div>
+					<span class="typed-load"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Container -->
+	<div class="container" style="background: url(images/14.jpeg) no-repeat center;background-size:cover;margin:0px;height:100vh;">
+		
 
-<!-- About -->
-<div class="section about">
-    <div class="content">
-        <div class="title">
-            <div class="title_inner">About Me</div>
-        </div>
-        <div class="image">
-            <img src="images/man.webp" alt="" />
-        </div>
-        <div class="desc">
-            <p>
-                I pursued my Bachelors in Multimedia Computing from Coventry University. As part of my curriculum, I particularly found the subjects of Programming and Deep learning highly intriguing, as these articles created in me a passion to study the computer related courses in much more detail. Talking about my profession, now I am web programmer where I work on various programming languages ​​such as PHP, JavaScript , Jquery, Vue.js, Node.js, Python, Objective-C and Swift.
-            </p>
-            <div class="info-list">
-                <ul>
-                    <li><strong>Name:</strong> ManFai</li>
-                    <li><strong>Age:</strong> <script>var dob = new Date(1993, 10, 6);var diff_ms = Date.now() - dob.getTime(); var age_dt = new Date(diff_ms); document.write(Math.abs(age_dt.getUTCFullYear() - 1970));</script> Years</li>
-                    <li><strong>Job:</strong> Web Developer</li>
-                    <li><strong>Citizenship:</strong> China/PRC</li>
-                    <li><strong>Residence: </strong> Hong Kong</li>
-                    <li><strong>E-mail:</strong> m4nfa1@gmail.com</li>
-                </ul>
-            </div>
-            <div class="bts"><a href="#" class="btn fill" data-text="Download CV">Download CV</a></div>
-        </div>
-        <div class="clear"></div>
-    </div>
-</div>
+		<!-- Header -->
+		<header style="background:transparent">
+			<div class="head-top">
+				<a href="#" class="menu-btn"><span></span></a>
+				<div class="top-menu">
+					<ul>
+						<li><a href="portfolio" class="lnk">Portfolio</a></li>
+						<li><a href="resume" class="lnk"">Resume</a></li>
+						<li><a href="contacts" class="lnk"">Contacts</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		
+		<!-- Wrapper -->
+		<div class="wrapper">
+		
+			<!-- Started -->
+			<div class="section started">
+				<div class="centrize full-width">
+					<div class="vertical-center">
+						<div class="started-content">
+							<div class="h-title glitch-effect" style="color:#fff" data-text="I'm ManFai">I'm <span>ManFai</span></div>
+							<div class="h-subtitle typing-subtitle">
+								<p>Web Developer.</p>
+								<p>Based in Hong Kong.</p>
+							</div>
+							<span class="typed-subtitle" style="color:#fff"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+		
+		<!-- Footer -->
+		<footer style="background:transparent!important">
+			<div class="soc">
+				<a target="_blank" href="https://twitter.com/manfai106"><span data-feather="twitter"></span></a>
+				<a target="_blank" href="https://github.com/manfai"><span data-feather="github"></span></a>
+				<a target="_blank" href="mailto:m4nfa1@gmail.com"><span data-feather="mail"></span></a>
+			</div>
+			<div class="copy">© 2019 M.W.F. All rights reserved.</div>
+			<div class="clr"></div>
+		</footer>
+		
+		<!-- Lines -->
+		<div class="line top"></div>
+		<div class="line bottom"></div>
+		<div class="line left"></div>
+		<div class="line right"></div>
+		
+	</div>
+	
+	<!-- jQuery Scripts -->
+    <script src="js/jquery.min.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/typed.js"></script>
+	<script src="js/magnific-popup.js"></script>
+	<script src="js/masonry.pkgd.js"></script>
+	<script src="js/imagesloaded.pkgd.js"></script>
+	<script src="js/masonry-filter.js"></script>
+	<!-- Main Scripts -->
+	<script src="js/glitche-scripts.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script>
+		feather.replace({
+			class: 'icon icon-soc'
+		})
+	</script>
+</body>
+</html>
