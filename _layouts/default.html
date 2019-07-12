@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>{{ page.title }}</title>
+	<link rel="stylesheet" href="/assets/css/glitche-basic.css">
+	<link rel="stylesheet" href="/assets/css/glitche-layout.css">
+	<link rel="stylesheet" href="/assets/css/magnific-popup.css" />
+	<link rel="stylesheet" href="/assets/css/animate.css" />
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<style>
+	.bg-black{
+		background:#000000;	
+	}
+	.bg-img{
+		background: url('/assets/img/14.jpeg') no-repeat center;
+		background-size:cover;
+		margin:0px;
+		height:100vh;
+	}
+	.bg-img-2{
+		background: url('/assets/img/17.jpeg') no-repeat center;
+		background-size:cover;
+		margin:0px;
+		height:100vh;
+	}
+	.lnk{
+		color:#ffffff;
+	}
+	footer .copy{
+		color:#ffffff;
+	}
+	.icon-soc{
+		color:#ffffff;
+		height:15px;
+		width:15px;
+		vertical-align: bottom;
+	}
+	header .head-top .menu-btn span,
+	header .head-top .menu-btn:before, header .head-top .menu-btn:after{
+		background:#ffffff;
+	}
+	.about{
+		color:#ffffff;
+	}
+	.about.section .content .title .title_inner{
+		color:#ffffff;
+	}
+	.section.started .started-content .h-title{
+		color:#ffffff;
+	}
+	</style>
+</head>
+<body>
+	<!-- Preloader -->
+	{% include preloader.html %}
+
+	<!-- Container -->
+	<main class="container">
+		<!-- Header -->
+		<header style="background:transparent">
+			<div class="head-top">
+				<a href="#" class="menu-btn"><span></span></a>
+				<div class="top-menu">
+					<ul>
+						<li><a href="/portfolio.html" class="lnk" data-text="Projects">Portfolio</a></li>
+						<li><a href="/index.html#about" class="lnk" data-text="Resume">Resume</a></li>
+						<li><a href="/contacts.html" class="lnk" data-text="Contacts">Contacts</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		
+		<!-- Wrapper -->
+		<div class="wrapper">
+		
+			{{ content }}
+
+		</div>
+		
+		<!-- Footer -->
+		<footer style="background:transparent!important">
+			<div class="soc">
+				<a target="_blank" href="https://twitter.com/manfai106"><span data-feather="twitter"></span></a>
+				<a target="_blank" href="https://github.com/manfai"><span data-feather="github"></span></a>
+				<a target="_blank" href="https://linkedin.com/wingfai-man"><span data-feather="linkedin"></span></a>
+				<a target="_blank" href="mailto:m4nfa1@gmail.com"><span data-feather="mail"></span></a>
+			</div>
+			<div class="copy">© 2019 M.W.F. All rights reserved.</div>
+			<div class="clr"></div>
+		</footer>
+		
+		<!-- Lines -->
+		<div class="line top"></div>
+		<div class="line bottom"></div>
+		<div class="line left"></div>
+		<div class="line right"></div>
+		
+	</main>
+	
+
+	<!-- jQuery Scripts -->
+	<script src="/assets/js/jquery.min.js"></script>
+	<script src="/assets/js/jquery.validate.js"></script>
+	<script src="/assets/js/typed.js"></script>
+	<script src="/assets/js/magnific-popup.js"></script>
+	<script src="/assets/js/masonry.pkgd.js"></script>
+	<script src="/assets/js/imagesloaded.pkgd.js"></script>
+	<script src="/assets/js/masonry-filter.js"></script>
+	<!-- Main Scripts -->
+	<script src="/assets/js/glitche-scripts.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script>
+		feather.replace({
+			class: 'icon icon-soc'
+		})
+	</script>
+</body>
+</html>
