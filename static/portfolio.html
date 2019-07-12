@@ -5,7 +5,7 @@
 
 	<!-- Basic -->
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>ManFai - Test Page</title>
+	<title>ManFai - Portfolio</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 
@@ -13,10 +13,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<!-- Load Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i&amp;subset=chinese-traditional,cyrillic" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+	<!-- <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,300italic,300,100italic,400italic,500,500italic,700,700italic&amp;subset=latin,cyrillic' rel='stylesheet'> -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i&amp;subset=chinese-traditional,cyrillic"
+		rel="stylesheet">
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/glitche-basic.css" />
@@ -37,194 +37,33 @@
 	<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
-
 	<style>
-		/* html,body,a,h1,h2,h3,h4,h5,h6,p,label{
-			font-family: 'Russo One';
-		} */
-
-		.box-item img{
-			box-shadow: 0px 2px 8px rgba(0,0,0,.3);
-			object-fit: cover;
-			width:300px!important;
-			height:250px!important;
-		}
-		.started-content {
-			align-items: center;
-			width: 100%;
-		}
-
-		.content {
-			position: relative;
-			display: grid;
-		}
-
-		.content__title {
-			grid-area: title;
-			font-weight: bold;
-			letter-spacing: -0.025em;
-			font-size: 7em;
-			padding-left:3px;
-			line-height: 160px;
-			margin: 0;
-			text-transform: lowercase;
-			z-index: 10;
-			cursor: default;
-			/* color:#304ffe; */
-			/* background: #ff4081; */
-			/* box-shadow: inset 0 -60px 0px #ff4081;
-			-moz-box-shadow: inset 0 -60px 0px #ff4081;
-			-webkit-box-shadow: inset 0 -60px 0px #ff4081; */
-		}
-
-		.content__img {
-			grid-column: 1 / 3;
-			grid-row: 1 / 3;
-			opacity: 0.8;
-			width: 300px;
-			height: 300px;
-			opacity: 1;
-		}
-
-		.content__desc {
-			text-align: left;
-			grid-area: desc;
-			margin: 0;
-			z-index: 10;
-			padding: 0 1em;
-			cursor: default;
-		}
-
-		.content__author {
-			grid-area: author;
-			margin: 0;
-			-webkit-writing-mode: vertical-lr;
-			writing-mode: vertical-lr;
-			padding: 1em;
-			text-align: right;
-			z-index: 10;
-			cursor: default;
-			color:#ff4081;
-		}
-
-		.content--layout {
-			pointer-events: auto;
-			justify-content: center;
-			align-content: center;
-			grid-template-columns: 150px 150px 150px 150px;
-			grid-template-rows: 150px 75px 75px;
-			grid-template-areas: " ...   title title title"
-								 "author ... desc desc"
-								 "author ... link link";
-		}
-
-		.content__link {
-			pointer-events: auto;
-			grid-area: link;
-			align-self: end;
-			justify-self: start;
-			z-index: 10;
-			padding: 0 1em 0.15em;
-		}
-
-		@media screen and (max-width: 40em) {
-			.content--layout {
-				transform: scale3d(0.8, 0.8, 1);
-			}
-		}
-
-		@media screen and (max-width: 36em) {
-			.content--layout {
-				transform: scale3d(0.7, 0.7, 1);
-			}
-		}
-
-		@media screen and (max-width: 32em) {
-			.content--layout {
-				transform: scale3d(0.6, 0.6, 1);
-			}
-
-			.content__author,
-			.content__desc,
-			.content__link {
-				font-size: 1.35em;
-			}
-		}
-
-		@media screen and (max-width: 28em) {
-			.content--layout {
-				transform: scale3d(0.5, 0.5, 1);
-			}
-		}
-
-		.morph-wrap {
-			position: absolute;
-			top: 0;
-			left: 0;
-			bottom: 0;
-			width: 100%;
-			overflow: hidden;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			pointer-events: none;
-			z-index: 1;
-		}
-
-		.morph {
-			fill: none;
-			stroke-width: 15px;
-			stroke: #304ffe;
-			opacity: 0.1;
-		}
-
-		.section {
-			position: relative;
-			z-index: 2;
-		}
-		.line{
-			background:#304ffe!important;
-			color:#304ffe!important;
-		}
-		.box-items .box-item .image .info .centrize {
-			background: #304ffe!important;
-		}
-		.category{
-			box-shadow: inset 0 -6px 0px #ff4081!important;
-			-moz-box-shadow: inset 0 -6px 0px #ff4081!important;
-			-webkit-box-shadow: inset 0 -6px 0px #ff4081!important;
-			-khtml-box-shadow: inset 0 -6px 0px #ff4081!important;
-		}
-		.section .content .title .title_inner {
-			box-shadow: inset 0 -6px 0px #ff4081!important;
-			-moz-box-shadow: inset 0 -6px 0px #ff4081!important;
-			-webkit-box-shadow: inset 0 -6px 0px #ff4081!important;
-		}
-		.btn{
-			background:#304ffe!important;
-			color:#fff!important;
-			border:none!important;
-		}
-		.box-item .feather{
-			color:#fff!important;
-			width: 30px;
-			height:30px;
-		}
-		.preloader .typed-load, .preloader .typed-cursor{
-			color:#304ffe; 
-		}
+	.box-item img{
+		box-shadow: 0px 2px 8px rgba(0,0,0,.3);
+		object-fit: cover;
+		width:100%!important;
+		height:260px!important;
+	}
+	.box-item .feather{
+		color:#fff!important;
+		width: 30px;
+		height:30px;
+	}
+	a.menu-btn{
+		color:white!important;
+	}
 	</style>
 </head>
 
 <body>
 
 	<!-- Preloader -->
-	<div class="preloader" style="background: white">
+	<div class="preloader">
 		<div class="centrize full-width">
 			<div class="vertical-center">
 				<div class="pre-inner">
 					<div class="load typing-load">
-						<p style="color:#304ffe;">loading...</p>
+						<p>loading...</p>
 					</div>
 					<span class="typed-load"></span>
 				</div>
@@ -241,9 +80,10 @@
 				<a href="#" class="menu-btn"><span></span></a>
 				<div class="top-menu">
 					<ul>
-						<li><a href="portfolio" class="lnk">Portfolio</a></li>
+						<li class="active"><a href="portfolio" class="lnk">Portfolio</a></li>
 						<li><a href="resume" class="lnk">Resume</a></li>
-						<li><a href="contacts" class="lnk">Contacts</a></li>
+						<!-- <a><a href="blog" class="lnk">Blog</a></a> -->
+						<li><a href="contacts" class="btn">Contacts</a></li>
 					</ul>
 				</div>
 			</div>
@@ -252,31 +92,20 @@
 		<!-- Wrapper -->
 		<div class="wrapper">
 
-	
 			<!-- Started -->
 			<div class="section started">
-				<div class="morph-wrap" style="display: none">
-					<svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
-						<polygon points="983.4,101.6 983.4,668.4 416.6,668.4 416.6,101.9 416.6,101.9 416.6,101.9" />
-					</svg>
-				</div>
-			
-				<div class="centrize full-width" style="z-index: 2">
+				<div class="centrize full-width">
 					<div class="vertical-center">
-						<div class="started-content content-wrap">
-							<div class="content content--layout content--layout-1">
-								<div class="content__img" style="box-shadow: 0px 2px 8px rgba(0,0,0,.3);background:#304ffe;filter: sepia(100%) hue-rotate(190deg) saturate(500%);">
-									<img src="images/19.jpeg" style="width:100%;height:100%;object-fit:cover;opacity: .9;">
-								</div>
-								<h3  data-text="projects" class="content__title h-title glitch-effect">projects</h3>
-								<p class="content__author">Based in HK.</p>
-								<p class="content__desc">Finding the heart when paradise is lost.</p>
-								<a href="/" class="content__link">Read More</a>
+						<div class="started-content">
+							<div class="h-title glitch-effect" data-text="Portfolio">Portfolio</div>
+							<div class="h-subtitle typing-bread">
+								<p><a href="/">Home</a> / <a href="portfolio">Portfolio</a></p>
 							</div>
 							<span class="typed-bread"></span>
 						</div>
 					</div>
 				</div>
+				<a href="#" class="mouse_btn"><span class="ion ion-md-finger-print"></span></a>
 			</div>
 
 			<!-- Works -->
@@ -290,8 +119,7 @@
 							<div class="btn-group">
 								<label><input type="checkbox" value="f-graphic" />Website</label>
 								<label><input type="checkbox" value="f-photo" />Backend</label>
-								<label><input type="checkbox"
-										value="f-illustration" />Illustration</label>
+								<label><input type="checkbox" value="f-illustration" />Illustration</label>
 								<label><input type="checkbox" value="f-mockups" />Mockups</label>
 							</div>
 						</div>
@@ -300,11 +128,11 @@
 						<div class="box-item f-graphic">
 							<div class="image">
 								<a href="#popup-1" class="has-popup">
-									<img src="images/11.jpeg" alt="" />
+									<img src="images/14.jpeg" alt="" />
 									<span class="info">
 										<span class="centrize full-width">
 											<span class="vertical-center">
-												<span data-feather="archive"></span>
+												<span data-feather="align-center"></span>
 											</span>
 										</span>
 									</span>
@@ -337,7 +165,7 @@
 									<span class="info">
 										<span class="centrize full-width">
 											<span class="vertical-center">
-												<span data-feather="archive"></span>
+												<span data-feather="align-center"></span>
 											</span>
 										</span>
 									</span>
@@ -372,7 +200,7 @@
 									<span class="info">
 										<span class="centrize full-width">
 											<span class="vertical-center">
-												<span data-feather="archive"></span>
+												<span data-feather="align-center"></span>
 											</span>
 										</span>
 									</span>
@@ -408,7 +236,7 @@
 									<span class="info">
 										<span class="centrize full-width">
 											<span class="vertical-center">
-												<span data-feather="archive"></span>
+												<span data-feather="align-center"></span>
 											</span>
 										</span>
 									</span>
@@ -444,7 +272,7 @@
 									<span class="info">
 										<span class="centrize full-width">
 											<span class="vertical-center">
-												<span data-feather="archive"></span>
+												<span data-feather="align-center"></span>
 											</span>
 										</span>
 									</span>
@@ -480,7 +308,7 @@
 									<span class="info">
 										<span class="centrize full-width">
 											<span class="vertical-center">
-												<span data-feather="archive"></span>
+												<span data-feather="align-center"></span>
 											</span>
 										</span>
 									</span>
@@ -519,11 +347,11 @@
 		<!-- Footer -->
 		<footer>
 			<div class="soc">
-				<!-- <a target="_blank" href="https://linkedin.com/wingfai-man"><span data-feather="linkedin"></span></a> -->
-				<a target="_blank" href="https://twitter.com/manfai106"><span data-feather="twitter"></span></a>
-				<a target="_blank" href="https://github.com/manfai"><span data-feather="github"></span></a>
+					<a target="_blank" href="https://twitter.com/manfai106"><span data-feather="twitter"></span></a>
+					<a target="_blank" href="https://github.com/manfai"><span data-feather="github"></span></a>
+					<a target="_blank" href="mailto:m4nfa1@gmail.com"><span data-feather="mail"></span></a>
 			</div>
-			<div class="copy">© 2019 M.W.F. All rights reserved.</div>
+			<div class="copy">© 2019 ManFai. All rights reserved.</div>
 			<div class="clr"></div>
 		</footer>
 
@@ -546,14 +374,10 @@
 
 	<!-- Main Scripts -->
 	<script src="js/glitche-scripts.js"></script>
-	<script src="js/imagesloaded.pkgd.min.js"></script>
-	<script src="js/anime.min.js"></script>
-	<script src="js/scrollMonitor.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-	<script src="js/demo3.js"></script>
 	<script>
 		feather.replace({
-			class: 'ion icon'
+			class: 'icon icon-soc'
 		})
 	</script>
 </body>
