@@ -247,7 +247,7 @@ strong {
 
 /* 5. Links */
 a {
-  color: #363636;
+  color: #ffffff;
   text-decoration: none;
   opacity: 1;
   outline: none;
@@ -327,11 +327,11 @@ button {
   font-size: 12px;
   height: 60px;
   width: 100%;
-  color: #141414;
+  color: #ffffff;
   margin-bottom: 30px;
   padding: 0;
   border: none;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #ffffff;
   -webkit-appearance: none;
   resize: none;
   transition: all 0.3s ease 0s;
@@ -794,3 +794,31 @@ blockquote {
 
 }
 
+.bg-black{
+  background:#000000;	
+}
+.bg-img{
+  background: url('/assets/img/14.jpeg') no-repeat center;
+  background-size:cover;
+  margin:0px;
+  height:100vh;
+}
+.bg-img-2{
+  background: url('/assets/img/17.jpeg') no-repeat center;
+  background-size:cover;
+  margin:0px;
+  height:100vh;
+}
+.lnk{
+  color:#ffffff;
+}
+
+.about{
+  color:#ffffff;
+}
+.about.section .content .title .title_inner{
+  color:#ffffff;
+}
+.section.started .started-content .h-title{
+  color:#ffffff;
+}

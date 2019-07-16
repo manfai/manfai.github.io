@@ -112,7 +112,7 @@ header .head-top .menu-btn:after {
   left: 0;
   width: 100%;
   height: 2px;
-  background: #141414;
+  background: #ffffff;
   transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
@@ -130,7 +130,7 @@ header .head-top .menu-btn span {
   left: 0;
   width: 100%;
   height: 2px;
-  background: #141414;
+  background: #ffffff;
   margin-top: -1px;
   transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -142,6 +142,12 @@ header .head-top .menu-btn:hover:before,
 header .head-top .menu-btn:hover:after,
 header .head-top .menu-btn:hover span {
   background: #304ffe;
+}
+
+header .head-top .menu-btn span,
+header .head-top .menu-btn:before, 
+header .head-top .menu-btn:after{
+  background:#ffffff;
 }
 
 @media (max-width: 840px) {
@@ -243,7 +249,7 @@ header .head-top .top-menu ul li.active .btn {
   position: relative;
   line-height: 18px;
   font-size: 13px;
-  color: #141414;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   transition: all 0.3s ease 0s;
@@ -274,7 +280,7 @@ header .head-top .top-menu ul li.active .btn {
 .section.started .started-content .h-title {
   font-size: 68px;
   font-family: 'Roboto Mono', 'Noto Sans TC';
-  color: #141414;
+  color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -325,21 +331,26 @@ header .head-top .top-menu ul li.active .btn {
 .section.started .started-content .typed-subtitle,
 .section.started .started-content .typed-bread {
   font-size: 13px;
+  color: #ffffff;
 }
 
 .section.started .mouse_btn {
   font-size: 24px;
-  color: #304ffe;
+  color: #ffffff;
   text-align: center;
   position: absolute;
-  width: 20px;
-  height: 40px;
+  /* width: 20px;
+  height: 40px; */
   left: 50%;
   bottom: 80px;
   margin-left: -10px;
 }
 
-.section.started .mouse_btn .ion {
+.section.started .mouse_btn:hover{
+  color:#304ffe;
+}
+
+.section.started .mouse_btn .icon {
   position: relative;
   top: 0px;
   animation: mouse-anim 1s ease-out 0s infinite;
@@ -396,6 +407,7 @@ header .head-top .top-menu ul li.active .btn {
 }
 
 .section.about .desc {
+  margin-top: -130px;
   margin-left: 130px;
 }
 
@@ -512,12 +524,13 @@ header .head-top .top-menu ul li.active .btn {
 
 .resume-items .resume-item .name {
   font-weight: 500;
-  color: #141414;
+  color: #ffffff;
   margin: 0 0 15px 0;
 }
 
 .resume-items .resume-item p {
   margin: 0;
+  color: #ffffff;
 }
 
 /* 6. Skills */
@@ -533,7 +546,7 @@ header .head-top .top-menu ul li.active .btn {
 
 .skills ul li .name {
   font-size: 13px;
-  color: #363636;
+  color: #ffffff;
   font-weight: 400;
   position: relative;
   margin: 0 0 9px 0;
@@ -565,7 +578,7 @@ header .head-top .top-menu ul li.active .btn {
   top: -27px;
   right: 0;
   font-size: 13px;
-  color: #363636;
+  color: #ffffff;
   font-weight: 400;
 }
 
@@ -633,14 +646,14 @@ header .head-top .top-menu ul li.active .btn {
 
 }
 
-.service-items .service-item .icon .ion {
+.service-items .service-item .icon {
   display: block;
 }
 
 .service-items .service-item .name {
   font-weight: 500;
   font-size: 13px;
-  color: #141414;
+  color: #ffffff;
   margin: 6px 0 0 46px;
 }
 
@@ -655,6 +668,7 @@ header .head-top .top-menu ul li.active .btn {
 
 .service-items .service-item p {
   margin-bottom: 0;
+  color: #ffffff;
 }
 
 /* 8. Portfolio */
@@ -671,7 +685,7 @@ header .head-top .top-menu ul li.active .btn {
   vertical-align: top;
   margin-right: 25px;
   font-size: 13px;
-  color: #363636;
+  color: #ffffff;
   cursor: pointer;
   position: relative;
   padding-bottom: 0;
@@ -784,7 +798,7 @@ header .head-top .top-menu ul li.active .btn {
   background: #304ffe;
 }
 
-.box-items .box-item .image .info .ion {
+.box-items .box-item .image .info .icon {
   color: #ffffff;
   font-size: 38px;
   display: inline-block;
@@ -810,7 +824,7 @@ header .head-top .top-menu ul li.active .btn {
 .box-items .box-item .desc .name {
   height: 40px;
   display: block;
-  color: #363636;
+  color: #ffffff;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
@@ -836,7 +850,7 @@ header .head-top .top-menu ul li.active .btn {
   margin: 0 0 10px 0;
   display: inline-block;
   font-size: 11px;
-  color: #363636;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   box-shadow: inset 0 -6px 0px #ff4081;
@@ -855,6 +869,9 @@ header .head-top .top-menu ul li.active .btn {
 
 .section.contacts .service-items .service-item p {
   margin-top: 20px;
+}
+.section.contacts .service-items .service-item p a {
+  color:#ffffff;
 }
 
 .section.contacts .contact_form {
@@ -881,7 +898,7 @@ header .head-top .top-menu ul li.active .btn {
 
 .post-comments .post-comment {
   padding: 20px 0;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #ffffff;
 }
 
 .post-comments .post-comment:first-child {
@@ -906,7 +923,7 @@ header .head-top .top-menu ul li.active .btn {
 
 .post-comments .post-comment .desc .name {
   font-size: 13px;
-  color: #141414;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: 500;
   padding: 5px 0 0 0;
@@ -955,16 +972,19 @@ footer .soc a {
   margin-left: 12px;
 }
 
-footer .soc a .ion {
+footer .soc a .icon {
   font-size: 17px;
-  color: #363636;
+  width: 17px;
+  height: 17px;
+  color: #ffffff;
+  vertical-align: bottom;
   transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
 }
 
-footer .soc a:hover .ion {
+footer .soc a:hover .icon {
   color: #304ffe;
 }
 
@@ -983,8 +1003,8 @@ footer .soc a:hover .ion {
 footer .copy {
   float: left;
   padding-top: 2px;
-  font-size: 11px;
-  color: #999999;
+  font-size: 13px;
+  color:#ffffff;
 }
 
 @media (max-width: 840px) {
@@ -1026,9 +1046,14 @@ footer .copy {
   padding: 30px 20px;
 }
 
+.popup-box .desc .category {
+  color: #141414;
+  font-weight: 700;
+}
+
 .popup-box .desc h4 {
   display: block;
-  color: #363636;
+  color: #141414;
   font-size: 17px;
   font-weight: 700;
   text-transform: uppercase;
