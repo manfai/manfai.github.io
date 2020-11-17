@@ -1017,10 +1017,15 @@ footer .copy {
 /* 13. Popups */
 .popup-box {
   margin: 30px auto;
-  width: 520px;
+  max-width: 800px;
+  width: 100%;
   background: #ffffff;
   position: relative;
   padding: 10px;
+}
+
+.popup-box img.w-100{
+  width:100%;
 }
 
 @media (max-width: 580px) {

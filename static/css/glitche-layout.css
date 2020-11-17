@@ -1002,7 +1002,8 @@ footer .copy {
 /* 13. Popups */
 .popup-box {
   margin: 30px auto;
-  width: 520px;
+  max-width: 800px;
+  width: 100%;
   background: #ffffff;
   position: relative;
   padding: 10px;
@@ -1094,4 +1095,3 @@ footer .copy {
   font-size: 24px;
   font-family: 'Verdana' !important;
 }
-
