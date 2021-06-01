@@ -25,7 +25,7 @@ title: Portfolio
         <div class="title">
             <div class="title_inner">Recent Works</div>
         </div>
-        <!-- <div class="filter-menu">
+        <div class="filter-menu">
             <div class="filters">
                 <div class="btn-group">
                     <label><input type="checkbox" value="f-website" />Website</label>
@@ -35,12 +35,50 @@ title: Portfolio
                     <label><input type="checkbox" value="f-app" />App</label>
                 </div>
             </div>
-        </div> -->
+        </div>
+
+
         <div class="box-items">
+
+
+        {% for post in site.posts %}
+        <div class="box-item {% for category in post.categories %} f-{{category}} {% endfor %}">
+            <div class="image">
+                <a href="#popup{{forloop.index}}" class="has-popup">
+                    <img src="{{post.cover}}" alt="" />
+                    <span class="info">
+                        <span class="centrize full-width">
+                            <span class="vertical-center">
+                                <span data-feather="archive"></span>
+                            </span>
+                        </span>
+                    </span>
+                </a>
+            </div>
+            <div class="desc">
+                <div class="category">{{ post.categories | join: ' + ' }}</div>
+                <a href="#popup{{forloop.index}}" class="name has-popup">{{post.title}}</a>
+            </div>
+            <div id="popup{{forloop.index}}" class="popup-box mfp-fade mfp-hide">
+                <div class="content">
+                    <div class="image">
+                        <img src="{{post.cover}}" alt="">
+                    </div>
+                    <div class="desc">
+                        <div class="category">{{ post.categories | join: ' + ' }}</div>
+                        {{post.content}}
+                        <a href="{{post.url}}" class="btn" data-text="View Project">View Detail</a>
+                        <!-- <a href="https://ecbento.com/2.0/" class="btn" data-text="View Project">View Backend</a> -->
+                        <a href="https://apps.apple.com/hk/app/ec-bento/id1529050746?l=en" class="btn" data-text="View Project">View APP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
 
             <!-- New Project 2019 - 2020 -->
 
-            <div class="box-item f-project">
+            <!-- <div class="box-item f-project">
                 <div class="image">
                     <a href="#popup-ecb2" class="has-popup">
                         <img src="/assets/portfolio/ecbento2.png" alt="" />
@@ -68,41 +106,7 @@ title: Portfolio
                             <p>EC Bento presented as finalist of IPHatch which is one of the biggest IT start up competition in Singapore and Hong Kong. </p>
                             <p><img src="/assets/portfolio/ecbento2-backend.png" class="w-100"></p>
                             <a href="https://ecbento.com/2.0/" class="btn" data-text="View Project">View Website</a>
-                            <!-- <a href="https://ecbento.com/2.0/" class="btn" data-text="View Project">View Backend</a> -->
                             <a href="https://apps.apple.com/hk/app/ec-bento/id1529050746?l=en" class="btn" data-text="View Project">View APP</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- <div class="box-item f-app">
-                <div class="image">
-                    <a href="#popup-6" class="has-popup">
-                        <img src="/assets/img/works/portfolio.jpg" alt="" />
-                        <span class="info">
-                            <span class="centrize full-width">
-                                <span class="vertical-center">
-                                    <span data-feather="archive"></span>
-                                </span>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-                <div class="desc">
-                    <div class="category">App</div>
-                    <a href="#popup-6" class="name has-popup">Vending Machine</a>
-                </div>
-                <div id="popup-6" class="popup-box mfp-fade mfp-hide">
-                    <div class="content">
-                        <div class="image">
-                            <img src="/assets/img/works/stc.png" alt="">
-                        </div>
-                        <div class="desc">
-                            <div class="category">App</div>
-                            <h4>Careers and Life Planning Section</h4>
-                            <p>The webpage of the Careers and Life Planning Section at Shung Tak Catholic English College
-                            </p>
-                            <a href="http://www.stc.edu.hk/home/career/new_website/" class="btn" data-text="View Project">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -140,40 +144,6 @@ title: Portfolio
                     </div>
                 </div>
             </div>
-
-
-            <!-- <div class="box-item f-project">
-                <div class="image">
-                    <a href="#popup-6" class="has-popup">
-                        <img src="/assets/img/works/portfolio.jpg" alt="" />
-                        <span class="info">
-                            <span class="centrize full-width">
-                                <span class="vertical-center">
-                                    <span data-feather="archive"></span>
-                                </span>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-                <div class="desc">
-                    <div class="category">Website</div>
-                    <a href="#popup-6" class="name has-popup">Tripod-CATs</a>
-                </div>
-                <div id="popup-6" class="popup-box mfp-fade mfp-hide">
-                    <div class="content">
-                        <div class="image">
-                            <img src="/assets/img/works/stc.png" alt="">
-                        </div>
-                        <div class="desc">
-                            <div class="category">Website</div>
-                            <h4>Careers and Life Planning Section</h4>
-                            <p>The webpage of the Careers and Life Planning Section at Shung Tak Catholic English College
-                            </p>
-                            <a href="http://www.stc.edu.hk/home/career/new_website/" class="btn" data-text="View Project">View Project</a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
 
             <div class="box-item f-project">
                 <div class="image">
@@ -281,6 +251,38 @@ title: Portfolio
                 </div>
             </div>
 
+            <!-- <div class="box-item f-project">
+                <div class="image">
+                    <a href="#popup-6" class="has-popup">
+                        <img src="/assets/img/works/portfolio.jpg" alt="" />
+                        <span class="info">
+                            <span class="centrize full-width">
+                                <span class="vertical-center">
+                                    <span data-feather="archive"></span>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="desc">
+                    <div class="category">Website</div>
+                    <a href="#popup-6" class="name has-popup">Tripod-CATs</a>
+                </div>
+                <div id="popup-6" class="popup-box mfp-fade mfp-hide">
+                    <div class="content">
+                        <div class="image">
+                            <img src="/assets/img/works/stc.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <div class="category">Website</div>
+                            <h4>Careers and Life Planning Section</h4>
+                            <p>The webpage of the Careers and Life Planning Section at Shung Tak Catholic English College
+                            </p>
+                            <a href="http://www.stc.edu.hk/home/career/new_website/" class="btn" data-text="View Project">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
             <!-- <div class="box-item f-website">
                 <div class="image">
                     <a href="#popup-3" class="has-popup">
@@ -317,7 +319,6 @@ title: Portfolio
                     </div>
                 </div>
             </div> -->
-
             <!-- <div class="box-item f-website">
                 <div class="image">
                     <a href="#popup-4" class="has-popup">
@@ -354,7 +355,6 @@ title: Portfolio
                     </div>
                 </div>
             </div> -->
-
             <!-- <div class="box-item f-website">
                 <div class="image">
                     <a href="#popup-5" class="has-popup">
@@ -391,7 +391,6 @@ title: Portfolio
                     </div>
                 </div>
             </div> -->
-
             <!-- <div class="box-item f-website">
                 <div class="image">
                     <a href="#popup-6" class="has-popup">
@@ -424,7 +423,39 @@ title: Portfolio
                     </div>
                 </div>
             </div> -->
-            
+            <!-- <div class="box-item f-app">
+                <div class="image">
+                    <a href="#popup-6" class="has-popup">
+                        <img src="/assets/img/works/portfolio.jpg" alt="" />
+                        <span class="info">
+                            <span class="centrize full-width">
+                                <span class="vertical-center">
+                                    <span data-feather="archive"></span>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="desc">
+                    <div class="category">App</div>
+                    <a href="#popup-6" class="name has-popup">Vending Machine</a>
+                </div>
+                <div id="popup-6" class="popup-box mfp-fade mfp-hide">
+                    <div class="content">
+                        <div class="image">
+                            <img src="/assets/img/works/stc.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <div class="category">App</div>
+                            <h4>Careers and Life Planning Section</h4>
+                            <p>The webpage of the Careers and Life Planning Section at Shung Tak Catholic English College
+                            </p>
+                            <a href="http://www.stc.edu.hk/home/career/new_website/" class="btn" data-text="View Project">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
           
 
         </div>

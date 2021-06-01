@@ -208,7 +208,44 @@ title: Resume
             <div class="title_inner">Achievements</div>
         </div>
         <div class="box-items">
+            {% for achievement in site.achievements %}
+            <div class="box-item">
+                <div class="image">
+                    <a href="#popup-3" class="has-popup">
+                        <img src="/assets/portfolio/ecbento2.png" alt="" />
+                        <span class="info">
+                            <span class="centrize full-width">
+                                <span class="vertical-center">
+                                    <span data-feather="link"></span>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div id="popup-3" class="popup-box mfp-fade mfp-hide">
+                    <div class="content">
+                        <div class="image">
+                            <img src="/assets/portfolio/ecbento2.png" alt="">
+                        </div>
+                        <div class="desc">
+                            <div class="category">Winner</div>
+                            <h4>{{achievement.title}}</h4>
+                            <!-- The long-awaited final result of IPHatch HK 2019/20 is out.  We would like to congratulate you for being selected for the assignment of IP portfolio Sapphire #09 –  INTERACTIVE MEDIA EXECUTOR offered by Nokia. -->
+                            <p>
+                                {{achievement.content}}
+                            </p> 
+                            <p><img src="/assets/portfolio/IPHatch.jpg" class="w-100"></p>
+                            <a target="_blank" href="https://www.iphatchday.com/"
+                                class="btn" data-text="IPHATCH">Link 1</a>
+                            <a target="_blank" href="http://startupbeat.hkej.com/?p=87009"
+                                class="btn" data-text="IPHATCH">Link 1</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            {% endfor %}
+            
             <div class="box-item">
                 <div class="image">
                     <a href="#popup-3" class="has-popup">

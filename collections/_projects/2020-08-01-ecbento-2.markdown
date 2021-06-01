@@ -1,0 +1,11 @@
+---
+layout: default
+cover: "/assets/portfolio/ecbento2.png"
+title:  "ECBento 2.0"
+date:   2019-07-12 11:27:42 +0800
+categories: frontend backend app website
+---
+#### WINNER OF 2019 IPHATCH HONG KONG
+EC Bento presented as finalist of IPHatch which is one of the biggest IT start up competition in Singapore and Hong Kong.
+
+![ECAdmin ScreenCap](/assets/portfolio/ecbento2-backend.png)
