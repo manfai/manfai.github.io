@@ -1,0 +1,5 @@
+I"ý<h3 id="school-lunch-ordering-system-for-dsc-international-school">School Lunch Ordering System for DSC International School.</h3>
+<p>I build a ordering system for different organization/company to pursue their lunch based on EC Bento System. And the First client for this system is a International School. They have are two department of primary school and secondary school. That why I adjusted the function. I added student management function and ordering cut-off function.
+As my know, student would be assign meal by manual. Staff need to download the report from the system.  According to a report downloaded. They would be arrange meal for student. 
+Parents can add student infomation to Student management function and they can make a order for student.</p>
+:ET

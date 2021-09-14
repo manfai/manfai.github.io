@@ -1,90 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>{{ page.title }}</title>
-	<link rel="stylesheet" href="/assets/css/glitche-basic.css">
-	<link rel="stylesheet" href="/assets/css/glitche-layout.css">
-	<link rel="stylesheet" href="/assets/css/magnific-popup.css" />
-	<link rel="stylesheet" href="/assets/css/animate.css" />
-	<!--[if lt IE 9]>
-	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	<!-- Favicons -->
-	<link rel="shortcut icon" href="/assets/img/favicons/logo.ico">
-	<link rel="apple-touch-icon" href="/assets/img/favicons/logo.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/logo.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/logo.png">
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,300italic,300,100italic,400italic,500,500italic,700,700italic&amp;subset=latin,cyrillic' rel='stylesheet'>
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900|Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i&amp;subset=chinese-traditional,cyrillic" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="/assets/css/daisyui.css" rel="stylesheet" type="text/css" />
 
 </head>
-<body>
-	<!-- Preloader -->
-	{% include preloader.html %}
 
-	<!-- Container -->
-	<main class="container">
-		<!-- Header -->
-		<header style="background:transparent">
-			<div class="head-top">
-				<a href="#" class="menu-btn"><span></span></a>
-				<div class="top-menu">
-					<ul>
-						<li><a href="/portfolio" class="lnk" data-text="Projects">Portfolio</a></li>
-						<li><a href="/resume" class="lnk" data-text="Resume">Resume</a></li>
-						<li><a href="/contacts" class="lnk" data-text="Contacts">Contacts</a></li>
-					</ul>
-				</div>
-			</div>
-		</header>
-		
-		<!-- Wrapper -->
-		<div class="wrapper">
-		
-			{{ content }}
+<body data-theme="corporate" class="bg-base-100 text-base-content">
 
-		</div>
-		
-		<!-- Footer -->
-		<footer style="background:transparent!important">
-			<div class="soc">
-				<a target="_blank" href="https://twitter.com/manfai106"><span data-feather="twitter"></span></a>
-				<a target="_blank" href="https://github.com/manfai"><span data-feather="github"></span></a>
-				<a target="_blank" href="https://linkedin.com/wingfai-man"><span data-feather="linkedin"></span></a>
-				<a target="_blank" href="mailto:m4nfa1@gmail.com"><span data-feather="mail"></span></a>
-			</div>
-			<div class="copy">© {{ site.time | date: '%Y' }} M.W.F. All rights reserved.</div>
-			<div class="clr"></div>
-		</footer>
-		
-		<!-- Lines -->
-		<div class="line top"></div>
-		<div class="line bottom"></div>
-		<div class="line left"></div>
-		<div class="line right"></div>
-		
-	</main>
-	
+    <div class="container mx-auto">
+        <nav class="w-full pt-4">
+            {% include navigation.html %}
+        </nav>
+        <main >
+            {{ content }}
+        </main>
 
-	<!-- jQuery Scripts -->
-	<script src="/assets/js/jquery.min.js"></script>
-	<script src="/assets/js/jquery.validate.js"></script>
-	<script src="/assets/js/typed.js"></script>
-	<script src="/assets/js/magnific-popup.js"></script>
-	<script src="/assets/js/masonry.pkgd.js"></script>
-	<script src="/assets/js/imagesloaded.pkgd.js"></script>
-	<script src="/assets/js/masonry-filter.js"></script>
-	<!-- Main Scripts -->
-	<script src="/assets/js/glitche-scripts.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-	<script>
-		feather.replace({
-			class: 'icon'
-		})
-	</script>
+    </div>
+
+    <footer class="pt-8 lg:pt-20">
+        {% include footer.html %}
+    </footer>
+
 </body>
+
 </html>
