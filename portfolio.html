@@ -26,9 +26,9 @@ title: Portfolio
             </span>
             is all of my best projects
         </h2>
-        <p class="text-base text-gray-700 md:text-lg">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque
-            ipsa quae.
+        <p class="text-base text-gray-700 md:text-lg">    
+            I using GitHub for manage my own project's work or company project work within the repository. I tried GitLab and it is selfhost by a vendor company. That why, i cant show all the repository to you because the 
+            confidentiality agreement. 
         </p>
     </div>
     <div class="grid gap-5 mb-8 md:grid-cols-2 lg:grid-cols-3">
@@ -42,8 +42,10 @@ title: Portfolio
                 <svg class="w-7 h-7" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="19" y="32" width="10" height="9" stroke="#333" stroke-width="4" stroke-linecap="round"   stroke-linejoin="round" /> <rect x="5" y="8" width="38" height="24" rx="2" fill="none" stroke="#333" stroke-width="4" /> <path d="M22 27H26" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /> <path d="M14 41L34 41" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /></svg>
                 {% when 'app' %}
                 <svg class="w-7 h-7" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="11" y="4" width="26" height="40" rx="3" fill="none" stroke="#333" stroke-width="4" /> <path d="M22 10L26 10" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /> <path d="M20 38H28" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                {% when 'package' %}
+                <svg class="w-7 h-7" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M48 0H0V48H48V0Z" fill="white" fill-opacity="0.01"/><path d="M44 14L24 4L4 14V34L24 44L44 34V14Z" stroke="#333" stroke-width="4" stroke-linejoin="round"/><path d="M4 14L24 24" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 44V24" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M44 14L24 24" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M34 9L14 19" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 {% else %}
-                <svg class="w-7 h-7" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" fill="white" fill-opacity="0.01"/><rect x="6" y="12" width="36" height="30" rx="2" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/><path d="M17.9498 24.0083L29.9498 24.0083" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 13L13 5H35L42 13" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <svg class="w-7 h-7 text-blue-100" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="48" height="48" fill="white" fill-opacity="0.01"/><rect x="6" y="12" width="36" height="30" rx="2" fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round"/><path d="M17.9498 24.0083L29.9498 24.0083" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 13L13 5H35L42 13" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 {% endcase %}
             </div>
             <h6 class="mb-2 font-semibold leading-5">{{ post.title }}</h6>
@@ -55,7 +57,7 @@ title: Portfolio
 
     </div>
     <div class="text-center">
-        <a href="/"
+        <a href="/#contact"
             class="btn-outline w-full h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md md:w-auto btn btn-primary">
             Contact Me for more detail
         </a>

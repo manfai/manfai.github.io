@@ -1,7 +1,7 @@
 ---
 layout: post
 cover: "ecbento2.png"
-icon: "plaform"
+icon: "platform"
 title:  "ECBento 2.0 System"
 date:   2021-06-10 11:27:42 +0800
 categories: "website platform frontend backend"

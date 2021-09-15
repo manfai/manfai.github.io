@@ -1,11 +1,22 @@
 ---
 layout: post
-cover: "https://manfai.me/assets/portfolio/ngc.png"
-icon: "platform"
+# cover: "https://manfai.me/assets/portfolio/ngc.png"
+icon: "website"
 title:  "TeamBrain Creative Website"
-url: "http://www.ngc-knowledge.com"
-date:   2021-06-10 11:27:42 +0800
-categories: "website platform frontend backend"
-description: "NGC KnowledgeLinki is a human capital business. I help them to build a general informational website."
+# url: "https://www.ngc-knowledge.com"
+date:   2015-09-16 11:27:42 +0800
+ccategories: "website platform frontend backend"
+description: "This is a Co-Dining Platform. Customer order bento online and then pick-up at the food locker."
+status: Suspend
+position: Freelancer
+imagefolder: images/projects/hkfcpro
+images:
+    - name: image-1.png
+tools: 
+    - name: Wordpress
+    - name: Bootstrap
+    - name: Jquery
+    - name: MySQL
 ---
-NGC KnowledgeLink is comprised of organization development experts, seasoned trainers and business strategists with diverse backgrounds in various sectors, in particular, banking & finance, insurance, fast moving consumer goods, retail, multi-media, information technology and public organizations. 
+#### Information website
+This is a information website and i used one-page design. It mean all the info would display in one page. Including About Section, Feature Section, Contact Section and Founder Detail.
