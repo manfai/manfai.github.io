@@ -1,4 +1,129 @@
-<div class="navbar mb-2 text-base-content">
+<div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+  <div class="relative flex items-center justify-between">
+    <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
+      <!-- <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
+        <rect x="3" y="1" width="7" height="12"></rect>
+        <rect x="3" y="17" width="7" height="6"></rect>
+        <rect x="14" y="1" width="7" height="6"></rect>
+        <rect x="14" y="11" width="7" height="12"></rect>
+      </svg> -->
+      <span class="ml-2 text-lg font-bold tracking-wide text-gray-800 uppercase">MWF's Portfolio</span>
+    </a>
+    <ul class="items-center hidden space-x-8 lg:flex">
+      <li><a href="/" aria-label="Home" title="Home" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Home</a></li>
+      <li><a href="/portfolio" aria-label="Projects" title="Projects" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Projects</a></li>
+      <li><a href="/resume" aria-label="Resume" title="Resume" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Resume</a></li>
+      <li><a href="/assets/pdf/man-wing-fai-resume.pdf" download  aria-label="Resume" title="Resume" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Download</a></li>
+     </ul>
+    <ul class="items-center hidden space-x-6 lg:flex">
+      <li><a target="_blank" href="https://github.com/{{site.github_username}}" aria-label="Github" title="Github" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
+        <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="inline-block w-6 h-6 stroke-current">
+        <path
+          d="M29.3444 30.4767C31.7481 29.9771 33.9292 29.1109 35.6247 27.8393C38.5202 25.6677 40 22.3137 40 19C40 16.6754 39.1187 14.5051 37.5929 12.6669C36.7427 11.6426 39.2295 4.00001 37.02 5.02931C34.8105 6.05861 31.5708 8.33691 29.8726 7.8341C28.0545 7.29577 26.0733 7.00001 24 7.00001C22.1992 7.00001 20.4679 7.22313 18.8526 7.63452C16.5046 8.23249 14.2591 6.00001 12 5.02931C9.74086 4.05861 10.9736 11.9633 10.3026 12.7946C8.84119 14.6052 8 16.7289 8 19C8 22.3137 9.79086 25.6677 12.6863 27.8393C14.6151 29.2858 17.034 30.2077 19.7401 30.6621"
+          stroke="#333" stroke-width="4" stroke-linecap="round" />
+        <path
+          d="M19.7402 30.662C18.5817 31.9372 18.0024 33.148 18.0024 34.2946C18.0024 35.4411 18.0024 38.3465 18.0024 43.0108"
+          stroke="#333" stroke-width="4" stroke-linecap="round" />
+        <path
+          d="M29.3443 30.4767C30.4421 31.9175 30.991 33.2112 30.991 34.3577C30.991 35.5043 30.991 38.3886 30.991 43.0108"
+          stroke="#333" stroke-width="4" stroke-linecap="round" />
+        <path
+          d="M6 31.2156C6.89887 31.3255 7.56554 31.7388 8 32.4555C8.65169 33.5304 11.0742 37.5181 13.8251 37.5181C15.6591 37.5181 17.0515 37.5181 18.0024 37.5181"
+          stroke="#333" stroke-width="4" stroke-linecap="round" /></svg>
+        </a></li>
+      <li><a target="_blank" href="https://www.linkedin.com/in/{{site.linkedin_username}}" aria-label="Linkedin" title="Linkedin" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
+        <svg class="inline-block w-6 h-6 stroke-current" viewBox="0 0 48 48" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="9" cy="8.00012" r="4" fill="none" stroke="#333" stroke-width="4" />
+        <rect x="5" y="18.0001" width="8" height="25" fill="none" stroke="#333" stroke-width="4"
+          stroke-linejoin="round" />
+        <path
+          d="M21 27.5V43H28V29C28 26.5 29.5 24.5 32 24.5C34.5 24.5 36 27 36 29V43H43V27.5C43 24.5 39.5 18 32 18C24.5 18 21 24.5 21 27.5Z"
+          fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round" /></svg>
+        </a></li>
+      <li><a target="_blank" href="https://twitter.com/{{site.twitter_username}}" aria-label="Home" title="Home" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
+        <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="inline-block w-6 h-6 stroke-current">
+        <path
+          d="M5 35.7622C6.92886 36.8286 20.8914 44.8773 30.8199 38.674C40.7483 32.4707 40.2006 21.7833 40.2006 16.886C41.1 15.0018 43 14.0439 43 8.9438C41.1337 10.6678 39.2787 11.2544 37.435 10.7036C35.6287 7.94957 33.1435 6.73147 29.9794 7.04934C25.2333 7.52614 23.4969 12.1825 24.0079 18.2067C16.6899 21.9074 10.9515 15.524 7.99418 10.7036C7.00607 14.4999 6.0533 19.0576 7.99418 24.0995C9.2881 27.4607 12.3985 30.3024 17.3254 32.6246C12.3323 35.3308 8.22382 36.3766 5 35.7622Z"
+          fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round" /></svg>
+        </a></li>
+      <!-- <li><a href="/" aria-label="Home" title="Home" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Home</a></li>
+      <li><a href="/portfolio" aria-label="Projects" title="Projects" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Projects</a></li>
+      <li><a href="/resume" aria-label="Resume" title="Resume" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Resume</a></li> -->
+      <!-- <li>
+        <a
+          href="/assets/pdf/man-wing-fai-resume.pdf" download 
+          class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide  transition duration-200 rounded shadow-md btn btn-primary"
+          aria-label="Sign up"
+          title="Sign up"
+        >
+        Download
+        </a>
+      </li> -->
+    </ul>
+    <!-- Mobile menu -->
+    <div class="lg:hidden">
+      <button aria-label="Open Menu" title="Open Menu" class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50">
+        <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
+          <path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"></path>
+          <path fill="currentColor" d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
+        </svg>
+      </button>
+      <!-- Mobile menu dropdown 
+      <div class="absolute top-0 left-0 w-full">
+        <div class="p-5 bg-white border rounded shadow-sm">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
+                <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
+                  <rect x="3" y="1" width="7" height="12"></rect>
+                  <rect x="3" y="17" width="7" height="6"></rect>
+                  <rect x="14" y="1" width="7" height="6"></rect>
+                  <rect x="14" y="11" width="7" height="12"></rect>
+                </svg>
+                <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Company</span>
+              </a>
+            </div>
+            <div>
+              <button aria-label="Close Menu" title="Close Menu" class="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <nav>
+            <ul class="space-y-4">
+              <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Product</a></li>
+              <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Features</a></li>
+              <li><a href="/" aria-label="Product pricing" title="Product pricing" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Pricing</a></li>
+              <li><a href="/" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">About us</a></li>
+              <li>
+                <a
+                  href="/"
+                  class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                  aria-label="Sign up"
+                  title="Sign up"
+                >
+                  Sign up
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      -->
+    </div>
+  </div>
+</div>
+
+<!-- <div class="navbar mb-2 text-base-content">
   <div class="navbar-start">
     <a href="/">
       <span class="text-lg font-bold">
@@ -20,12 +145,10 @@
       <a href="/assets/pdf/man-wing-fai-resume.pdf" download class="btn btn-ghost btn-sm rounded-btn">
         Download
       </a>
-      <!-- <a href="/resume" class="btn btn-ghost btn-sm rounded-btn">
-        Resume
-      </a> -->
+ 
     </div>
   </div>
-  <div class="navbar-end">
+  <div class="flex-none hidden lg:flex navbar-end">
     <a target="_blank" href="https://github.com/{{site.github_username}}" class="btn btn-square btn-ghost">
       <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
         class="inline-block w-6 h-6 stroke-current">
@@ -52,8 +175,6 @@
           d="M21 27.5V43H28V29C28 26.5 29.5 24.5 32 24.5C34.5 24.5 36 27 36 29V43H43V27.5C43 24.5 39.5 18 32 18C24.5 18 21 24.5 21 27.5Z"
           fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round" /></svg>
     </a>
-    <!-- <a  href="/assets/pdf/man-wing-fai-resume.pdf" download class="btn btn-square btn-ghost">
-      <svg class="inline-block w-6 h-6 stroke-current" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 44H38C39.1046 44 40 43.1046 40 42V14L31 4H10C8.89543 4 8 4.89543 8 6V42C8 43.1046 8.89543 44 10 44Z" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="24" r="4" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 36C32 31.5817 28.4183 28 24 28C19.5817 28 16 31.5817 16 36" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 4V14H40" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> -->
     <a target="_blank" href="https://twitter.com/{{site.twitter_username}}" class="btn btn-square btn-ghost">
       <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
         class="inline-block w-6 h-6 stroke-current">
@@ -62,4 +183,4 @@
           fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round" /></svg>
     </a>
   </div>
-</div>
+</div> -->
