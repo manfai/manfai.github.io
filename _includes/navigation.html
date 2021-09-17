@@ -1,19 +1,19 @@
-<div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+<div class="px-4 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
   <div class="relative flex items-center justify-between">
     <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
-      <!-- <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
+      <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
         <rect x="3" y="1" width="7" height="12"></rect>
         <rect x="3" y="17" width="7" height="6"></rect>
         <rect x="14" y="1" width="7" height="6"></rect>
         <rect x="14" y="11" width="7" height="12"></rect>
-      </svg> -->
+      </svg>
       <span class="ml-2 text-lg font-bold tracking-wide text-gray-800 uppercase">MWF's Portfolio</span>
     </a>
     <ul class="items-center hidden space-x-8 lg:flex">
       <li><a href="/" aria-label="Home" title="Home" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Home</a></li>
-      <li><a href="/portfolio" aria-label="Projects" title="Projects" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Projects</a></li>
+      <li><a href="/portfolio" aria-label="Portfolio" title="Portfolio" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Portfolio</a></li>
       <li><a href="/resume" aria-label="Resume" title="Resume" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Resume</a></li>
-      <li><a href="/assets/pdf/man-wing-fai-resume.pdf" download  aria-label="Resume" title="Resume" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Download</a></li>
+      <li><a href="/assets/pdf/man-wing-fai-resume.pdf" download aria-label="Resume" title="Resume" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Download</a></li>
      </ul>
     <ul class="items-center hidden space-x-6 lg:flex">
       <li><a target="_blank" href="https://github.com/{{site.github_username}}" aria-label="Github" title="Github" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
@@ -49,31 +49,20 @@
           d="M5 35.7622C6.92886 36.8286 20.8914 44.8773 30.8199 38.674C40.7483 32.4707 40.2006 21.7833 40.2006 16.886C41.1 15.0018 43 14.0439 43 8.9438C41.1337 10.6678 39.2787 11.2544 37.435 10.7036C35.6287 7.94957 33.1435 6.73147 29.9794 7.04934C25.2333 7.52614 23.4969 12.1825 24.0079 18.2067C16.6899 21.9074 10.9515 15.524 7.99418 10.7036C7.00607 14.4999 6.0533 19.0576 7.99418 24.0995C9.2881 27.4607 12.3985 30.3024 17.3254 32.6246C12.3323 35.3308 8.22382 36.3766 5 35.7622Z"
           fill="none" stroke="#333" stroke-width="4" stroke-linejoin="round" /></svg>
         </a></li>
-      <!-- <li><a href="/" aria-label="Home" title="Home" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Home</a></li>
-      <li><a href="/portfolio" aria-label="Projects" title="Projects" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Projects</a></li>
-      <li><a href="/resume" aria-label="Resume" title="Resume" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Resume</a></li> -->
-      <!-- <li>
-        <a
-          href="/assets/pdf/man-wing-fai-resume.pdf" download 
-          class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide  transition duration-200 rounded shadow-md btn btn-primary"
-          aria-label="Sign up"
-          title="Sign up"
-        >
-        Download
-        </a>
-      </li> -->
     </ul>
     <!-- Mobile menu -->
+  
     <div class="lg:hidden">
-      <button aria-label="Open Menu" title="Open Menu" class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50">
+      <button id="open_menu" aria-label="Open Menu" title="Open Menu" class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-purple-50 focus:bg-purple-50">
         <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
           <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
           <path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"></path>
           <path fill="currentColor" d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
         </svg>
       </button>
-      <!-- Mobile menu dropdown 
-      <div class="absolute top-0 left-0 w-full">
+      
+      <!-- Mobile menu dropdown -->
+      <div class="mobile-menu hidden z-10 absolute top-0 left-0 w-full">
         <div class="p-5 bg-white border rounded shadow-sm">
           <div class="flex items-center justify-between mb-4">
             <div>
@@ -84,11 +73,11 @@
                   <rect x="14" y="1" width="7" height="6"></rect>
                   <rect x="14" y="11" width="7" height="12"></rect>
                 </svg>
-                <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Company</span>
+                <span class="ml-2 text-lg font-bold tracking-wide text-gray-800 uppercase">MWF's Portfolio</span>
               </a>
             </div>
             <div>
-              <button aria-label="Close Menu" title="Close Menu" class="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+              <button id="close_menu" aria-label="Close Menu" title="Close Menu" class="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
                 <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
                   <path
                     fill="currentColor"
@@ -100,25 +89,37 @@
           </div>
           <nav>
             <ul class="space-y-4">
-              <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Product</a></li>
-              <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Features</a></li>
-              <li><a href="/" aria-label="Product pricing" title="Product pricing" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Pricing</a></li>
-              <li><a href="/" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">About us</a></li>
+              <li><a href="/" aria-label="Home" title="Home" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Home</a></li>
+              <li><a href="/portfolio" aria-label="Portfolio" title="Portfolio" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Portfolio</a></li>
+              <li><a href="/resume" aria-label="Resume" title="Resume" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Resume</a></li>
               <li>
                 <a
-                  href="/"
-                  class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                  href="/assets/pdf/man-wing-fai-resume.pdf" download 
+                  class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide transition duration-200 btn btn-primary"
                   aria-label="Sign up"
                   title="Sign up"
                 >
-                  Sign up
+                  Download
                 </a>
               </li>
             </ul>
           </nav>
         </div>
       </div>
-      -->
+      <script>
+        document.getElementById("open_menu").onclick = function toggleMenu() {
+          const navToggle = document.getElementsByClassName("mobile-menu");
+          for (let i = 0; i < navToggle.length; i++) {
+            navToggle.item(i).classList.toggle("hidden");
+          }
+        };
+        document.getElementById("close_menu").onclick = function toggleMenu() {
+          const navToggle = document.getElementsByClassName("mobile-menu");
+          for (let i = 0; i < navToggle.length; i++) {
+            navToggle.item(i).classList.toggle("hidden");
+          }
+        };
+      </script>
     </div>
   </div>
 </div>
