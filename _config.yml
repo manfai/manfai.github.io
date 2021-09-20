@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: ManFai's Portfolio
+title: MWF's Portfolio
 email: manfai106@gmail.com
 gender: male
 name: ManFai
