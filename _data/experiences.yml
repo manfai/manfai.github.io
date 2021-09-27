@@ -1,0 +1,49 @@
+- position: Senior Programmer
+  company: ECBento Hong Kong Ltd.
+  type: Full-Time
+  duties: 
+    - Develop System for Bento Platform
+    - Provided technical assistance on website and hosting. (Alibaba and AWS)
+    - Develop Vending Machine App and API for Backend sidebar
+    - Design Database (MySQL)
+    - Build an API in PHP
+    - Assist in developing a API of supplier
+  start_date: Aug 2019
+  end_date: Present
+
+- position: Senior Web Programmer
+  company: HKICTech Ltd.
+  type: Full-Time
+  duties: 
+    - Design and Develop a website to clients
+    - Designing, launching and managing an API for clients 
+  start_date: Mar 2017
+  end_date: July 2019
+
+- position: Programmer
+  company: TeamBrain Creative Ltd.
+  type: Part-Time
+  duties: 
+    - Designing, launching and managing a website to clients
+    - Provided technical assistance on website and hosting 
+  start_date: Sept 2016
+  end_date: Feb 2017
+  
+- position: Technical Support
+  company:  Speedy Group Corp. Limited
+  type: Full-Time
+  duties: 
+    - Provided technical assistance to customers on website and hosting.
+    - Used remote access to perform troubleshooting when needed.
+    - Walked customers through step-by-step process for troubleshooting hardware issues. 
+  start_date: June 2015
+  end_date: Aug 2016
+
+- position: Programmer
+  company: WiseSmart Ltd.
+  type: Internship
+  duties: 
+    - Designing, building, and maintaining customer's website.
+    - Performing quality assurance and troubleshooting code rendering acrossmultiple desktop and mobile devices. 
+  start_date: Sept 2014
+  end_date: Mar 2015

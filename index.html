@@ -2,8 +2,8 @@
 layout: default
 title: Home
 icon: IMG_5789.PNG
----
-
+sleep_icon: IMG_5961.PNG
+---                  
 <section
   class="relative px-4 pt-16 pb-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20">
   <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20">
@@ -13,7 +13,12 @@ icon: IMG_5789.PNG
           <div class="flex items-center justify-center w-40 h-40 rounded-full ">
             <div class="avatar">
               <div class="mb-20 rounded-full w-40 h-40 bg-blue-100 ring ring-primary ring-offset-blue-700 ring-offset-4">
+                {% assign hour = 'now' | date: "%H" %}
+                {% if hour >= '16' and hour <= '7' %}
+                <img src="/assets/images/{{page.sleep_icon}}">
+                {% else %}
                 <img src="/assets/images/{{page.icon}}">
+                {% endif %}
               </div>
             </div>
           </div>
@@ -40,7 +45,7 @@ icon: IMG_5789.PNG
             a Fullstack
             <span class="relative inline-block px-2 mt-2">
               <div class="absolute inset-0 transform -skew-x-12 bg-primary"></div>
-              <span class="relative text-white">Developer</span>
+              <span class="relative text-primary-content">Developer</span>
             </span>
           </h2>
 
@@ -56,7 +61,7 @@ icon: IMG_5789.PNG
 
     <div class="order-2 lg:order-1 grid gap-5 row-gap-5 sm:grid-cols-2 mt-10 mb-10 lg:mb-auto text-base-content">
       <div class="max-w-md">
-        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
+        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-base-300">
           <svg class="w-8 h-8 text-base-content stroke-current" width="24" height="24" viewBox="0 0 48 48" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -83,32 +88,32 @@ icon: IMG_5789.PNG
         </p>
       </div>
       <div class="max-w-md">
-        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
+        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-base-300">
           <svg class="w-8 h-8 text-base-content stroke-current" width="24" height="24" viewBox="0 0 48 48" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M4 6H44V28H4V6Z" fill="none" stroke-width="4" stroke-linejoin="round" />
             <path d="M44 28V36H4V28" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
             <path
               d="M13.0909 18H10.9091C10.407 18 10 18.407 10 18.9091V21.0909C10 21.593 10.407 22 10.9091 22H13.0909C13.593 22 14 21.593 14 21.0909V18.9091C14 18.407 13.593 18 13.0909 18Z"
-              fill="#333" />
+               fill="#333" />
             <path
               d="M13.0909 12H10.9091C10.407 12 10 12.407 10 12.9091V15.0909C10 15.593 10.407 16 10.9091 16H13.0909C13.593 16 14 15.593 14 15.0909V12.9091C14 12.407 13.593 12 13.0909 12Z"
-              fill="#333" />
+               fill="#333" />
             <path
               d="M21.0909 18H18.9091C18.407 18 18 18.407 18 18.9091V21.0909C18 21.593 18.407 22 18.9091 22H21.0909C21.593 22 22 21.593 22 21.0909V18.9091C22 18.407 21.593 18 21.0909 18Z"
-              fill="#333" />
+               fill="#333" />
             <path
               d="M21.0909 12H18.9091C18.407 12 18 12.407 18 12.9091V15.0909C18 15.593 18.407 16 18.9091 16H21.0909C21.593 16 22 15.593 22 15.0909V12.9091C22 12.407 21.593 12 21.0909 12Z"
-              fill="#333" />
+               fill="#333" />
             <path
               d="M29.0909 18H26.9091C26.407 18 26 18.407 26 18.9091V21.0909C26 21.593 26.407 22 26.9091 22H29.0909C29.593 22 30 21.593 30 21.0909V18.9091C30 18.407 29.593 18 29.0909 18Z"
-              fill="#333" />
+               fill="#333" />
             <path
               d="M29.0909 12H26.9091C26.407 12 26 12.407 26 12.9091V15.0909C26 15.593 26.407 16 26.9091 16H29.0909C29.593 16 30 15.593 30 15.0909V12.9091C30 12.407 29.593 12 29.0909 12Z"
-              fill="#333" />
+               fill="#333" />
             <path
               d="M37.0909 12H34.9091C34.407 12 34 12.407 34 12.9091V15.0909C34 15.593 34.407 16 34.9091 16H37.0909C37.593 16 38 15.593 38 15.0909V12.9091C38 12.407 37.593 12 37.0909 12Z"
-              fill="#333" />
+               fill="#333" />
             <path d="M20.8462 36L16 42H32L27.1538 36" stroke-width="4" stroke-linecap="round"
               stroke-linejoin="round" /></svg>
         </div>
@@ -119,7 +124,7 @@ icon: IMG_5789.PNG
         </p>
       </div>
       <div class="max-w-md text-base-content">
-        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
+        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-base-300">
           <svg class="w-8 h-8 text-base-content stroke-current" width="24" height="24" viewBox="0 0 48 48" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M23 43H43V5H14V15" stroke-width="4" stroke-linejoin="round" />
@@ -134,7 +139,7 @@ icon: IMG_5789.PNG
         </p>
       </div>
       <div class="max-w-md">
-        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-indigo-50">
+        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-base-300">
           <svg class="w-8 h-8 text-base-content stroke-current" width="24" height="24" viewBox="0 0 48 48" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -188,7 +193,7 @@ icon: IMG_5789.PNG
 <section class="relative px-4 pb-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20">
   <div class="flex flex-col mb-6 lg:flex-row md:mb-10">
     <div class="lg:w-1/2">
-      <h2 class="max-w-md mb-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none xl:max-w-lg">
+      <h2 class="max-w-md mb-6 text-3xl font-bold tracking-tight text-base-content sm:text-4xl sm:leading-none xl:max-w-lg">
         This is my past
         <span class="relative px-1">
           <div class="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-accent"></div>
@@ -197,7 +202,7 @@ icon: IMG_5789.PNG
       </h2>
     </div>
     <div class="lg:w-1/2">
-      <p class="text-base text-gray-700 md:text-lg mb-6">
+      <p class="text-base text-base-content md:text-lg mb-6">
         For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the
         experience most certainly changes your perspective.
       </p>
@@ -214,13 +219,13 @@ icon: IMG_5789.PNG
   </div>
 
   <div class="relative grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-
-    {% for post in site.posts limit:8 %}
-    <a href="{{ post.url }}"
+    {% assign projects = site.projects | reverse %}
+    {% for project in projects limit:8 %}
+    <a href="{{ project.url }}"
       class="text-base-content flex h-full flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-base-200 rounded shadow-lg group hover:shadow-xl">
       <div class="p-5">
-        <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-blue-100">
-          {% case post.icon %}
+        <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-base-300">
+          {% case project.icon %}
           {% when 'website' %}
           <svg class="w-7 h-7 stroke-current" width="24" height="24" viewBox="0 0 48 48" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -230,13 +235,13 @@ icon: IMG_5789.PNG
               stroke-width="4" stroke-linejoin="round" />
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z"
-              fill="#333" />
+               />
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M18 14C19.1046 14 20 13.1046 20 12C20 10.8954 19.1046 10 18 10C16.8954 10 16 10.8954 16 12C16 13.1046 16.8954 14 18 14Z"
-              fill="#333" />
+               />
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M24 14C25.1046 14 26 13.1046 26 12C26 10.8954 25.1046 10 24 10C22.8954 10 22 10.8954 22 12C22 13.1046 22.8954 14 24 14Z"
-              fill="#333" /></svg>
+               /></svg>
           {% when 'platform' %}
           <svg class="w-7 h-7 stroke-current" width="24" height="24" viewBox="0 0 48 48" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -255,7 +260,6 @@ icon: IMG_5789.PNG
           {% else %}
           <svg class="w-7 h-7 stroke-current" width="24" height="24" viewBox="0 0 48 48" fill="none"
             xmlns="http://www.w3.org/2000/svg">
-            <rect width="48" height="48" fill="white" fill-opacity="0.01" />
             <rect x="6" y="12" width="36" height="30" rx="2" fill="none" stroke-width="4"
               stroke-linejoin="round" />
             <path d="M17.9498 24.0083L29.9498 24.0083" stroke-width="4" stroke-linecap="round"
@@ -264,9 +268,9 @@ icon: IMG_5789.PNG
               stroke-linejoin="round" /></svg>
           {% endcase %}
         </div>
-        <p class="mb-2 font-bold">{{ post.title }}</p>
+        <p class="mb-2 font-bold">{{ project.title }}</p>
         <p class="text-sm leading-5 text-gray-900">
-          {{ post.description }}
+          {{ project.description }}
         </p>
       </div>
     </a>
@@ -365,6 +369,8 @@ icon: IMG_5789.PNG
             <!-- https://ourhkfoundation.org.hk/innotechexpo2016/%E5%B9%B4%E8%BC%95%E4%BA%BA%E5%B0%8D%E5%B9%B4%E8%BC%95%E4%BA%BA%E7%9A%84%E7%A7%91%E6%99%AE%E5%AD%B8%E5%A0%82/ -->
             <!-- http://www.takungpao.com.hk/hongkong/text/2016/0926/26548.html -->
           </p>
+          <a target="_blank" href="https://www.youtube.com/watch?v=4uDs80RWdck"
+            class="text-xs mr-2 uppercase link link-secondary">video</a>
           <a target="_blank"
             href="https://ourhkfoundation.org.hk/innotechexpo2016/%E5%B9%B4%E8%BC%95%E4%BA%BA%E5%B0%8D%E5%B9%B4%E8%BC%95%E4%BA%BA%E7%9A%84%E7%A7%91%E6%99%AE%E5%AD%B8%E5%A0%82/"
             class="text-xs mr-2 uppercase link link-primary">link 1</a>
@@ -373,7 +379,7 @@ icon: IMG_5789.PNG
         </div>
         <div>
           <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-base-300">
-            <svg class="w-7 h-7 stroke-current text-base-content" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="13" width="38" height="28" rx="2" fill="none" stroke="#333" stroke-width="4"/><circle cx="18" cy="28" r="6" fill="none" stroke="#333" stroke-width="4"/><path d="M30 24L36 24" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 32L36 32" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 13L25 4" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg class="w-7 h-7 stroke-current text-base-content" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="13" width="38" height="28" rx="2" fill="none" stroke-width="4"/><circle cx="18" cy="28" r="6" fill="none" stroke-width="4"/><path d="M30 24L36 24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 32L36 32" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 13L25 4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <h6 class="mb-2 font-semibold leading-5 text-base-content">
             Interviewee
@@ -432,7 +438,7 @@ icon: IMG_5789.PNG
         <span class="font-bold">Phone:</span> {{site.phone}} <br>
         <span class="font-bold">Age:</span>
         <script>
-          var dob = new Date(1993, 10, 6);
+          var dob = new Date('{{site.dob| date: "%Y" }}','{{site.dob| date: "%m" }}','{{site.dob| date: "%d" }}');
           var diff_ms = Date.now() - dob.getTime();
           var age_dt = new Date(diff_ms);
           document.write(Math.abs(age_dt.getUTCFullYear() - 1970));
@@ -447,11 +453,11 @@ icon: IMG_5789.PNG
       </p> -->
       <div class="flex items-center">
         <a href="https://wa.me/{{site.phone | remove: '' | replace: '+(852)', '852'  }}" class="btn btn-success mr-3">
-          <svg class="stroke-current inline-block w-6 h-6 mr-2 text-white" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M44 24C44 35.0457 35.0457 44 24 44C18.0265 44 4 44 4 44C4 44 4 29.0722 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24Z" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 18L32 18" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 26H32" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 34H24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="stroke-current inline-block w-6 h-6 mr-2 " width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M44 24C44 35.0457 35.0457 44 24 44C18.0265 44 4 44 4 44C4 44 4 29.0722 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24Z" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 18L32 18" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 26H32" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 34H24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           Whatsapp
         </a>
         <a href="mailto:{{site.email}}" class="btn btn-info">
-          <svg class="stroke-current inline-block w-6 h-6 mr-2 text-white" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M44 24V9H24H4V24V39H24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M44 34L30 34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M39 29L44 34L39 39" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 9L24 24L44 9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg class="stroke-current inline-block w-6 h-6 mr-2 " width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M44 24V9H24H4V24V39H24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M44 34L30 34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M39 29L44 34L39 39" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 9L24 24L44 9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           E-mail
         </a>
       </div>

@@ -1,0 +1,44 @@
+---
+layout: post
+cover: "ecbento2.png"
+icon: "platform"
+title:  "ECBento 2.0 System"
+date:   2021-06-10 11:27:42 +0800
+categories: "website platform frontend backend"
+description: "This is a Co-Dining Platform. Customer order bento online and then pick-up at the food locker."
+
+position: Lead programmer
+
+imagefolder: images/projects/ecbento
+images:
+    - name: image-1.png
+videos:
+    - name: mqdefault_6s.webp
+    - name: hq720.webp
+    - name: mqdefault_6s2.webp
+
+tools: 
+    - name: Laravel
+    - name: Tailwindcss
+    - name: Vue.js
+    - name: Laravel Nova
+    - name: MySQL
+---
+#### Co-Dining Platform
+
+EC Bento Co-Dining Platform is for connecting various of restaurants and customers in offline and ordering, paying food online.Customer order bento online and then pick-up at our food locker, it is effective and convenient!
+<br><br>
+Based ECBento ver1.0. We are improve workflow of ordering part and vendoring machine part. So, I propose to my team and my boss to upgrade the system and rewirte the main system. First of all, I redesign the flow of ordering part. Customer could check the menu of next 14 days. and then we also added coupon part, gift part, and AI suggest. There are the new function. That why, I suggest rewrite the main system and make it easy to addon new function.
+<br><br>
+During development , this major language still using php and develop with laravel framework. My team have four people, including app developer, ui/ux desginer, and frontend developer. I am in charge of design system, API doc, offical website and the new backend. Our staff manage product, menu, checking order, refund, control the vendoring machine in this new backend. 
+<br><br>
+
+<!-- https://www.youtube.com/watch?v=Crd6b4k3Djg
+
+https://www.youtube.com/watch?v=EF0Pr44lbTA
+
+https://www.youtube.com/watch?v=Of6Ali7znmg
+
+https://www.youtube.com/watch?v=uJn6nv2pdRI
+
+https://www.youtube.com/watch?v=9jFq2iNq_0g -->

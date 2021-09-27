@@ -1,0 +1,10 @@
+- name: Home
+  link: /
+- name: Portfolio
+  link: /portfolio
+- name: Resume
+  link: /resume
+- name: Download
+  link: /assets/pdf/man-wing-fai-resume.pdf
+  type: download
+  

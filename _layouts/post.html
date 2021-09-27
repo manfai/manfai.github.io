@@ -1,18 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html data-theme="{{site.daisyui_theme}}" lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <!-- <link rel="stylesheet" href="/assets/css/main.css"> -->
-    <link href="/assets/css/tailwind.min.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/css/daisyui.css" rel="stylesheet" type="text/css" />
-
+    {% include head.html %}
 </head>
 
-<body data-theme="corporate" class="bg-base-100 text-base-content">
+<body class="bg-base-100 text-base-content">
 
     <div class="container mx-auto">
         <nav class="w-full pt-4">
@@ -21,6 +14,7 @@
 
         <main class="mt-10">
 
+            <section class="px-4 pt-5 pb-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-10 lg:pb-16">
             <div class="text-sm breadcrumbs">
                 <ul>
                     <li>
@@ -34,7 +28,7 @@
             </div>
             <div class="mb-4 md:mb-0 w-full mx-auto relative">
                 <div class="px-4 lg:px-0">
-                    <h2 class="text-4xl font-semibold text-gray-800 leading-tight">
+                    <h2 class="text-4xl font-semibold text-base-content leading-tight">
                         {{ page.title }}
                     </h2>
                     {% if page.preview %}
@@ -71,7 +65,7 @@
 
             <div class="flex flex-col lg:flex-row lg:space-x-12">
 
-                <div class="px-4 lg:px-0 mt-6 text-gray-700 text-lg leading-relaxed w-full lg:w-3/4">
+                <div class="px-4 lg:px-0 mt-6 text-base-content text-lg leading-relaxed w-full lg:w-3/4">
 
 
                     <div>
@@ -179,16 +173,22 @@
 
 
 
-            </div>
+                </div>
 
-    </div>
-    </main>
+            </div>
+            </section>
+        </main>
 
     </div>
 
     <footer class="pt-8 lg:pt-20">
         {% include footer.html %}
     </footer>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZ2MTG5"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
 </body>
 

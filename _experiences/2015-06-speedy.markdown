@@ -1,0 +1,9 @@
+---
+title: "Technical Support"
+start_date: "Spet 2016"
+end_date: "Feb 2017"
+company: "Speedy Group Corp. Limited"
+---
+- Provided technical assistance to customers on website and hosting.
+- Used remote access to perform troubleshooting when needed.
+- Walked customers through step-by-step process for troubleshooting hardware issues.
