@@ -16,16 +16,26 @@ sleep_icon: IMG_5961.PNG
           <div class="flex items-center justify-center rounded-full w-40 h-40">
             <div class="avatar">
               <div class="mb-20 rounded-full w-52 h-52 bg-blue-100 ring ring-primary ring-offset-blue-700 ring-offset-4">
-                {% assign hour = 'now' | date: "%H" %}
-                {% if hour >= '16' and hour <= '7' %}
-                <img src="/assets/images/{{page.sleep_icon}}">
-                {% else %}
-                <img src="/assets/images/{{page.icon}}">
-                {% endif %}
+                <img id="sleep_icon" src="/assets/images/{{page.sleep_icon}}">
+                <img id="icon" src="/assets/images/{{page.icon}}">
               </div>
             </div>
           </div>
         </a>
+
+        <script>
+          var now = new Date();
+          var hour = now.getHours();
+          console.log(hour);
+          if(hour >= 22 || hour <= 7){
+            document.getElementById('sleep_icon').style.display = 'block'; 
+            document.getElementById('icon').style.display = 'none'; 
+          } else {
+            document.getElementById('sleep_icon').style.display = 'none'; 
+            document.getElementById('icon').style.display = 'block'; 
+          }
+        </script>
+        
         <div class="z-10 text-base-content max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
             
           <h2 class="font-black max-w-lg mb-3 text-3xl leading-none tracking-tight sm:text-4xl md:mx-auto">
