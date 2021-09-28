@@ -1,6 +1,7 @@
 - position: Senior Programmer
   company: ECBento Hong Kong Ltd.
   type: Full-Time
+  salary: 20K
   duties: 
     - Develop System for Bento Platform
     - Provided technical assistance on website and hosting. (Alibaba and AWS)
@@ -14,6 +15,7 @@
 - position: Senior Web Programmer
   company: HKICTech Ltd.
   type: Full-Time
+  salary: 21K
   duties: 
     - Design and Develop a website to clients
     - Designing, launching and managing an API for clients 
@@ -23,6 +25,7 @@
 - position: Programmer
   company: TeamBrain Creative Ltd.
   type: Part-Time
+  salary: 11K
   duties: 
     - Designing, launching and managing a website to clients
     - Provided technical assistance on website and hosting 
@@ -32,6 +35,7 @@
 - position: Technical Support
   company:  Speedy Group Corp. Limited
   type: Full-Time
+  salary: 10K
   duties: 
     - Provided technical assistance to customers on website and hosting.
     - Used remote access to perform troubleshooting when needed.
@@ -39,9 +43,10 @@
   start_date: June 2015
   end_date: Aug 2016
 
-- position: Programmer
+- position: Internship
   company: WiseSmart Ltd.
-  type: Internship
+  type: Full-Time
+  salary: 5K
   duties: 
     - Designing, building, and maintaining customer's website.
     - Performing quality assurance and troubleshooting code rendering acrossmultiple desktop and mobile devices. 

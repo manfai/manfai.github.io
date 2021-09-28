@@ -20,20 +20,32 @@
         </p>
       </div>
     </div>
-    <div class="space-y-2 text-sm">
+    <div class="space-y-2 text-xs">
       <p class="text-base font-black tracking-wide text-neutral-content">Contacts</p>
       <div class="flex">
         <p class="mr-1 text-neutral-content">Phone:</p>
-        <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone" class="duration-300 text-base-content">{{site.phone}}</a>
+        <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone" class="font-mono duration-300 text-base-content">{{site.phone}}</a>
       </div>
       <div class="flex">
         <p class="mr-1 text-neutral-content">Email:</p>
-        <a href="mailto:info@lorem.mail" aria-label="Our email" title="Our email" class="duration-300 text-base-content">{{site.email}}</a>
+        <a href="mailto:info@lorem.mail" aria-label="Our email" title="Our email" class="font-mono duration-300 text-base-content">{{site.email}}</a>
       </div>
-      <div class="flex">
+      {% comment %} <div class="flex">
         <p class="mr-1 text-neutral-content">Address:</p>
         <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" aria-label="Our address" title="Our address" class="duration-300 text-base-content">
-          {{site.address}}
+          {{site.info['address']}}
+        </a>
+      </div> {% endcomment %}
+      <div class="flex">
+        <p class="mr-1 text-neutral-content">Citizenship:</p>
+        <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" aria-label="Citizenship" title="Citizenship" class="font-mono duration-300 text-base-content">
+          {{site.citizenship}}
+        </a>
+      </div>
+      <div class="flex">
+        <p class="mr-1 text-neutral-content">Residence:</p>
+        <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" aria-label="Residence" title="Residence" class="font-mono duration-300 text-base-content">
+          {{site.residence}}
         </a>
       </div>
     </div>

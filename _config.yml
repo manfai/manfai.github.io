@@ -28,14 +28,17 @@ daisyui_theme: corporate
 
 email: manfai106@gmail.com
 name: ManFai
+bio: I pursued my Bachelors in Multimedia Computing from Coventry University. About my profession, now I am web programmer where I work on various programming languages ​​such as PHP, JavaScript, Jquery, Vue.js, Node.js, Python.
+last_name: Man
+first_name: Wing Fai
 phone: +(852) 9351 7034
 dob: "1993-10-06"
 gender: male
-info:
-  - address: Yuen Long
-  - citizenship: China/PRC
-  - residence: Hong Kong
-  - title: Full-Stack Developer
+job_title: Full-Stack Developer
+address: Yuen Long
+citizenship: China/PRC
+residence: Hong Kong
+
 twitter_username: manfai106
 github_username:  manfai
 linkedin_username:  wingfai-man
