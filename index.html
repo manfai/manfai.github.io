@@ -7,15 +7,15 @@ sleep_icon: IMG_5961.PNG
 <section class="relative px-4 pt-16 pb-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20">
  
  
-  <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20">
+  <div class="px-4 pt-32 md:pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
   
     <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
  
-      <div class="flex flex-col mt-16 sm:text-center sm:mb-0">
+      <div class="flex flex-col sm:text-center sm:mb-0">
         <a href="/" class="z-10 mb-6 mx-auto">
-          <div class="flex items-center justify-center w-40 h-40 rounded-full ">
+          <div class="flex items-center justify-center rounded-full w-40 h-40">
             <div class="avatar">
-              <div class="mb-20 rounded-full w-40 h-40 bg-blue-100 ring ring-primary ring-offset-blue-700 ring-offset-4">
+              <div class="mb-20 rounded-full w-52 h-52 bg-blue-100 ring ring-primary ring-offset-blue-700 ring-offset-4">
                 {% assign hour = 'now' | date: "%H" %}
                 {% if hour >= '16' and hour <= '7' %}
                 <img src="/assets/images/{{page.sleep_icon}}">
@@ -28,7 +28,7 @@ sleep_icon: IMG_5961.PNG
         </a>
         <div class="z-10 text-base-content max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
             
-          <h2 class="max-w-lg mb-3 text-3xl font-bold leading-none tracking-tight sm:text-4xl md:mx-auto">
+          <h2 class="font-black max-w-lg mb-3 text-3xl leading-none tracking-tight sm:text-4xl md:mx-auto">
             <span class="relative inline-block">
               <svg viewBox="0 0 52 24" fill="currentColor"
                 class="absolute text-primray top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
@@ -47,13 +47,13 @@ sleep_icon: IMG_5961.PNG
             a Fullstack
             <span class="relative inline-block px-2 mt-2">
               <div class="absolute inset-0 transform -skew-x-12 bg-primary"></div>
-              <span class="relative text-neutral-content">Developer</span>
+              <span class="relative text-neutral-content font-mono">Developer</span>
             </span>
           </h2>
 
         </div>
 
-        <div class="absolute inset-x-0 z-0 top-0 items-center justify-center hidden overflow-hidden md:flex md:inset-y-0">
+        {% comment %} <div class="absolute inset-x-0 z-0 top-0 items-center justify-center hidden overflow-hidden md:flex md:inset-y-0">
               <svg viewBox="0 0 88 88" class="w-full max-w-screen-xl text-indigo-100">
                 <circle fill="currentColor" cx="44" cy="44" r="15.5"></circle>
                 <circle fill-opacity="0.2" fill="currentColor" cx="44" cy="44" r="44"></circle>
@@ -61,7 +61,7 @@ sleep_icon: IMG_5961.PNG
                 <circle fill-opacity="0.3" fill="currentColor" cx="44" cy="44" r="29.5"></circle>
                 <circle fill-opacity="0.3" fill="currentColor" cx="44" cy="44" r="22.5"></circle>
               </svg>
-        </div>
+        </div> {% endcomment %}
 
       </div>
       
@@ -175,9 +175,10 @@ sleep_icon: IMG_5961.PNG
     </div>
 
     <div class="order-1 lg:order-2 max-w-xl pl-auto lg:pl-16 mx-auto lg:mt-10 text-base-content">
-      <h5 class="mb-6 text-3xl font-extrabold text-base-content leading-none">
+      <h5 class="mb-6 text-3xl text-base-content font-black leading-none">
         <!-- What I Do? -->
         Skills & Experience
+        <!-- Bring passion to everything I do -->
       </h5>
       <p class="mb-6">
         I pursued my Bachelors in Multimedia Computing from Coventry University. About my
@@ -205,10 +206,10 @@ sleep_icon: IMG_5961.PNG
 <section class="relative px-4 pb-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20">
   <div class="flex flex-col mb-6 lg:flex-row md:mb-10">
     <div class="lg:w-1/2">
-      <h2 class="max-w-md mb-6 text-3xl font-bold tracking-tight text-base-content sm:text-4xl sm:leading-none xl:max-w-lg">
+      <h2 class="max-w-md mb-6 text-3xl font-black tracking-tight text-base-content sm:text-4xl sm:leading-none xl:max-w-lg">
         This is my past
         <span class="relative px-1">
-          <div class="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-accent"></div>
+          <div class="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-pink-500"></div>
           <span class="relative inline-block text-primary">projects</span>
         </span>
       </h2>
@@ -299,12 +300,12 @@ sleep_icon: IMG_5961.PNG
   <div class="grid gap-10 lg:grid-cols-2">
     <div class="flex flex-col justify-center">
       <div class="max-w-xl mb-6">
-        <h2 class="max-w-lg mb-6 text-3xl font-bold tracking-tight text-base-content sm:text-4xl sm:leading-none">
+        <h2 class="max-w-lg mb-6 text-3xl font-black tracking-tight text-base-content sm:text-4xl sm:leading-none">
           My Greatest Achievement
         </h2>
         <p class="text-base text-gray-700 text-justify md:text-lg mb-2">
           <div class="dropdown dropdown-right">
-            <span tabindex="0" class="link">Nature Internet</span>
+            <span tabindex="0" class="link font-semibold uppercase">Nature Internet</span>
             <div tabindex="0" class="shadow card compact dropdown-content bg-blue-400 text-white rounded-box w-64 ml-2">
               <div class="card-body text-white">
                 <h2 class="card-title">More Detail</h2>
@@ -340,11 +341,11 @@ sleep_icon: IMG_5961.PNG
             </div>
           </div>
 
-          <h6 class="mb-2 font-semibold leading-5 text-base-content">
+          <h6 class="mb-2 font-semibold leading-5 text-sm text-base-content">
             Silver Quality Award
           </h6>
           <p class="text-xs text-base-content mb-2">
-            2015 Pan-Pearl River Delta Region Universities IT Project Competition
+            China Pan-Pearl River Delta Region Universities IT Project Competition 2015
           </p>
           <a target="_blank" href="https://news.cnyes.com/news/id/154094"
             class="text-xs mr-2 uppercase link link-primary">link 1 </a>
@@ -353,6 +354,21 @@ sleep_icon: IMG_5961.PNG
           <!-- https://www.facebook.com/NatureInternet/ -->
           <!-- https://news.cnyes.com/news/id/154094 -->
           <!-- https://hk.on.cc/hk/bkn/cnt/news/20150905/bkn-20150905134848591-0905_00822_001.html -->
+        </div>
+        <div>
+          <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-base-300">
+            <svg class="w-7 h-7 stroke-current text-base-content" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="13" width="38" height="28" rx="2" fill="none" stroke-width="4"/><circle cx="18" cy="28" r="6" fill="none" stroke-width="4"/><path d="M30 24L36 24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 32L36 32" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 13L25 4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h6 class="mb-2 font-semibold leading-5 text-sm text-base-content">
+            Interviewee
+          </h6>
+          <p class="text-xs text-base-content mb-2">
+            RTHK Putonghua 新紫荊廣場 <br> Episode <br>2015-07-16
+            <!-- https://ourhkfoundation.org.hk/innotechexpo2016/%E5%B9%B4%E8%BC%95%E4%BA%BA%E5%B0%8D%E5%B9%B4%E8%BC%95%E4%BA%BA%E7%9A%84%E7%A7%91%E6%99%AE%E5%AD%B8%E5%A0%82/ -->
+            <!-- http://www.takungpao.com.hk/hongkong/text/2016/0926/26548.html -->
+          </p>
+          <del> <a target="_blank" 
+            class="text-xs mr-2 uppercase link link-primary">listen</a></del>
         </div>
         <div>
           <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-base-300">
@@ -372,41 +388,28 @@ sleep_icon: IMG_5961.PNG
                 d="M4 40.8V42H34V40.8C34 36.3196 34 34.0794 33.1281 32.3681C32.3611 30.8628 31.1372 29.6389 29.6319 28.8719C27.9206 28 25.6804 28 21.2 28H16.8C12.3196 28 10.0794 28 8.36808 28.8719C6.86278 29.6389 5.63893 30.8628 4.87195 32.3681C4 34.0794 4 36.3196 4 40.8Z"
                 fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /></svg>
           </div>
-          <h6 class="mb-2 font-semibold leading-5 text-base-content">
+          <h6 class="mb-2 font-semibold leading-5 text-sm text-base-content">
             Keynote Speaker
           </h6>
           <p class="text-xs text-base-content mb-2">
             The InnoTech Expo 2016<br>
+            年輕人對年輕人的科普學堂 <br>
             智能護眼及互聯網 + 樹木應用程式
             <!-- https://ourhkfoundation.org.hk/innotechexpo2016/%E5%B9%B4%E8%BC%95%E4%BA%BA%E5%B0%8D%E5%B9%B4%E8%BC%95%E4%BA%BA%E7%9A%84%E7%A7%91%E6%99%AE%E5%AD%B8%E5%A0%82/ -->
             <!-- http://www.takungpao.com.hk/hongkong/text/2016/0926/26548.html -->
           </p>
           <a target="_blank" href="https://www.youtube.com/watch?v=4uDs80RWdck"
-            class="text-xs mr-2 uppercase link link-secondary">video</a>
+            class="text-xs mr-2 uppercase link link-primary">video</a>
           <a target="_blank"
             href="https://ourhkfoundation.org.hk/innotechexpo2016/%E5%B9%B4%E8%BC%95%E4%BA%BA%E5%B0%8D%E5%B9%B4%E8%BC%95%E4%BA%BA%E7%9A%84%E7%A7%91%E6%99%AE%E5%AD%B8%E5%A0%82/"
             class="text-xs mr-2 uppercase link link-primary">link 1</a>
           <a target="_blank" href="http://www.takungpao.com.hk/hongkong/text/2016/0926/26548.html"
             class="text-xs mr-2 uppercase link link-primary">link 2</a>
         </div>
-        <div>
-          <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-base-300">
-            <svg class="w-7 h-7 stroke-current text-base-content" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="13" width="38" height="28" rx="2" fill="none" stroke-width="4"/><circle cx="18" cy="28" r="6" fill="none" stroke-width="4"/><path d="M30 24L36 24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 32L36 32" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 13L25 4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h6 class="mb-2 font-semibold leading-5 text-base-content">
-            Interviewee
-          </h6>
-          <p class="text-xs text-base-content mb-2">
-            RTHK Putonghua 新紫荊廣場 <br> EP: 2015-07-16
-            <!-- https://ourhkfoundation.org.hk/innotechexpo2016/%E5%B9%B4%E8%BC%95%E4%BA%BA%E5%B0%8D%E5%B9%B4%E8%BC%95%E4%BA%BA%E7%9A%84%E7%A7%91%E6%99%AE%E5%AD%B8%E5%A0%82/ -->
-            <!-- http://www.takungpao.com.hk/hongkong/text/2016/0926/26548.html -->
-          </p>
-          <del> <a target="_blank" 
-            class="text-xs mr-2 uppercase link link-primary">listen</a></del>
-        </div>
+      
       </div>
     </div>
-    <div class="flex items-center justify-center -mx-4 lg:pl-8">
+    <div class="flex items-center justify-center -mx-4 lg:pl-8 gap-8 md:gap-0">
       <div class="flex flex-col items-end px-3">
         <img class="object-cover object-right mb-6 rounded shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
           src="/assets/images/2016-02.jpg" alt="" />
@@ -437,11 +440,11 @@ sleep_icon: IMG_5961.PNG
     <div class="flex flex-col justify-center p-8 bg-base-200 lg:p-16 lg:pl-10 lg:w-1/2">
       <div>
         <p
-          class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-gray-100 uppercase rounded-full bg-accent">
+          class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-gray-100 uppercase rounded-full bg-pink-500">
           Thank you for your visit
         </p>
       </div>
-      <h5 class="mb-3 text-3xl text-base-content font-extrabold leading-none sm:text-4xl">
+      <h5 class="mb-3 text-3xl text-base-content font-black leading-none sm:text-4xl">
         Get in touch 🤙
       </h5>
       <p class="mb-5 text-base-content">
@@ -468,7 +471,7 @@ sleep_icon: IMG_5961.PNG
           <svg class="stroke-current inline-block w-6 h-6 mr-2 " width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M44 24C44 35.0457 35.0457 44 24 44C18.0265 44 4 44 4 44C4 44 4 29.0722 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24Z" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 18L32 18" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 26H32" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 34H24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           Whatsapp
         </a>
-        <a href="mailto:{{site.email}}" class="btn btn-info">
+        <a href="mailto:{{site.email}}" class="btn btn-neutral">
           <svg class="stroke-current inline-block w-6 h-6 mr-2 " width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M44 24V9H24H4V24V39H24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M44 34L30 34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M39 29L44 34L39 39" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 9L24 24L44 9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
           E-mail
         </a>
