@@ -84,12 +84,17 @@
                     <h3 class="mt-4 mb-2">Screenshot: </h3>
                     <div class="w-full p-4 space-x-4 carousel carousel-center bg-neutral rounded">
                         {% for image in page.images %}
-                        <div class="carousel-item cursor-pointer">
-                            <img src="/assets/{{ page.imagefolder }}/{{ image.name }}" class="object-cover object-top w-56 h-32 rounded">
-                        </div>
+                            <div class="carousel-item cursor-pointer">
+                        <a target="_blank" href="/assets/{{ page.imagefolder }}/{{ image.name }}">
+                                <img src="/assets/{{ page.imagefolder }}/{{ image.name }}" class="object-cover object-top w-56 h-32 rounded">
+                        </a> 
+                            </div>
+                       
+
                         {% endfor %}
                     </div>
                     {% endif %}
+
 
                     {% if page.videos %}
                     <h3 class="mt-4 mb-2">Video: </h3>
