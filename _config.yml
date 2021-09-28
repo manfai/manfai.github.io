@@ -48,6 +48,7 @@ linkedin_username:  wingfai-man
 plugins:
   - jekyll-feed
   - jekyll-postcss
+  - jekyll-multiple-languages-plugin
   
 sass:
   load_paths:
@@ -86,7 +87,7 @@ defaults:
     values:
       layout: "post"
 
-
+languages: ["en", "hk", "cn"]
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
