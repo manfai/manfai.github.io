@@ -1,0 +1,9 @@
+en:
+  label: English
+  icon: 🇺🇸
+hk:
+  label: 中文（香港）
+  icon: 🇭🇰
+cn:
+  label: 中文（中国）
+  icon: 🇨🇳

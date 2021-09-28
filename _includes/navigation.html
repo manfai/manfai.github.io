@@ -61,7 +61,7 @@
       </button>
       
       <!-- Mobile menu dropdown -->
-      <div class="mobile-menu hidden z-10 absolute top-0 left-0 w-full">
+      <div class="mobile-menu hidden z-50 absolute top-0 left-0 w-full">
         <div class="p-5 bg-white border rounded shadow-sm">
           <div class="flex items-center justify-between mb-4">
             <div>
@@ -72,7 +72,7 @@
                   <rect x="14" y="1" width="7" height="6"></rect>
                   <rect x="14" y="11" width="7" height="12"></rect>
                 </svg>
-                <span class="ml-2 text-lg font-bold tracking-wide text-base-content uppercase">MWF's Portfolio</span>
+                <span class="ml-2 text-lg font-bold tracking-wide text-base-content uppercase">{{site.title}}</span>
               </a>
             </div>
             <div>
@@ -88,19 +88,16 @@
           </div>
           <nav>
             <ul class="space-y-4">
-              <li><a href="/" aria-label="Home" title="Home" class="font-medium tracking-wide text-base-content transition-colors duration-200 hover:text-deep-purple-accent-400">Home</a></li>
-              <li><a href="/portfolio" aria-label="Portfolio" title="Portfolio" class="font-medium tracking-wide text-base-content transition-colors duration-200 hover:text-deep-purple-accent-400">Portfolio</a></li>
-              <li><a href="/resume" aria-label="Resume" title="Resume" class="font-medium tracking-wide text-base-content transition-colors duration-200 hover:text-deep-purple-accent-400">Resume</a></li>
-              <li>
-                <a
-                  href="/assets/pdf/man-wing-fai-resume.pdf" download 
-                  class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide transition duration-200 btn btn-primary"
-                  aria-label="Sign up"
-                  title="Sign up"
-                >
-                  Download
-                </a>
-              </li>
+                {% for item in site.data.navigation %}
+                <li><a href="{{ item.link }}"  {{ item.type }} aria-label="{{ item.name }}" title="{{ item.name }}"  class="font-medium tracking-wide text-base-content">{{ item.name }}</a></li>
+                {% if item.type == 'download' %}
+                <li>
+                  <a href="{{ item.link }}" download  class="inline-flex items-center justify-center w-full h-12 px-6 font-medium text-white transition duration-200 btn btn-primary" aria-label="{{item.title}}" title="{{item.title}}">
+                    {{ item.name }}
+                  </a>
+                </li>
+                {% endif %}
+                {% endfor %}
             </ul>
           </nav>
         </div>
