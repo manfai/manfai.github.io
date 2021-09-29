@@ -1,24 +1,26 @@
-<div class="fixed z-50 bg-white lg:bg-transparent shadow-md lg:shadow-none w-full lg:relative px-4 py-3 left-0 lg:py-6 mx-auto lg:max-w-screen-xl md:px-24 lg:px-8">
+<div class="fixed z-50 bg-white lg:bg-transparent shadow-xl lg:shadow-none w-full lg:relative px-4 py-4 left-0 lg:py-4 mx-auto lg:max-w-screen-xl md:px-24 lg:px-8">
   <div class="relative flex items-center justify-between">
     <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
-      <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
+      <!-- <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
         <rect x="3" y="1" width="7" height="12"></rect>
         <rect x="3" y="17" width="7" height="6"></rect>
         <rect x="14" y="1" width="7" height="6"></rect>
         <rect x="14" y="11" width="7" height="12"></rect>
-      </svg>
+      </svg> -->
+      <svg class="w-10 stroke-current text-base-content" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 23C26.7614 23 29 20.7614 29 18C29 15.2386 26.7614 13 24 13C21.2386 13 19 15.2386 19 18C19 20.7614 21.2386 23 24 23Z" fill="none" stroke-width="4" stroke-linejoin="round"/><path d="M10.022 38.332C10.3657 33.1206 14.7016 29 20 29H28C33.2914 29 37.6229 33.1097 37.9767 38.3113" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <!-- <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><g><rect width="48" height="48" fill="white" fill-opacity="0.01" stroke-linejoin="round" stroke-width="4" stroke="none" fill-rule="evenodd"/><g transform="translate(6.000000, 6.000000)"><rect x="0" y="0" width="14" height="11" stroke-linejoin="round" stroke-width="4" fill="none" fill-rule="nonzero"/><rect x="22" y="25" width="14" height="11" stroke-linejoin="round" stroke-width="4" fill="none" fill-rule="nonzero"/><rect x="22" y="0" width="14" height="17" stroke-linejoin="round" stroke-width="4" fill="none" fill-rule="nonzero"/><rect x="0" y="19" width="14" height="17" stroke-linejoin="round" stroke-width="4" fill="none" fill-rule="nonzero"/></g></g></svg> -->
       <span class="ml-2 text-lg font-bold tracking-wide text-base-content uppercase">{{site.title}}</span>
     </a>
     <ul class="items-center hidden space-x-8 lg:flex">
       {% for item in site.data.navigation %}
-      <li class="transition duration-500 motion-reduce:transition-none motion-reduce:transform-none hover:bg-pink-500 px-2">
-          <a href="{{ item.link }}"  {{ item.type }} aria-label="{{ item.name }}" title="{{ item.name }}" class="font-medium tracking-wide text-base-content">{{ item.name }}</a>
+      <li class="transition duration-500 hover:text-pink-500 px-2">
+          <a href="{{ item.link }}"  {{ item.type }} aria-label="{{ item.name }}" title="{{ item.name }}" class="font-medium tracking-wide">{{ item.name }}</a>
       </li>
       {% endfor %}
       </ul>
     <ul class="items-center hidden space-x-6 lg:flex">
       <li><a target="_blank" href="https://github.com/{{site.github_username}}" aria-label="Github" title="Github" class="font-medium tracking-wide text-base-content transition-colors duration-200 hover:text-deep-purple-accent-400">
-        <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+        <svg  viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
         class="inline-block w-6 h-6 stroke-current">
         <path
           d="M29.3444 30.4767C31.7481 29.9771 33.9292 29.1109 35.6247 27.8393C38.5202 25.6677 40 22.3137 40 19C40 16.6754 39.1187 14.5051 37.5929 12.6669C36.7427 11.6426 39.2295 4.00001 37.02 5.02931C34.8105 6.05861 31.5708 8.33691 29.8726 7.8341C28.0545 7.29577 26.0733 7.00001 24 7.00001C22.1992 7.00001 20.4679 7.22313 18.8526 7.63452C16.5046 8.23249 14.2591 6.00001 12 5.02931C9.74086 4.05861 10.9736 11.9633 10.3026 12.7946C8.84119 14.6052 8 16.7289 8 19C8 22.3137 9.79086 25.6677 12.6863 27.8393C14.6151 29.2858 17.034 30.2077 19.7401 30.6621"
@@ -44,7 +46,7 @@
           fill="none" stroke-width="4" stroke-linejoin="round" /></svg>
         </a></li>
       <li><a target="_blank" href="https://twitter.com/{{site.twitter_username}}" aria-label="Home" title="Home" class="font-medium tracking-wide text-base-content transition-colors duration-200 hover:text-deep-purple-accent-400">
-        <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+        <svg  viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
         class="inline-block w-6 h-6 stroke-current">
         <path
           d="M5 35.7622C6.92886 36.8286 20.8914 44.8773 30.8199 38.674C40.7483 32.4707 40.2006 21.7833 40.2006 16.886C41.1 15.0018 43 14.0439 43 8.9438C41.1337 10.6678 39.2787 11.2544 37.435 10.7036C35.6287 7.94957 33.1435 6.73147 29.9794 7.04934C25.2333 7.52614 23.4969 12.1825 24.0079 18.2067C16.6899 21.9074 10.9515 15.524 7.99418 10.7036C7.00607 14.4999 6.0533 19.0576 7.99418 24.0995C9.2881 27.4607 12.3985 30.3024 17.3254 32.6246C12.3323 35.3308 8.22382 36.3766 5 35.7622Z"
@@ -68,7 +70,7 @@
           <div class="flex items-center justify-between mb-5">
             <div>
               <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
-                <svg width="24" height="24" class="w-8"  viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 14C12.2091 14 14 12.2091 14 10C14 7.79086 12.2091 6 10 6C7.79086 6 6 7.79086 6 10C6 12.2091 7.79086 14 10 14Z" fill="#333"/><path d="M24 14C26.2091 14 28 12.2091 28 10C28 7.79086 26.2091 6 24 6C21.7909 6 20 7.79086 20 10C20 12.2091 21.7909 14 24 14Z" fill="#333"/><path d="M38 14C40.2091 14 42 12.2091 42 10C42 7.79086 40.2091 6 38 6C35.7909 6 34 7.79086 34 10C34 12.2091 35.7909 14 38 14Z" fill="#333"/><path d="M10 28C12.2091 28 14 26.2091 14 24C14 21.7909 12.2091 20 10 20C7.79086 20 6 21.7909 6 24C6 26.2091 7.79086 28 10 28Z" fill="#333"/><path d="M24 28C26.2091 28 28 26.2091 28 24C28 21.7909 26.2091 20 24 20C21.7909 20 20 21.7909 20 24C20 26.2091 21.7909 28 24 28Z" fill="#333"/><path d="M38 28C40.2091 28 42 26.2091 42 24C42 21.7909 40.2091 20 38 20C35.7909 20 34 21.7909 34 24C34 26.2091 35.7909 28 38 28Z" fill="#333"/><path d="M10 42C12.2091 42 14 40.2091 14 38C14 35.7909 12.2091 34 10 34C7.79086 34 6 35.7909 6 38C6 40.2091 7.79086 42 10 42Z" fill="#333"/><path d="M24 42C26.2091 42 28 40.2091 28 38C28 35.7909 26.2091 34 24 34C21.7909 34 20 35.7909 20 38C20 40.2091 21.7909 42 24 42Z" fill="#333"/><path d="M38 42C40.2091 42 42 40.2091 42 38C42 35.7909 40.2091 34 38 34C35.7909 34 34 35.7909 34 38C34 40.2091 35.7909 42 38 42Z" fill="#333"/></svg>
+                <svg  class="w-8"  viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 14C12.2091 14 14 12.2091 14 10C14 7.79086 12.2091 6 10 6C7.79086 6 6 7.79086 6 10C6 12.2091 7.79086 14 10 14Z" fill="#333"/><path d="M24 14C26.2091 14 28 12.2091 28 10C28 7.79086 26.2091 6 24 6C21.7909 6 20 7.79086 20 10C20 12.2091 21.7909 14 24 14Z" fill="#333"/><path d="M38 14C40.2091 14 42 12.2091 42 10C42 7.79086 40.2091 6 38 6C35.7909 6 34 7.79086 34 10C34 12.2091 35.7909 14 38 14Z" fill="#333"/><path d="M10 28C12.2091 28 14 26.2091 14 24C14 21.7909 12.2091 20 10 20C7.79086 20 6 21.7909 6 24C6 26.2091 7.79086 28 10 28Z" fill="#333"/><path d="M24 28C26.2091 28 28 26.2091 28 24C28 21.7909 26.2091 20 24 20C21.7909 20 20 21.7909 20 24C20 26.2091 21.7909 28 24 28Z" fill="#333"/><path d="M38 28C40.2091 28 42 26.2091 42 24C42 21.7909 40.2091 20 38 20C35.7909 20 34 21.7909 34 24C34 26.2091 35.7909 28 38 28Z" fill="#333"/><path d="M10 42C12.2091 42 14 40.2091 14 38C14 35.7909 12.2091 34 10 34C7.79086 34 6 35.7909 6 38C6 40.2091 7.79086 42 10 42Z" fill="#333"/><path d="M24 42C26.2091 42 28 40.2091 28 38C28 35.7909 26.2091 34 24 34C21.7909 34 20 35.7909 20 38C20 40.2091 21.7909 42 24 42Z" fill="#333"/><path d="M38 42C40.2091 42 42 40.2091 42 38C42 35.7909 40.2091 34 38 34C35.7909 34 34 35.7909 34 38C34 40.2091 35.7909 42 38 42Z" fill="#333"/></svg>
                 <span class="ml-2 text-lg font-bold tracking-wide text-base-content uppercase">Menu</span>
               </a>
             </div>
@@ -145,7 +147,7 @@
   </div>
   <div class="flex-none hidden lg:flex navbar-end">
     <a target="_blank" href="https://github.com/{{site.github_username}}" class="btn btn-square btn-ghost">
-      <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+      <svg  viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
         class="inline-block w-6 h-6 stroke-current">
         <path
           d="M29.3444 30.4767C31.7481 29.9771 33.9292 29.1109 35.6247 27.8393C38.5202 25.6677 40 22.3137 40 19C40 16.6754 39.1187 14.5051 37.5929 12.6669C36.7427 11.6426 39.2295 4.00001 37.02 5.02931C34.8105 6.05861 31.5708 8.33691 29.8726 7.8341C28.0545 7.29577 26.0733 7.00001 24 7.00001C22.1992 7.00001 20.4679 7.22313 18.8526 7.63452C16.5046 8.23249 14.2591 6.00001 12 5.02931C9.74086 4.05861 10.9736 11.9633 10.3026 12.7946C8.84119 14.6052 8 16.7289 8 19C8 22.3137 9.79086 25.6677 12.6863 27.8393C14.6151 29.2858 17.034 30.2077 19.7401 30.6621"
@@ -171,7 +173,7 @@
           fill="none" stroke-width="4" stroke-linejoin="round" /></svg>
     </a>
     <a target="_blank" href="https://twitter.com/{{site.twitter_username}}" class="btn btn-square btn-ghost">
-      <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+      <svg  viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"
         class="inline-block w-6 h-6 stroke-current">
         <path
           d="M5 35.7622C6.92886 36.8286 20.8914 44.8773 30.8199 38.674C40.7483 32.4707 40.2006 21.7833 40.2006 16.886C41.1 15.0018 43 14.0439 43 8.9438C41.1337 10.6678 39.2787 11.2544 37.435 10.7036C35.6287 7.94957 33.1435 6.73147 29.9794 7.04934C25.2333 7.52614 23.4969 12.1825 24.0079 18.2067C16.6899 21.9074 10.9515 15.524 7.99418 10.7036C7.00607 14.4999 6.0533 19.0576 7.99418 24.0995C9.2881 27.4607 12.3985 30.3024 17.3254 32.6246C12.3323 35.3308 8.22382 36.3766 5 35.7622Z"

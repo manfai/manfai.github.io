@@ -6,12 +6,7 @@
       <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
     <div class="sm:col-span-2">
       <a href="/" aria-label="Go home" title="Company" class="hidden md:inline-flex text-neutral-content items-center">
-        <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
-          <rect x="3" y="1" width="7" height="12"></rect>
-          <rect x="3" y="17" width="7" height="6"></rect>
-          <rect x="14" y="1" width="7" height="6"></rect>
-          <rect x="14" y="11" width="7" height="12"></rect>
-        </svg>
+        <svg class="w-10 stroke-current text-neutral-content" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 23C26.7614 23 29 20.7614 29 18C29 15.2386 26.7614 13 24 13C21.2386 13 19 15.2386 19 18C19 20.7614 21.2386 23 24 23Z" fill="none" stroke-width="4" stroke-linejoin="round"/><path d="M10.022 38.332C10.3657 33.1206 14.7016 29 20 29H28C33.2914 29 37.6229 33.1097 37.9767 38.3113" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         <span class="ml-2 text-xl font-black tracking-wide text-neutral-content uppercase">{{site.title}}</span>
       </a>
       <div class="hidden md:block mt-6 lg:max-w-sm">
@@ -30,13 +25,13 @@
         <p class="mr-1 text-neutral-content">Email:</p>
         <a href="mailto:info@lorem.mail" aria-label="Our email" title="Our email" class="font-mono duration-300 text-base-content">{{site.email}}</a>
       </div>
-      {% comment %} <div class="flex">
-        <p class="mr-1 text-neutral-content">Address:</p>
-        <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" aria-label="Our address" title="Our address" class="duration-300 text-base-content">
-          {{site.info['address']}}
-        </a>
-      </div> {% endcomment %}
       <div class="flex">
+        <p class="mr-1 text-neutral-content">Location:</p>
+        <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" aria-label="Our address" title="Our address" class="duration-300 text-base-content">
+          {{site.address}}, {{site.residence}}
+        </a>
+      </div>
+      <!-- <div class="flex">
         <p class="mr-1 text-neutral-content">Citizenship:</p>
         <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" aria-label="Citizenship" title="Citizenship" class="font-mono duration-300 text-base-content">
           {{site.citizenship}}
@@ -47,7 +42,7 @@
         <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" aria-label="Residence" title="Residence" class="font-mono duration-300 text-base-content">
           {{site.residence}}
         </a>
-      </div>
+      </div> -->
     </div>
     <div>
       <span class="text-base font-black tracking-wide text-neutral-content">Social</span>
@@ -78,7 +73,7 @@
                         d="M21 27.5V43H28V29C28 26.5 29.5 24.5 32 24.5C34.5 24.5 36 27 36 29V43H43V27.5C43 24.5 39.5 18 32 18C24.5 18 21 24.5 21 27.5Z"
                         fill="none"  stroke-width="4" stroke-linejoin="round" /></svg> </a>
             <!-- <a href="/assets/pdf/man-wing-fai-resume.pdf" download>                 -->
-                <!-- <svg class="h-5 text-neutral-content" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 44H38C39.1046 44 40 43.1046 40 42V14L31 4H10C8.89543 4 8 4.89543 8 6V42C8 43.1046 8.89543 44 10 44Z"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="24" r="4" fill="none"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 36C32 31.5817 28.4183 28 24 28C19.5817 28 16 31.5817 16 36"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 4V14H40"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> -->
+                <!-- <svg class="h-5 text-neutral-content"  viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 44H38C39.1046 44 40 43.1046 40 42V14L31 4H10C8.89543 4 8 4.89543 8 6V42C8 43.1046 8.89543 44 10 44Z"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="24" r="4" fill="none"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 36C32 31.5817 28.4183 28 24 28C19.5817 28 16 31.5817 16 36"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 4V14H40"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> -->
             <a href="https://twitter.com/{{site.twitter_username}}">
                 <svg class="h-5 text-neutral-content stroke-current" viewBox="0 0 48 48" fill="none"
                     xmlns="http://www.w3.org/2000/svg">

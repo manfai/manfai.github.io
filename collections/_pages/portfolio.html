@@ -1,0 +1,66 @@
+---
+layout: default
+title: Portfolio
+---
+
+<section class="px-4 py-28 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+        <div>
+            <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-white uppercase rounded-full bg-pink-500">
+                {{page.title}}
+            </p>
+        </div>
+        <h2
+            class="max-w-lg mb-6 font-sans text-3xl font-black leading-none tracking-tight text-base-content sm:text-4xl md:mx-auto">
+            <span class="relative inline-block">
+                <svg viewBox="0 0 52 24" fill="currentColor"
+                    class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
+                    <defs>
+                        <pattern id="d9d7687a-355f-4502-8ec4-7945db034688" x="0" y="0" width=".135" height=".30">
+                            <circle cx="1" cy="1" r=".7"></circle>
+                        </pattern>
+                    </defs>
+                    <rect fill="url(#d9d7687a-355f-4502-8ec4-7945db034688)" width="52" height="24"></rect>
+                </svg>
+                <span class="relative">This</span>
+            </span>
+            is all of my best projects
+        </h2>
+        <p class="text-base text-base-content md:text-lg">    
+            I using GitHub for manage my own project's work or company project work within the repository. I tried GitLab and it is selfhost by a vendor company. That why, i cant show all the repository to you because the 
+            confidentiality agreement. 
+        </p>
+    </div>
+    <div class="grid gap-5 mb-8 md:grid-cols-2 lg:grid-cols-3">
+        {% for project in site.projects reversed %}
+        <a href="{{ project.url | remove:'.html' }}" class="p-5 duration-300 transform bg-base-300 rounded shadow hover:-translate-y-2 hover:shadow-xl">
+            <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-neutral text-neutral-content">
+                {% case project.icon %}
+                {% when 'website' %}
+                <svg class="w-7 h-7 stroke-current"  viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M42 18V40C42 41.1046 41.1046 42 40 42H8C6.89543 42 6 41.1046 6 40V18"   stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /> <path d="M6 8C6 6.89543 6.89543 6 8 6H40C41.1046 6 42 6.89543 42 8V18H6V8Z" fill="none"   stroke-width="4" stroke-linejoin="round" /> <path fill-rule="evenodd" clip-rule="evenodd"   d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z"   fill="#333" /> <path fill-rule="evenodd" clip-rule="evenodd"   d="M18 14C19.1046 14 20 13.1046 20 12C20 10.8954 19.1046 10 18 10C16.8954 10 16 10.8954 16 12C16 13.1046 16.8954 14 18 14Z"   fill="#333" /> <path fill-rule="evenodd" clip-rule="evenodd"   d="M24 14C25.1046 14 26 13.1046 26 12C26 10.8954 25.1046 10 24 10C22.8954 10 22 10.8954 22 12C22 13.1046 22.8954 14 24 14Z"   fill="#333" /></svg>
+                {% when 'platform' %}
+                <svg class="w-7 h-7 stroke-current"  viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="19" y="32" width="10" height="9" stroke-width="4" stroke-linecap="round"   stroke-linejoin="round" /> <rect x="5" y="8" width="38" height="24" rx="2" fill="none" stroke-width="4" /> <path d="M22 27H26" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /> <path d="M14 41L34 41" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                {% when 'app' %}
+                <svg class="w-7 h-7 stroke-current"  viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="11" y="4" width="26" height="40" rx="3" fill="none" stroke-width="4" /> <path d="M22 10L26 10" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /> <path d="M20 38H28" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                {% when 'package' %}
+                <svg class="w-7 h-7 stroke-current"  viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M48 0H0V48H48V0Z" fill="white" fill-opacity="0.01"/><path d="M44 14L24 4L4 14V34L24 44L44 34V14Z" stroke-width="4" stroke-linejoin="round"/><path d="M4 14L24 24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 44V24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M44 14L24 24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M34 9L14 19" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                {% else %}
+                <svg class="w-7 h-7 stroke-current"  viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="6" y="12" width="36" height="30" rx="2" fill="none" stroke-width="4" stroke-linejoin="round"/><path d="M17.9498 24.0083L29.9498 24.0083" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 13L13 5H35L42 13" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                {% endcase %}
+            </div>
+            <h6 class="mb-2 font-black leading-5">{{ project.title }}</h6>
+            <p class="mb-2 text-sm text-base-content">
+                {{ project.description }}
+            </p>
+            <p class="text-sm text-primary font-semibold transition-colors hover:underline">View detail</p>
+        </a>
+        {% endfor %}
+
+    </div>
+    <div class="text-center pt-6">
+        <a href="/#contact"
+            class="w-full h-12 px-6 font-medium tracking-wide transition duration-200 rounded md:w-auto btn btn-neutral">
+            Contact Me for more detail
+        </a>
+    </div>
+</section>

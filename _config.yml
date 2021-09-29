@@ -58,6 +58,7 @@ include: ['_pages', 'node_modules/tailwindcss']
 
 excerpt_separator: <!--more-->
 permalink: pretty
+collections_dir: collections
 collections:
   pages:
     output: true
@@ -68,6 +69,9 @@ collections:
   projects:
     output: true
     permalink: /portfolio/:year/:month/:title:output_ext
+  achievements:
+    output: true
+    permalink: /achievements/:year/:month/:title:output_ext
 
 defaults:
   - scope:
@@ -83,6 +87,11 @@ defaults:
   - scope:
       path: ""
       type: "experiences"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "achievements"
     values:
       layout: "post"
 

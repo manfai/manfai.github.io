@@ -1,13 +1,24 @@
 - name: Silver Quality Award
-  organization: 2015 Pan-Pearl River Delta Region Universities IT Project Competition
+  organization: China Pan-Pearl River Delta Region Universities IT Project Competition 2015
   year: 2015
+  link: 
+    - "https://news.cnyes.com/news/id/154094"
+    - "https://hk.on.cc/hk/bkn/cnt/news/20150905/bkn-20150905134848591-0905_00822_001.html"
+
+- name: Interviewee
+  organization: RTHK Putonghua
+  title: 新紫荊廣場
+  description: "Episode: 2015-07-16"
+  year: 2015
+  listen:
+    - ""
 
 - name: Keynote Speaker
   organization: The InnoTech Expo 2016
+  title: 年輕人對年輕人的科普學堂 
   description: 智能護眼及互聯網 + 樹木應用程式
   year: 2016
-
-- name: Interviewee
-  organization: RTHK Putonghua 新紫荊廣場
-  description: "EP: 2015-07-16"
-  year: 2015
+  link:
+    - "https://www.youtube.com/watch?v=4uDs80RWdck"
+    - "https://ourhkfoundation.org.hk/innotechexpo2016/%E5%B9%B4%E8%BC%95%E4%BA%BA%E5%B0%8D%E5%B9%B4%E8%BC%95%E4%BA%BA%E7%9A%84%E7%A7%91%E6%99%AE%E5%AD%B8%E5%A0%82/"
+    - "http://www.takungpao.com.hk/hongkong/text/2016/0926/26548.html"
