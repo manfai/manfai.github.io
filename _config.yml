@@ -48,6 +48,7 @@ linkedin_username:  wingfai-man
 plugins:
   - jekyll-feed
   - jekyll-postcss
+  - jekyll-seo-tag
   
 sass:
   load_paths:
