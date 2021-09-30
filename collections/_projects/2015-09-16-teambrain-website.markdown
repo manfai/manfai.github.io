@@ -1,6 +1,5 @@
 ---
 layout: post
-# cover: "https://manfai.me/assets/portfolio/ngc.png"
 icon: "website"
 title:  "TeamBrain Creative Website"
 # url: "https://www.ngc-knowledge.com"
@@ -9,7 +8,7 @@ categories: "website platform frontend backend"
 description: "This is a Co-Dining Platform. Customer order bento online and then pick-up at the food locker."
 status: Suspend
 position: Freelancer
-imagefolder: images/projects/hkfcpro
+imagefolder: images/projects/teambrain
 images:
     - name: image-1.png
 tools: 

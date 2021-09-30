@@ -1,6 +1,6 @@
 ---
 layout: post
-# cover: "https://manfai.me/assets/portfolio/ngc.png"
+# 
 icon: "platform"
 title:  "ECBento Logistic System"
 date:   2021-06-10 11:27:42 +0800

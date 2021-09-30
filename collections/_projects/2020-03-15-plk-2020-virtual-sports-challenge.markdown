@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: "https://manfai.me/assets/portfolio/ngc.png"
+
 icon: "platform"
 status: "completed"
 title:  "PLK Virtual Sports Challenge"

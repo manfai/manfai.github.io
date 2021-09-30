@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: "https://manfai.me/assets/portfolio/ngc.png"
+
 icon: "package"
 title:  "Laravel E-shop Package"
 date:   2021-06-10 11:27:42 +0800
