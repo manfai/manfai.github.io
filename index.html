@@ -13,15 +13,11 @@ sleep_icon: IMG_5961.PNG
  
       <div class="flex flex-col sm:text-center sm:mb-0">
         <a href="/" class="z-10 mb-6 mx-auto">
-          <div class="flex items-center justify-center rounded-full  shadow-2xl">
+          <div class="flex items-center justify-center rounded-full shadow-2xl">
             <div class="avatar">
               <div class="rounded-full w-52 h-52 bg-blue-100 ring ring-blue-500 ring-offset-blue-700 ring-offset-8">
-                {% assign hour = 'now' | date: "%H" %}
-                {% if hour >= '22' and hour <= '7' %}
                 <img id="sleep_icon" src="/assets/images/{{page.sleep_icon}}">
-                {% else %}
                 <img id="smart_icon" src="/assets/images/{{page.icon}}">
-                {% endif %}
               </div>
             </div>
           </div>
