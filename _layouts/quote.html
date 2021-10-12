@@ -19,7 +19,7 @@
 			<h2 class="transform origin-bottom-center mt-96 ml-32 text-4xl font-extralight space-x-5 -rotate-90 block uppercase flex">
 				<span class="text-gray-500">quote</span>
 				<span class="text-primary">
-					#210108
+					#{{page.id_number}}
 				</span>
 			</h2>
 		</aside>
@@ -63,7 +63,7 @@
 						</td>
 						<td>
 							<div>
-								<p>Quote Date: <b class="font-semibold">{{page.date}}</b></p>
+								<p>Quote Date: <b class="font-semibold">{{ page.date | date: "%m/%d/%Y"}}</b></p>
 								<p>Valid For: <b class="font-semibold">15 Days</b></p>
 								<p></p>
 							</div>

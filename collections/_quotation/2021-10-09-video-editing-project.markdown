@@ -1,7 +1,8 @@
 ---
 layout: quote
-title: Video Editing Project
-date: 2021-10-08
+id_number: 3120321
+title: "Video Editing Project"
+date: 2015-07-10 08:42:12 +0800
 tax_rate: 0
 discount: 20
 shipping: 190
