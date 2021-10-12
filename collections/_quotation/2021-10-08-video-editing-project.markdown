@@ -1,6 +1,6 @@
 ---
 layout: quote
-title: Home
+title: Video Editing Project
 tax_rate: 0
 discount: 20
 shipping: 190
