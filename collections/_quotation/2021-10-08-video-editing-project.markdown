@@ -1,6 +1,7 @@
 ---
 layout: quote
 title: Video Editing Project
+date: 2021-10-08
 tax_rate: 0
 discount: 20
 shipping: 190
