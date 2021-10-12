@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html data-theme="corporate" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Quote</title>
+	<link href="http://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdn.jsdelivr.net/npm/daisyui@1.14.3/dist/full.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="bg-base-300 p-10">
+	
+	<main class="shadow min-w-max max-w-4xl flex flex-wrap items-stretch m-auto bg-base-100 min-h-screen">
+
+		<aside class="w-1/5 text-transform">
+			<h2 class="transform origin-bottom-center mt-96 ml-32 text-4xl font-extralight space-x-5 -rotate-90 block uppercase flex">
+				<span class="text-gray-500">quote</span>
+				<span class="text-primary">
+					#210108
+				</span>
+			</h2>
+		</aside>
+
+		<section class="w-4/5 relative flex-col pt-10 pr-10 pl-5">
+			<table class="w-full">
+				<thead>
+					<tr>
+						<td colspan="2" class="align-top">
+							<div class="content-start">
+								<h3 class="text-3xl font-normal text-primary">Video Editing Project</h3>
+								<p class="text-sm">https://manfai.me</p>
+								<p class="text-sm">manfai106@gmail.com</p>
+								<p class="text-sm">+852 98792217</p>
+							</div>
+						</td>
+						<td class="grid justify-items-end">
+							<img src="/assets/images/logo.webp" width="200px" class="pb-5">
+						</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="h-20 align-top">
+						<td>
+							<div class="pr-10">
+								<h4 class="text-primary">Bill to</h4>
+								<hr class="text-primary">
+								<p class="text-sm">Mann Man</p>
+								<p class="text-sm">manfai106@gmail.com</p>
+								<p class="text-sm">+852 98792217</p>
+							</div>
+						</td>
+						<td>
+							<div class="pr-10">
+								<h4 class="text-primary">Ship to</h4>
+								<hr class="text-primary">
+								<p class="text-sm">Mann Man</p>
+								<p class="text-sm">manfai106@gmail.com</p>
+								<p class="text-sm">+852 98792217</p>
+							</div>
+						</td>
+						<td>
+							<div>
+								<p>Quote Date: <b class="font-semibold">2021-10-08</b></p>
+								<p>Valid For: <b class="font-semibold">15 Days</b></p>
+								<p></p>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="w-full table-auto table-compact mt-20">
+				<thead class="font-semibold bg-primary text-white text-center">
+					<tr>
+						<th class="border border-gray-800">DESCRIPTION</th>
+						<th class="border border-gray-800">QTY</th>
+						<th class="border border-gray-800">UNIT PRICE</th>
+						<th class="border border-gray-800">TOTAL</th>
+					</tr>
+				</thead>
+				<tbody>
+                    {% assign subtotal = 0 %}
+                    {% for item in page.items %}
+                    <tr class="{{ forloop.index | modulo:2 | plus:1 | replace: '2', 'odd' | replace: '1', 'bg-gray-100'}}">
+						<td class="border">{{item.description}}</td>
+						<td class="border text-center">{{item.qty}}</td>
+
+                        {% assign price = item.price %}
+                        {% assign price_split = price | round: 2 | split: "." %}
+                        {% assign integral = price_split[0] %}
+                        {% assign fractional = price_split[1] | append: "00" | truncate: 2, "" %}
+						<td class="border text-center">{{ integral }}.{{ fractional }}</td>
+
+                        {% assign price = item.qty | times:item.price %}
+                        {% assign price_split = price | round: 2 | split: "." %}
+                        {% assign integral = price_split[0] %}
+                        {% assign fractional = price_split[1] | append: "00" | truncate: 2, "" %}
+						<td class="border text-right">{{ integral }}.{{ fractional }}</td>
+					</tr>
+                    {% assign subtotal = subtotal | plus: price %}
+                    {% endfor %}
+
+                    {% assign row = 10 %}
+                    {% if page.items.size < row %}
+                        {% assign value = row| minus: page.items.size %}
+                        {% assign even = page.items.size | modulo:2 | plus:1 | replace: '1', 'bg-gray-100' | replace: '2', '' %}
+                        {% assign odd  = page.items.size | modulo:2 | plus:1 | replace: '1', '' | replace: '2', 'bg-gray-100' %}
+                        {% for item in (1..value) %}
+                        <tr class="{{ forloop.index | modulo:2 | plus:1 | replace: '1', even | replace: '2', odd}}">
+                            <td class="border"></td>
+                            <td class="border text-center"></td>
+                            <td class="border text-center"></td>
+                            <td class="border text-right">0.00</td>
+                        </tr>
+                        {% endfor %}
+                    {% endif %}
+					
+				</tbody>
+				<tfoot>
+					<tr>
+						<td rowspan="7" colspan="2" class="text-left">
+							<h3 class="text-md">Thank you for your business! 🤝</h3>	
+						</td>
+						<td class="text-right font-medium tracking-tighter">
+							<h5 class="text-xs">SUBTOTAL</h5>
+						</td>
+                        {% assign price = subtotal %}
+                        {% assign price_split = price | round: 2 | split: "." %}
+                        {% assign integral = price_split[0] %}
+                        {% assign fractional = price_split[1] | append: "00" | truncate: 2, "" %}
+						
+						<td class="border-b text-right">{{ integral }}.{{ fractional }}</td>
+					</tr>
+					<tr>
+						<td class="text-right font-medium tracking-tighter">
+							<h5 class="text-xs">DISCOUNT</h5>
+						</td>
+                        {% assign price = page.discount %}
+                        {% assign price_split = price | round: 2 | split: "." %}
+                        {% assign integral = price_split[0] %}
+                        {% assign fractional = price_split[1] | append: "00" | truncate: 2, "" %}
+						<td class="border-b text-right">{{ integral }}.{{ fractional }}</td>
+					</tr>
+					<tr>
+						<td class="text-right font-medium tracking-tighter">
+							<h5 class="text-xs">SUBTOTAL LESS DISCOUNT</h5>
+						</td>
+						<td class="border-b text-right">0.00</td>
+					</tr>
+					<tr>
+						<td class="text-right font-medium tracking-tighter">
+							<h5 class="text-xs">TAX RATE</h5>
+						</td>
+                        {% assign price = page.tax_rate %}
+                        {% assign price_split = price | round: 2 | split: "." %}
+                        {% assign integral = price_split[0] %}
+						<td class="border-b text-right">{{ integral }}%</td>
+					</tr>
+					<tr>
+						<td class="text-right font-medium tracking-tighter">
+							<h5 class="text-xs">TOTAL TAX</h5>
+						</td>
+						<td class="border-b text-right">0.00</td>
+					</tr>
+					<tr>
+						<td class="text-right font-medium tracking-tighter">
+							<h5 class="text-xs">SHIPPING/HANDLING</h5>
+						</td>
+						<td class="border-b text-right">{{ page.shipping }}</td>
+					</tr>
+					<tr class="font-bold">
+						<td class="text-right border-t">
+							<h5 class="text-base text-primary">
+								Quote Total</h5>	
+						</td>
+						<td class="border-b border-t">
+							<h5 class="text-lg text-right">$ <span>{{subtotal|plus:page.shipping|minus:page.discount}}</span></h5>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+
+			<footer class="w-full block mt-20 py-10 px-3 justify-self-start">
+				<h6 class="text-sm text-primary">Terms & Instructions</h6>
+				<hr class="text-primary">
+				<p class="text-xs">Make all payments payable to my FPS account +852 98792217</p>	
+				<p class="text-xs">Total due in 15 days. Overdue accounts subject to a service charge of 1% per week.</p>	
+			</footer>
+		</section>
+	
+	</main>
+</body>
+</html>
