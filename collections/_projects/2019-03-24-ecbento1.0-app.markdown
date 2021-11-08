@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: "https://manfai.me/assets/portfolio/ngc.png"
+# cover: "https://manfai.me/assets/portfolio/ngc.png"
 icon: "app"
 title:  "ECBento 1.0 APP"
 date:   2019-03-24 11:27:42 +0800
