@@ -3,7 +3,7 @@ layout: post
 # 
 icon: "platform"
 title:  "School Lunch Ordering System"
-date:   2021-06-10 11:27:42 +0800
+date:   2021-09-01 11:27:42 +0800
 categories: "website platform frontend backend"
 description: "Parents can easily preorder lunch using this web-based platform."
 status: Completed

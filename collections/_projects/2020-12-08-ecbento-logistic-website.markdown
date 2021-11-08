@@ -3,7 +3,7 @@ layout: post
 # 
 icon: "platform"
 title:  "ECBento Logistic System"
-date:   2021-06-10 11:27:42 +0800
+date:   2020-12-08 11:27:42 +0800
 categories: "website platform frontend backend"
 description: "The aims to invite people of all ages to be on the move whenever and wherever they like."
 status: Completed
