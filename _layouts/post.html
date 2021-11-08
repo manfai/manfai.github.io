@@ -86,7 +86,11 @@
                         {% for image in page.images %}
                             <div class="carousel-item cursor-pointer">
                         <a target="_blank" href="/assets/{{ page.imagefolder }}/{{ image.name }}">
-                                <img src="/assets/{{ page.imagefolder }}/{{ image.name }}" class="object-cover object-top w-56 h-32 rounded">
+                                <img src="/assets/{{ page.imagefolder }}/{{ image.name }}" class="object-cover object-top 
+                                {% if page.icon != 'app' %}
+                                w-56 
+                                {% endif %}
+                                h-32 rounded">
                         </a> 
                             </div>
                        
