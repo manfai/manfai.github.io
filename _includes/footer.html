@@ -2,12 +2,14 @@
   <svg class="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-secondary" preserveAspectRatio="none" viewBox="0 0 1440 54">
     <path fill="currentColor" d="M0 22L120 16.7C240 11 480 1.00001 720 0.700012C960 1.00001 1200 11 1320 16.7L1440 22V54H1320C1200 54 960 54 720 54C480 54 240 54 120 54H0V22Z"></path>
   </svg>
+
   <div class="px-4 pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
       <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
     <div class="sm:col-span-2">
       <a href="/" aria-label="Go home" title="Company" class="hidden md:inline-flex text-neutral-content items-center">
-        <!-- <svg class="w-10 stroke-current text-neutral-content" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M24 23C26.7614 23 29 20.7614 29 18C29 15.2386 26.7614 13 24 13C21.2386 13 19 15.2386 19 18C19 20.7614 21.2386 23 24 23Z" fill="none" stroke-width="4" stroke-linejoin="round"/><path d="M10.022 38.332C10.3657 33.1206 14.7016 29 20 29H28C33.2914 29 37.6229 33.1097 37.9767 38.3113" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> -->
         <svg class="w-10 stroke-current text-neutral-content" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M39 4H11C9.89543 4 9 4.89543 9 6V42C9 43.1046 9.89543 44 11 44H39C40.1046 44 41 43.1046 41 42V6C41 4.89543 40.1046 4 39 4Z" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 30L31 30" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 36H24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><rect x="17" y="12" width="14" height="10" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        {% comment %} <svg class="w-10 stroke-current text-base-content" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M39 4H11C9.89543 4 9 4.89543 9 6V42C9 43.1046 9.89543 44 11 44H39C40.1046 44 41 43.1046 41 42V6C41 4.89543 40.1046 4 39 4Z" fill="#4B6BFB" stroke="#FFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 30L31 30" stroke="#FFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 36H24" stroke="#FFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><rect x="17" y="12" width="14" height="10" fill="#4B6BFB" stroke="#FFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> {% endcomment %}
+
         <span class="ml-2 text-xl font-black tracking-wide text-neutral-content uppercase">{{site.title}}</span>
       </a>
       <div class="hidden md:block mt-6 lg:max-w-sm">
@@ -48,7 +50,7 @@
     <div>
       <span class="text-base font-black tracking-wide text-neutral-content">Social</span>
       <div class="flex items-center mt-1 space-x-3">
-        <a href="https://github.com/{{site.github_username}}">
+            <a target="_blank" href="https://github.com/{{site.github_username}}">
                 <svg class="h-5 text-neutral-content stroke-current" viewBox="0 0 48 48" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -64,7 +66,10 @@
                         d="M6 31.2156C6.89887 31.3255 7.56554 31.7388 8 32.4555C8.65169 33.5304 11.0742 37.5181 13.8251 37.5181C15.6591 37.5181 17.0515 37.5181 18.0024 37.5181"
                          stroke-width="4" stroke-linecap="round" /></svg>
             </a>
-            <a href="https://www.linkedin.com/in/{{site.linkedin_username}}/">
+            {% comment %} <a target="_blank" href="https://gitlab.com/{{site.github_username}}">
+                <svg class="h-5 text-neutral-content stroke-current" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.9627 42L42 27.4152L36.9957 6L30.9661 18.9935H17.9932L11.0151 6L6 27.4152L23.9627 42Z" fill="none" stroke-width="4" stroke-linejoin="round"/></svg>
+            </a> {% endcomment %}
+            <a target="_blank" href="https://www.linkedin.com/in/{{site.linkedin_username}}/">
                 <svg class="h-5 text-neutral-content stroke-current" viewBox="0 0 48 48" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <circle cx="9" cy="8.00012" r="4" fill="none"  stroke-width="4" />
@@ -73,9 +78,7 @@
                     <path
                         d="M21 27.5V43H28V29C28 26.5 29.5 24.5 32 24.5C34.5 24.5 36 27 36 29V43H43V27.5C43 24.5 39.5 18 32 18C24.5 18 21 24.5 21 27.5Z"
                         fill="none"  stroke-width="4" stroke-linejoin="round" /></svg> </a>
-            <!-- <a href="/assets/pdf/man-wing-fai-resume.pdf" download>                 -->
-                <!-- <svg class="h-5 text-neutral-content"  viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 44H38C39.1046 44 40 43.1046 40 42V14L31 4H10C8.89543 4 8 4.89543 8 6V42C8 43.1046 8.89543 44 10 44Z"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="24" r="4" fill="none"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 36C32 31.5817 28.4183 28 24 28C19.5817 28 16 31.5817 16 36"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M30 4V14H40"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> -->
-            <a href="https://twitter.com/{{site.twitter_username}}">
+            <a target="_blank" href="https://twitter.com/{{site.twitter_username}}">
                 <svg class="h-5 text-neutral-content stroke-current" viewBox="0 0 48 48" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
