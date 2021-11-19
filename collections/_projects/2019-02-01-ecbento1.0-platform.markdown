@@ -1,7 +1,7 @@
 ---
 layout: post
 
-icon: "plaform"
+icon: "platform"
 title:  "ECBento 1.0 Platform"
 date:   2021-06-10 11:27:42 +0800
 categories: "website platform frontend backend"
