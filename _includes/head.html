@@ -16,9 +16,24 @@
 <link href="https://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
 <style>
     html,body{
-        font-family: 'Segoe UI', sans-serif;
+        font-family: 'Segoe UI', sans-serif!important;
     }
 </style>
+
+<script>
+    $(document).ready(function () {
+    console.log("Hey!!!!");
+    var styles = ['background: #ddd',                  
+                  'color: white',
+                  'font-size:40px',
+                  'display: block',
+                  'text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3)',
+                  'line-height: 80px',
+                  'text-align: center',
+                  'font-weight: bold'].join(';');
+    console.log('%c H e l l o', styles);
+});
+</script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VH9PNKZCQG"></script>
 <script>
