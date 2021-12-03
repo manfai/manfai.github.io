@@ -53,6 +53,7 @@ plugins:
   - jekyll-feed
   - jekyll-postcss
   - jekyll-seo-tag
+  - jekyll-sitemap
   
 sass:
   load_paths:
@@ -128,6 +129,7 @@ defaults:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
 
 
 ############################################################
