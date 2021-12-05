@@ -5,7 +5,7 @@ icon: "app"
 title:  "ECBento 1.0 APP"
 date:   2019-03-24 11:27:42 +0800
 categories: "website platform frontend backend"
-description: "The aims to invite people of all ages to be on the move whenever and wherever they like."
+description: "I design a APP UI/UX for ECBento"
 position: Designer & Programmer
 status: Suspend
 imagefolder: images/projects/ecbento-app1.0

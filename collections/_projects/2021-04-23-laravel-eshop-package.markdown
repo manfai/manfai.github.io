@@ -5,6 +5,7 @@ icon: "package"
 title:  "Laravel E-shop Package"
 date:   2021-04-23 11:27:42 +0800
 categories: "website platform frontend backend"
-description: "The aims to invite people of all ages to be on the move whenever and wherever they like."
+description: "A Package for laravel and easy to addon the eshop function"
 ---
-#### A web-based system for manage or hier Maid  
+#### A laravel package
+I build this package for laravel and easy to addon the eshop function.

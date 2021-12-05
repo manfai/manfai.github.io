@@ -5,7 +5,7 @@ icon: "website"
 title:  "ECBento 2.0 Website"
 date:   2020-08-01 11:27:42 +0800
 categories: "website platform frontend backend"
-description: "The aims to invite people of all ages to be on the move whenever and wherever they like."
+description: "Upgrade website to match a new businness image for ecbento"
 position: Developer
 status: Completed
 imagefolder: images/projects/ecbento-web2.0
@@ -13,3 +13,4 @@ images:
     - name: image-1.png
     - name: image-2.png
 ---
+I am busy on update a new platform for ecbento Since ECBento have a new businness image. That why I rewirte a new website with Wordpress. I can easy and faster to build a new website.

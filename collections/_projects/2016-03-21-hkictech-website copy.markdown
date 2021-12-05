@@ -29,5 +29,5 @@ tools:
     - name: Codeigniter
 
 ---
-#### Information website for introduce Focuslearning businesses
-The Informational websites are perfect for businesses with an offline presence. And I still used one-page design. It mean all the info would display in one page. Including About Section, Feature Section, Contact Section and Founder Detail.
+#### Information website
+This is a offical website of HKIC Tech and i used bootstrap css to design this website.

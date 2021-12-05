@@ -4,7 +4,7 @@ icon: "website"
 title:  "HKFCPro Website"
 date:   2017-06-04 12:15:07 +0800
 categories: "website platform frontend backend"
-description: "This is a Co-Dining Platform. Customer order bento online and then pick-up at the food locker."
+description: "A website for introduce HKFCPro businesses"
 status: Suspend
 position: Freelancer
 imagefolder: images/projects/hkfcpro
