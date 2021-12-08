@@ -18,19 +18,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 
-  en: MWF's Portfolio
-  zh-hk: 文輝的作品集
-  zh-cn: 文輝的作品集
+title: MWF's Portfolio
 description: >-
   I pursued my Bachelors in Multimedia Computing from Coventry University. 
   About my profession, now I am web programmer where I work on various programming languages ​​such as 
   PHP, JavaScript, Jquery, Vue.js, Node.js, Python.
-introduction: 
-  en: Jekyll is a website generator that's designed for building minimal, static blogs to be hosted on GitHub Pages. Today I'm just doing my part in getting away from a platform that should be forgotten.
-  zh-hk: Jekyll 是一個網站生成器，旨在構建託管在 GitHub 頁面上的最小的靜態博客。今天，我只是儘自己的一份力量，擺脫一個應該被遺忘的平台。
-  zh-cn: Jekyll 是一個網站生成器，旨在構建託管在 GitHub 頁面上的最小的靜態博客。今天，我只是儘自己的一份力量，擺脫一個應該被遺忘的平台。 
-
+introduction: >- # this means to ignore newlines until "baseurl:"
+  Jekyll is a website generator that's designed for building minimal, static blogs to be hosted on GitHub Pages.
+  Today I'm just doing my part in getting away from a platform that should be forgotten. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://manfai.me" # the base hostname & protocol for your site, e.g. http://example.com
 daisyui_theme: corporate
@@ -59,7 +54,6 @@ plugins:
   - jekyll-postcss
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-multiple-languages-plugin
   
 sass:
   load_paths:
@@ -67,7 +61,6 @@ sass:
     - node_modules
 
 include: ['_pages', 'node_modules/tailwindcss']
-languages: ["en", "zh-hk", "zh-cn"]
 
 excerpt_separator: <!--more-->
 permalink: pretty

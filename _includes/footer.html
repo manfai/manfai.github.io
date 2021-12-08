@@ -8,38 +8,46 @@
     <div class="sm:col-span-2">
       <a href="/" aria-label="Go home" title="Company" class="hidden md:inline-flex text-neutral items-center">
         <svg class="w-10 stroke-current text-neutral" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M39 4H11C9.89543 4 9 4.89543 9 6V42C9 43.1046 9.89543 44 11 44H39C40.1046 44 41 43.1046 41 42V6C41 4.89543 40.1046 4 39 4Z" fills="#4B6BFB"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 30L31 30" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 36H24"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><rect x="17" y="12" width="14" height="10" fill="#4B6BFB"  stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span class="ml-2 text-xl font-black tracking-wide text-neutral uppercase">{{site.title[site.lang]}}</span>
+        <!-- <svg class="w-10 stroke-current text-neutral" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M39 4H11C9.89543 4 9 4.89543 9 6V42C9 43.1046 9.89543 44 11 44H39C40.1046 44 41 43.1046 41 42V6C41 4.89543 40.1046 4 39 4Z" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 30L31 30" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 36H24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><rect x="17" y="12" width="14" height="10" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> -->
+        <span class="ml-2 text-xl font-black tracking-wide text-neutral uppercase">{{site.title}}</span>
       </a>
       <div class="hidden md:block mt-6 lg:max-w-sm">
         <p class="text-sm text-neutral">
-        {{site.introduction[site.lang] }}
+        {{site.introduction }}
         </p>
       </div>
-      <!-- <div>
-        {% for lang in site.languages %}
-        <span class="mr-3">{{ lang }}</span>
-        {% endfor %}
-      </div> -->
     </div>
     <div class="space-y-2 text-xs">
-      <p class="text-base font-black tracking-wide text-neutral">{% t global.contacts %}</p>
+      <p class="text-base font-black tracking-wide text-neutral">Contacts</p>
       <div class="flex">
-        <p class="mr-1 text-neutral">{% t global.phone %}:</p>
+        <p class="mr-1 text-neutral">Phone:</p>
         <a href="tel:850-123-5021" aria-label="Our phone" title="Our phone" class="font-mono duration-300 text-neutral underline">{{site.phone}}</a>
       </div>
       <div class="flex">
-        <p class="mr-1 text-neutral">{% t global.email %}:</p>
+        <p class="mr-1 text-neutral">Email:</p>
         <a href="mailto:info@lorem.mail" aria-label="Our email" title="Our email" class="font-mono duration-300 text-neutral underline">{{site.email}}</a>
       </div>
       <div class="flex">
-        <p class="mr-1 text-neutral">{% t global.location %}:</p>
+        <p class="mr-1 text-neutral">Location:</p>
         <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" aria-label="Our address" title="Our address" class="duration-300 text-neutral underline">
           {{site.address}}, {{site.residence}}
         </a>
       </div>
+      <!-- <div class="flex">
+        <p class="mr-1 text-neutral">Citizenship:</p>
+        <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" aria-label="Citizenship" title="Citizenship" class="font-mono duration-300 text-success">
+          {{site.citizenship}}
+        </a>
+      </div>
+      <div class="flex">
+        <p class="mr-1 text-neutral">Residence:</p>
+        <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer" aria-label="Residence" title="Residence" class="font-mono duration-300 text-success">
+          {{site.residence}}
+        </a>
+      </div> -->
     </div>
     <div>
-      <span class="text-base font-black tracking-wide text-neutral">{% t global.social %}</span>
+      <span class="text-base font-black tracking-wide text-neutral">Social</span>
       <div class="flex items-center mt-1 space-x-3">
             <a target="_blank" href="https://github.com/{{site.github_username}}">
                 <svg class="h-5 text-neutral stroke-current" viewBox="0 0 48 48" fill="none"
@@ -88,7 +96,7 @@
     </p>
     <ul class="hidden md:flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
       {% for item in site.data.navigation %}
-      <li><a href="{{ item.link }}"  {{ item.type }} aria-label="{{ item.name[site.lang] }}" title="{{ item.name[site.lang] }}" class="text-sm text-neutral transition-colors duration-300 link link-hover">{{ item.name[site.lang] }}</a></li>
+      <li><a href="{{ item.link }}"  {{ item.type }} aria-label="{{ item.name }}" title="{{ item.name }}" class="text-sm text-neutral transition-colors duration-300 link link-hover">{{ item.name }}</a></li>
       {% endfor %}
     </ul>
   </div>
