@@ -1,10 +1,22 @@
-- name: About
+- name: 
+    en: About
+    zh-hk: 關於
+    zh-cn: 關於
   link: /
-- name: Portfolio
+- name: 
+    en: Portfolio
+    zh-hk: 作品
+    zh-cn: 作品
   link: /portfolio
-- name: Resume
+- name: 
+    en: Resume
+    zh-hk: 履歷
+    zh-cn: 履歷
   link: /resume
-- name: Download
+- name: 
+    en: Download
+    zh-hk: 下載
+    zh-cn: 下載
   link: /assets/pdf/man-wing-fai-resume.pdf
   type: download
   

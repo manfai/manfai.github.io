@@ -38,6 +38,7 @@ sleep_icon: IMG_5961
         
         <div class="z-10 text-base-content max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
             
+          {% if site.lang == "en" %}
           <h2 class="font-black max-w-lg mb-3 text-3xl leading-none tracking-tight sm:text-4xl md:mx-auto">
             <span class="relative inline-block">
               <svg viewBox="0 0 52 24" fill="currentColor"
@@ -59,21 +60,53 @@ sleep_icon: IMG_5961
               <span class="relative text-neutral-content font-mono">Developer</span>
             </span>
           </h2>
-
-        </div>
-
-         <!-- <div class="absolute inset-x-0 z-0 top-0 items-center justify-center hidden overflow-hidden md:flex md:inset-y-0">
-              <svg viewBox="0 0 88 88" class="w-full max-w-screen-xl text-indigo-100">
-                <circle fill="currentColor" cx="44" cy="44" r="15.5"></circle>
-                <circle fill-opacity="0.2" fill="currentColor" cx="44" cy="44" r="44"></circle>
-                <circle fill-opacity="0.2" fill="currentColor" cx="44" cy="44" r="37.5"></circle>
-                <circle fill-opacity="0.3" fill="currentColor" cx="44" cy="44" r="29.5"></circle>
-                <circle fill-opacity="0.3" fill="currentColor" cx="44" cy="44" r="22.5"></circle>
+          {% elsif site.lang == "zh-hk" %}
+          <h2 class="font-black max-w-lg mb-3 text-3xl leading-none tracking-tight sm:text-4xl md:mx-auto">
+            <span class="relative inline-block">
+              <svg viewBox="0 0 52 24" fill="currentColor"
+                class="absolute text-primray top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
+                <defs>
+                  <pattern id="700c93bf-0068-4e32-aafe-ef5b6a647708" x="0" y="0" width=".135" height=".30">
+                    <circle cx="1" cy="1" r=".7"></circle>
+                  </pattern>
+                </defs>
+                <rect fill="url(#700c93bf-0068-4e32-aafe-ef5b6a647708)" width="52" height="24"></rect>
               </svg>
-        </div> -->
-
+              <span class="relative">你好！ 👋🏻&nbsp;&nbsp;</span>
+            </span>
+            我叫文永輝
+            <br class="hidden md:block" />
+            一個全棧
+            <span class="relative inline-block px-2 mt-2">
+              <div class="absolute inset-0 transform -skew-x-12 bg-primary"></div>
+              <span class="relative text-neutral-content font-mono">開發人員</span>
+            </span>
+          </h2>
+          {% else %}
+          <h2 class="font-black max-w-lg mb-3 text-3xl leading-none tracking-tight sm:text-4xl md:mx-auto">
+            <span class="relative inline-block">
+              <svg viewBox="0 0 52 24" fill="currentColor"
+                class="absolute text-primray top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
+                <defs>
+                  <pattern id="700c93bf-0068-4e32-aafe-ef5b6a647708" x="0" y="0" width=".135" height=".30">
+                    <circle cx="1" cy="1" r=".7"></circle>
+                  </pattern>
+                </defs>
+                <rect fill="url(#700c93bf-0068-4e32-aafe-ef5b6a647708)" width="52" height="24"></rect>
+              </svg>
+              <span class="relative">你好！ 👋🏻&nbsp;&nbsp;</span>
+            </span>
+            我叫文永辉
+            <br class="hidden md:block" />
+            一个全栈
+            <span class="relative inline-block px-2 mt-2">
+              <div class="absolute inset-0 transform -skew-x-12 bg-primary"></div>
+              <span class="relative text-neutral-content font-mono">开发人员</span>
+            </span>
+          </h2>
+          {% endif %}
+        </div>
       </div>
-      
     </div>
   </div>
 </section>
@@ -121,14 +154,16 @@ sleep_icon: IMG_5961
 
     <div class="order-1 lg:order-2 max-w-xl pl-auto lg:pl-16 mx-auto lg:mt-10 text-base-content">
       <h5 class="mb-6 text-3xl text-base-content font-black leading-none">
-        What I Do?
-        <!-- Who am I? -->
-        <!-- Skills & Experience -->
-        <!-- Bring passion to everything I do -->
+        {% t global.what_i_do %}
       </h5>
       <p class="mb-6">
-        I pursued my Bachelors in Multimedia Computing from Coventry University. About my
-        profession, now I am web programmer where I work on various programming languages ​​such as
+        {% if site.lang == "en" %}
+        I pursued my Bachelors in Multimedia Computing from Coventry University. About my profession, now I am web programmer where I work on various programming languages ​​such as
+        {% elsif site.lang == "zh-hk" %}
+        我在考文垂大學攻讀了多媒體計算學士學位。 關於我職業，現在我是網絡程序員，我從事各種編程語言的工作，例如 
+        {% else %}
+        我在考文垂大学攻读了多媒体计算学士学位。 关于我职业，现在我是网络程序员，我从事各种编程语言的工作，例如 
+        {% endif %}
         <small><code>PHP</code>,
           <code>JavaScript</code>, <code>Jquery</code>, <code>Vue.js</code>, <code>Node.js</code>,
           <code>Python</code></small>.
@@ -139,11 +174,12 @@ sleep_icon: IMG_5961
       <div class="flex items-center">
         <a href="/assets/pdf/man-wing-fai-resume.pdf" download type="submit"
           class="inline-flex items-center transition duration-200 btn btn-netural text-white mr-6">
-          Download CV
+          {% t global.download_cv %}
         </a>
         <a href="/resume" aria-label=""
           class="inline-flex items-center font-semibold transition-colors duration-200 text-base-content hover:text-primary">
-          See More</a>
+          {% t global.see_more %}
+        </a>
       </div>
     </div>
   </div>
@@ -166,7 +202,7 @@ sleep_icon: IMG_5961
       </p>
       <a href="/portfolio" aria-label=""
         class="inline-flex items-center font-semibold transition-colors duration-200 text-blue-500 hover:text-blue-800">
-        See more
+        {% t global.see_more %}
         <svg class="inline-block w-3 ml-2 stroke-current" fill="currentColor" viewBox="0 0 12 12">
           <path
             d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z">
@@ -190,7 +226,7 @@ sleep_icon: IMG_5961
         <p class="mb-2 text-sm leading-5 text-gray-900">
           {{ project.description }}
         </p>
-        <p class="text-sm text-primary font-semibold transition-colors text-blue-500 hover:text-blue-800">View detail</p>
+        <p class="text-sm text-primary font-semibold transition-colors text-blue-500 hover:text-blue-800">{% t global.view_detail %}</p>
       </div>
     </a>
     {% endfor %}
@@ -202,7 +238,8 @@ sleep_icon: IMG_5961
     <div class="lg:col-span-6 flex flex-col justify-center">
       <div class="max-w-xl mb-6">
         <h2 class="max-w-lg mb-6 text-3xl font-black tracking-tight text-base-content sm:text-4xl sm:leading-none">
-          My Greatest Achievement
+          
+          {% t global.my_greatest_achievement %}
         </h2>
         <!--
         REMIND:
@@ -254,9 +291,9 @@ sleep_icon: IMG_5961
           <p class="text-xs text-base-content mb-2">
             2015 Pan Pearl River Delta Universities IT Project Competition
           </p> 
-          <a target="_blank" href="https://news.cnyes.com/news/id/154094" class="text-xs mr-2 uppercase link link-primary"><del>listen</del></a>
-          <a target="_blank" href="https://news.cnyes.com/news/id/154094" class="text-xs mr-2 uppercase link link-primary">link 1 </a>
-          <a target="_blank" href="https://hk.on.cc/hk/bkn/cnt/news/20150905/bkn-20150905134848591-0905_00822_001.html" class="text-xs mr-2 uppercase link link-primary">link 2 </a>
+          <a target="_blank" href="https://news.cnyes.com/news/id/154094" class="text-xs mr-2 uppercase link link-primary"><del>{%t global.listen %}</del></a>
+          <a target="_blank" href="https://news.cnyes.com/news/id/154094" class="text-xs mr-2 uppercase link link-primary">{%t global.link %} 1 </a>
+          <a target="_blank" href="https://hk.on.cc/hk/bkn/cnt/news/20150905/bkn-20150905134848591-0905_00822_001.html" class="text-xs mr-2 uppercase link link-primary">{%t global.link %} 2 </a>
         </div>
         <div class="">
           <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-base-300">
@@ -270,7 +307,7 @@ sleep_icon: IMG_5961
             RTHK Putonghua Channel<br>新紫荊廣場 <br>Episode: 2015-07-16
           </p>
           <del> <a target="_blank" 
-            class="text-xs mr-2 uppercase link link-primary">listen</a></del>
+            class="text-xs mr-2 uppercase link link-primary">{%t global.listen%}</a></del>
         </div>
         <div class="">
           <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-base-300">
@@ -289,11 +326,11 @@ sleep_icon: IMG_5961
             class="text-xs mr-2 uppercase link link-primary">video</a> -->
           <a target="_blank"
             href="https://ourhkfoundation.org.hk/innotechexpo2016/%E5%B9%B4%E8%BC%95%E4%BA%BA%E5%B0%8D%E5%B9%B4%E8%BC%95%E4%BA%BA%E7%9A%84%E7%A7%91%E6%99%AE%E5%AD%B8%E5%A0%82/"
-            class="text-xs mr-2 uppercase link link-primary">link 1</a>
+            class="text-xs mr-2 uppercase link link-primary">{%t global.link%} 1</a>
           <a target="_blank" href="http://www.takungpao.com.hk/hongkong/text/2016/0926/26548.html"
-            class="text-xs mr-2 uppercase link link-primary">link 2</a>
+            class="text-xs mr-2 uppercase link link-primary">{%t global.link%} 2</a>
           <a target="_blank" href="/assets/pdf/20160926_A8.pdf"
-            class="text-xs mr-2 uppercase link link-primary">link 3</a>
+            class="text-xs mr-2 uppercase link link-primary">{%t global.link%} 3</a>
         </div>
       
       </div>
@@ -346,17 +383,17 @@ sleep_icon: IMG_5961
         Get in touch 🤙
       </h5>
       <p class="mb-5 text-base-content">
-        <span class="font-bold">Name:</span> {{site.name}} <br>
-        <span class="font-bold">Email:</span> {{site.email}} <br>
-        <span class="font-bold">Phone:</span> {{site.phone}} <br>
-        <span class="font-bold">Age:</span>
+        <span class="font-bold">{% t global.name %}:</span> {{site.name}} <br>
+        <span class="font-bold">{% t global.email %}:</span> {{site.email}} <br>
+        <span class="font-bold">{% t global.phone %}:</span> {{site.phone}} <br>
+        <span class="font-bold">{% t global.age %}:</span>
         <script>
           var dob = new Date('{{site.dob| date: "%Y" }}','{{site.dob| date: "%m" }}','{{site.dob| date: "%d" }}');
           var diff_ms = Date.now() - dob.getTime();
           var age_dt = new Date(diff_ms);
           document.write(Math.abs(age_dt.getUTCFullYear() - 1970));
-        </script> Years <br>
-        <span class="font-bold">Residence:</span> {{site.residence}} <br>
+        </script> {% t global.year_old %} <br>
+        <span class="font-bold">{% t global.residence %}:</span> {{site.residence}} <br>
       </p>
       <p class="mb-5 text-base-content">
         <span class="font-bold">I look forward to meeting with you and discussing my qualifications in more
