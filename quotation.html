@@ -144,7 +144,7 @@
   <div 
     class="container mx-auto py-6 px-4"
     x-data="qoutation()"
-    x-init="generateInvoiceNumber(111111, 999999);"
+    x-init="generateInvoiceNumber(300000, 399999);"
     x-cloak
   >
     <h1 class="text-5xl font-black pb-2 uppercase">manfai.me</h1>
@@ -305,7 +305,7 @@
         </div>
       </div>
       <div class="flex justify-between mb-4">
-        <div class="text-sm text-gray-600 text-right flex-1">GST(18%) incl. in Total</div>
+        <div class="text-sm text-gray-600 text-right flex-1">GST(%) incl. in Total</div>
         <div class="text-right w-40">
           <div class="text-sm text-gray-600" x-html="totalGST"></div>
         </div>
@@ -319,6 +319,8 @@
           </div>
         </div>
       </div>
+
+     
     </div>
 
     <div class="hidden py-10 text-xs text-center">
@@ -427,7 +429,7 @@
           </div>
         </div>
         <div class="flex justify-between mb-4">
-          <div class="text-sm text-gray-600 text-right flex-1">GST(18%) incl. in Total</div>
+          <div class="text-sm text-gray-600 text-right flex-1">GST(%) incl. in Total</div>
           <div class="text-right w-40">
             <div class="text-sm text-gray-600" x-html="totalGST"></div>
           </div>
@@ -441,7 +443,30 @@
             </div>
           </div>
         </div>
+       
       </div>
+      
+      <div class="py-2 mt-20">
+        <h4 class="font-bold border-b py-2">Terms & Instructions</h4>
+        <div class="text-sm">
+          <p class="py-2">Payment Terms: 50% deposit required to start work. Balance 50% on completion.</p>
+          <p class="pt-2">Make all payments payable to <span class="font-bold">Man Wing Fai</span></p>
+            <ul class="list-disc list-inside">
+              <li>Bank of China (Hong Kong) / 012-598-2-006027-3</li>
+              <li>FPS / +852 98792217</li>
+            </ul>
+          <p class="pb-2">Total due in 15 days. Overdue accounts subject to a service charge of 1% per week.</p>
+        </div>  
+      </div>
+      <div class="pt-10 pb-2">
+        <div class="flex justify-between">
+          <div class="text-gray-600 text-right flex-1">Accepted By:</div>
+          <div class="text-right w-40 border-b border-gray-600">
+            <div class=" font-bold underline w-40"></div>
+          </div>
+        </div>
+      </div>
+
     </div>
     <!-- /Print Template -->
 
@@ -607,7 +632,7 @@
           qty: 0,
           rate: 0,
           total: 0,
-          gst: 18
+          gst: 0
         },
 
         billing: {
@@ -642,7 +667,7 @@
           this.item.name = '';
           this.item.qty = 0;
           this.item.rate = 0;
-          this.item.gst = 18;
+          this.item.gst = 0;
           this.item.total = 0;
         },
 
@@ -698,6 +723,7 @@
         }
       }
     }
+    
   </script>
 </body>
 </html>
