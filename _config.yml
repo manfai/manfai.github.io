@@ -74,13 +74,10 @@ collections:
     permalink: /:collection/:year/:month/:title:output_ext
   projects:
     output: true
-    permalink: /projects/:year/:month/:title:output_ext
-  projects:
-    output: true
-    permalink: /portfolios/:year/:month/:title:output_ext
+    permalink: /project/:year/:month/:title:output_ext
   achievements:
     output: true
-    permalink: /achievements/:year/:month/:title:output_ext
+    permalink: /achievement/:year/:month/:title:output_ext
   quotation:
     output: true
     permalink: /quotation/:title:output_ext
