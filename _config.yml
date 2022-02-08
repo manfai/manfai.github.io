@@ -74,7 +74,7 @@ collections:
     permalink: /:collection/:year/:month/:title:output_ext
   projects:
     output: true
-    permalink: /project/:year/:month/:title:output_ext
+    permalink: /portfolio/:title:output_ext
   achievements:
     output: true
     permalink: /achievement/:year/:month/:title:output_ext
