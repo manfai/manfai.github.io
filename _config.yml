@@ -30,7 +30,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://manfai.me" # the base hostname & protocol for your site, e.g. http://example.com
 daisyui_theme: corporate
 
-email: manfai106@gmail.com
+email: iam@manfai.me
 name: ManFai
 bio: I pursued my Bachelors in Multimedia Computing from Coventry University. About my profession, now I am web programmer where I work on various programming languages ​​such as PHP, JavaScript, Jquery, Vue.js, Node.js, Python.
 last_name: Man
@@ -74,7 +74,7 @@ collections:
     permalink: /:collection/:year/:month/:title:output_ext
   projects:
     output: true
-    permalink: /project/:year/:month/:title:output_ext
+    permalink: /portfolio/:title:output_ext
   achievements:
     output: true
     permalink: /achievement/:year/:month/:title:output_ext
