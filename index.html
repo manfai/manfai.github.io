@@ -11,9 +11,17 @@ sleep_icon: sleep.png
         <a href="/" class="z-10 mb-6 mx-auto">
           <div class="flex items-center justify-center rounded-full shadow-2xl">
             <div class="avatar">
-              <div class="rounded-full w-56 md:w-72 h-56 md:h-72 bg-blue-100 ring ring-blue-500 ring-offset-blue-700 ring-offset-8">
-                <img id="sleep_icon" src="/assets/images/{{page.sleep_icon}}">
-                <img id="smart_icon" src="/assets/images/{{page.smile_icon}}">
+              <div class="rounded-full w-56 md:w-72 h-56 md:h-72 bg-blue-300 ring ring-blue-700 ring-offset-blue-900 ring-offset-8">
+                <label class="swap swap-rotate text-9xl">
+  
+                  <!-- this hidden checkbox controls the state -->
+                  <input id="onoff" type="checkbox"/>
+                  
+                  <div class="swap-on"><img id="sleep_icon" src="/assets/images/{{page.sleep_icon}}"></div>
+                  <div class="swap-off"><img id="smart_icon" src="/assets/images/{{page.smile_icon}}"></div>
+                </label>
+                <!-- <img id="sleep_icon" src="/assets/images/{{page.sleep_icon}}">
+                <img id="smart_icon" src="/assets/images/{{page.smile_icon}}"> -->
               </div>
             </div>
           </div>
@@ -24,11 +32,9 @@ sleep_icon: sleep.png
           var hour = now.getHours();
           console.log(hour);
           if (hour >= 22 || hour <= 7) {
-            document.getElementById('sleep_icon').style.display = 'block';
-            document.getElementById('smart_icon').style.display = 'none';
+            document.getElementById('onoff').checked = true;
           } else {
-            document.getElementById('sleep_icon').style.display = 'none';
-            document.getElementById('smart_icon').style.display = 'block';
+            document.getElementById('onoff').checked = false;
           }
         </script>
 
@@ -50,8 +56,8 @@ sleep_icon: sleep.png
             <br class="hidden md:block" />
             a Fullstack
             <span class="relative inline-block px-2 mt-2">
-              <div class="absolute inset-0 transform -skew-x-12 bg-primary"></div>
-              <span class="relative text-neutral-content font-mono">Developer</span>
+              <div class="absolute inset-0 transform -skew-x-12 bg-blue-700"></div>
+              <span class="relative text-primary-content font-mono">Developer</span>
             </span>
           </h2>
         </div>
@@ -65,7 +71,7 @@ sleep_icon: sleep.png
 
     <div class="order-2 lg:order-1 grid gap-5 row-gap-5 sm:grid-cols-2 mt-10 mb-10 lg:mb-auto text-base-content">
       <div class="max-w-md">
-        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-base-300">
+        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-base-200">
           <svg class="w-8 h-8 text-base-content stroke-current" viewBox="0 0 48 48" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <rect x="4" y="8" width="40" height="32" rx="2" stroke="#333" stroke-width="4" stroke-linecap="round"
@@ -85,7 +91,7 @@ sleep_icon: sleep.png
         </p>
       </div>
       <div class="max-w-md">
-        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-base-300">
+        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-base-200">
           <svg class="w-8 h-8 text-base-content stroke-current" viewBox="0 0 48 48" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M40.0393 22V42H8.03931V22" stroke="#333" stroke-width="4" stroke-linecap="round"
@@ -101,7 +107,7 @@ sleep_icon: sleep.png
         </p>
       </div>
       <div class="max-w-md text-base-content">
-        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-base-300">
+        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-base-200">
           <svg class="w-8 h-8 text-base-content stroke-current" viewBox="0 0 48 48" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M23 43H43V5H14V15" stroke="#333" stroke-width="4" stroke-linejoin="round" />
@@ -116,7 +122,7 @@ sleep_icon: sleep.png
         </p>
       </div>
       <div class="max-w-md">
-        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-base-300">
+        <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-base-200">
           <svg class="w-8 h-8 text-base-content stroke-current" viewBox="0 0 48 48" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M18 10H42C43.1046 10 44 10.8954 44 12V38C44 39.1046 43.1046 40 42 40H18" stroke="#333"
@@ -176,7 +182,7 @@ sleep_icon: sleep.png
         This is my past
         <span class="relative px-1">
           <div class="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-pink-500"></div>
-          <span class="relative inline-block text-primary">projects</span>
+          <span class="relative inline-block text-blue-700">projects</span>
         </span>
       </h2>
     </div>
@@ -186,7 +192,7 @@ sleep_icon: sleep.png
         would build a package for laravel.
       </p>
       <a href="/portfolio" aria-label=""
-        class="inline-flex items-center font-semibold transition-colors duration-200 text-blue-500 hover:text-blue-800">
+        class="inline-flex items-center font-semibold transition-colors duration-200 text-blue-700 hover:text-blue-800">
         See more
         <svg class="inline-block w-3 ml-2 stroke-current" fill="currentColor" viewBox="0 0 12 12">
           <path
@@ -201,7 +207,7 @@ sleep_icon: sleep.png
     {% assign projects = site.projects | reverse %}
     {% for project in projects limit:8 %}
     <a href="{{ project.url }}"
-      class="text-base-content flex h-full flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-base-300 rounded shadow-lg group hover:shadow-xl">
+      class="text-base-content flex h-full flex-col justify-between overflow-hidden text-left transition-shadow duration-200 bg-base-200 rounded shadow-lg group hover:shadow-xl">
       <div class="p-5">
         <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full">
           {% assign icon = site.data.icons[project.icon] %}
@@ -211,7 +217,7 @@ sleep_icon: sleep.png
         <p class="mb-2 text-sm leading-5 text-gray-900">
           {{ project.description }}
         </p>
-        <p class="text-sm text-primary font-semibold transition-colors text-blue-500 hover:text-blue-800">View detail
+        <p class="text-sm text-primary font-semibold transition-colors text-blue-700 hover:text-blue-800">View detail
         </p>
       </div>
     </a>
@@ -235,7 +241,7 @@ sleep_icon: sleep.png
          https://ourhkfoundation.org.hk/innotechexpo2016/%E5%B9%B4%E8%BC%95%E4%BA%BA%E5%B0%8D%E5%B9%B4%E8%BC%95%E4%BA%BA%E7%9A%84%E7%A7%91%E6%99%AE%E5%AD%B8%E5%A0%82/
          http://www.takungpao.com.hk/hongkong/text/2016/0926/26548.html
         -->
-        <p class="text-base text-gray-700 text-justify md:text-lg mb-2">
+        <p class="text-base text-primary text-justify md:text-lg mb-2">
           <div class="dropdown lg:dropdown-right">
             <span tabindex="0" class="link font-semibold uppercase">Nature Internet</span>
             <div tabindex="0" class="shadow card compact dropdown-content bg-primary text-white rounded-box w-max max-w-lg mt-2 lg:ml-2">
@@ -244,9 +250,9 @@ sleep_icon: sleep.png
                 <p>This is a Final Year Project in IVE.</p>
                 <p>
                   <a target="_blank" href="http://nature-internet.ivehost.net/fyp/index.php"
-                    class="link link-primary-foucs mr-3">Offical Website</a>
+                    class="link llink-primary text-blue-700-foucs mr-3">Offical Website</a>
                   <a target="_blank" href="https://www.facebook.com/NatureInternet/"
-                    class="link link-primary-foucs">Facebook Page</a>
+                    class="link llink-primary text-blue-700-foucs">Facebook Page</a>
                 </p>
               </div>
             </div>
@@ -258,7 +264,7 @@ sleep_icon: sleep.png
 
         <div class="">
           <div class="dropdown dropdown-right">
-            <div tabindex="0" class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-base-300">
+            <div tabindex="0" class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-base-200">
               {% assign award = site.data.icons['silver_award'] %}
               {{ award.svg | replace: 'width="24" height="24"', 'class="w-7 h-7 stroke-current text-base-content"' }}
             </div>
@@ -279,14 +285,14 @@ sleep_icon: sleep.png
             2015 Pan Pearl River Delta Universities IT Project Competition
           </p>
           <a target="_blank" href="https://news.cnyes.com/news/id/154094"
-            class="text-xs mr-2 uppercase link link-primary"><del>video</del></a>
+            class="text-xs mr-2 uppercase link llink-primary text-blue-700"><del>video</del></a>
           <a target="_blank" href="https://news.cnyes.com/news/id/154094"
-            class="text-xs mr-2 uppercase link link-primary">link 1 </a>
+            class="text-xs mr-2 uppercase link llink-primary text-blue-700">link 1 </a>
           <a target="_blank" href="https://hk.on.cc/hk/bkn/cnt/news/20150905/bkn-20150905134848591-0905_00822_001.html"
-            class="text-xs mr-2 uppercase link link-primary">link 2 </a>
+            class="text-xs mr-2 uppercase link llink-primary text-blue-700">link 2 </a>
         </div>
         <div class="">
-          <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-base-300">
+          <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-base-200">
             {% assign award = site.data.icons['interviewee'] %}
             {{ award.svg | replace: 'width="24" height="24"', 'class="w-7 h-7 stroke-current text-base-content"' }}
           </div>
@@ -298,12 +304,12 @@ sleep_icon: sleep.png
             <br> Episode: 315130 
             <!-- <br> 什麼是個人形象？ 著名形象指導 何淑賢女士 / 泛珠三角大學生計算機作品賽：互聯網專業協會副會長 陳家豪先生 洪文正先生 -->
           </p>
-          <del> <a target="_blank" href="http://stmw3.rthk.hk/aod/_definst_/radio/archive/pth/xinzijingguangchang/mp3/mp3:20150716.mp3/playlist.m3u8?wowzaplaystart=0&wowzaplayduration=3298000" class="text-xs mr-2 uppercase link link-primary">listen 1</a></del>
-          <del> <a target="_blank" href="http://stmw3.rthk.hk/aod/_definst_/radio/archive/pth/xinzijingguangchang/mp3/mp3:20150716.mp3/playlist.m3u8?wowzaplaystart=3298000&wowzaplayduration=3298000" class="text-xs mr-2 uppercase link link-primary">listen 2</a></del>
-          <del> <a target="_blank" href="http://programme.rthk.hk/channel/radio/programme.php?name=pth/xinzijingguangchang&d=2015-07-16&p=5966&e=315130&m=episode" class="text-xs mr-2 uppercase link link-primary">link 1</a></del>
+          <del> <a target="_blank" href="http://stmw3.rthk.hk/aod/_definst_/radio/archive/pth/xinzijingguangchang/mp3/mp3:20150716.mp3/playlist.m3u8?wowzaplaystart=0&wowzaplayduration=3298000" class="text-xs mr-2 uppercase link llink-primary text-blue-700">listen 1</a></del>
+          <del> <a target="_blank" href="http://stmw3.rthk.hk/aod/_definst_/radio/archive/pth/xinzijingguangchang/mp3/mp3:20150716.mp3/playlist.m3u8?wowzaplaystart=3298000&wowzaplayduration=3298000" class="text-xs mr-2 uppercase link llink-primary text-blue-700">listen 2</a></del>
+          <del> <a target="_blank" href="http://programme.rthk.hk/channel/radio/programme.php?name=pth/xinzijingguangchang&d=2015-07-16&p=5966&e=315130&m=episode" class="text-xs mr-2 uppercase link llink-primary text-blue-700">link 1</a></del>
         </div>
         <div class="">
-          <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-base-300">
+          <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-base-200">
             {% assign award = site.data.icons['keynote_speaker'] %}
             {{ award.svg | replace: 'width="24" height="24"', 'class="w-7 h-7 stroke-current text-base-content"' }}
           </div>
@@ -316,13 +322,13 @@ sleep_icon: sleep.png
             <br>互聯網 + 樹木應用程式
           </p>
           <!-- <a target="_blank" href="https://www.youtube.com/watch?v=4uDs80RWdck"
-            class="text-xs mr-2 uppercase link link-primary">video</a> -->
+            class="text-xs mr-2 uppercase link llink-primary text-blue-700">video</a> -->
           <a target="_blank"
             href="https://ourhkfoundation.org.hk/innotechexpo2016/%E5%B9%B4%E8%BC%95%E4%BA%BA%E5%B0%8D%E5%B9%B4%E8%BC%95%E4%BA%BA%E7%9A%84%E7%A7%91%E6%99%AE%E5%AD%B8%E5%A0%82/"
-            class="text-xs mr-2 uppercase link link-primary">link 1</a>
+            class="text-xs mr-2 uppercase link llink-primary text-blue-700">link 1</a>
           <a target="_blank" href="http://www.takungpao.com.hk/hongkong/text/2016/0926/26548.html"
-            class="text-xs mr-2 uppercase link link-primary">link 2</a>
-          <a target="_blank" href="/assets/pdf/20160926_A8.pdf" class="text-xs mr-2 uppercase link link-primary">link
+            class="text-xs mr-2 uppercase link llink-primary text-blue-700">link 2</a>
+          <a target="_blank" href="/assets/pdf/20160926_A8.pdf" class="text-xs mr-2 uppercase link llink-primary text-blue-700">link
             3</a>
         </div>
 
@@ -357,81 +363,14 @@ sleep_icon: sleep.png
   </div>
 </section>
 
-<section id="contact" class="hidden px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
-  <div class="flex flex-col overflow-hidden bg-base-300 shadow-md rounded-md lg:flex-row sm:mx-auto">
-    <div class="relative lg:w-1/2" style="background:#ACC7DF">
-      <img src="/assets/images/smile_macbook.png" alt=""
-        class="object-cover object-center h-full lg:absolute lg:left-4" />
-      <svg class="absolute bottom-0 -right-1 hidden h-full fill-current text-base-300 stroke-current lg:inline-block"
-        viewBox="0 0 20 104" fill="red">
-        <polygon points="17.3036738 5.68434189e-14 20 5.68434189e-14 20 104 0.824555778 104"></polygon>
-      </svg>
-    </div>
-    <div class="flex flex-col justify-center p-8 bg-base-300 lg:p-16 lg:pl-10 lg:w-1/2">
-      <div>
-        <p
-          class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-gray-100 uppercase rounded-full bg-pink-500">
-          Thank you for your visit
-        </p>
-      </div>
-      <h5 class="mb-3 text-3xl text-base-content font-bold leading-none sm:text-4xl">
-        Get in touch 🤙
-      </h5>
-      <p class="mb-5 text-base-content">
-        <span class="font-bold">Name:</span> {{site.name}} <br>
-        <span class="font-bold">Email:</span> {{site.email}} <br>
-        <span class="font-bold">Phone:</span> {{site.phone}} <br>
-        <span class="font-bold">Age:</span>
-        <script>
-          var dob = new Date('{{site.dob| date: "%Y" }}', '{{site.dob| date: "%m" }}', '{{site.dob| date: "%d" }}');
-          var diff_ms = Date.now() - dob.getTime();
-          var age_dt = new Date(diff_ms);
-          document.write(Math.abs(age_dt.getUTCFullYear() - 1970));
-        </script> Year-old <br>
-        <span class="font-bold">Residence:</span> {{site.residence}} <br>
-      </p>
-      <p class="mb-5 text-base-content">
-        <span class="font-bold">I look forward to meeting with you and discussing my qualifications in more
-          detail.</span> If you have any further queries, please do not hesitate to contact me.
-      </p>
-      <!-- <p class="mb-5 text-base-content">
-        <span class="font-bold">Address:</span> Yeun Long
-      </p> -->
-      <div class="flex items-center">
-        <a href="https://wa.me/{{site.phone | remove: '' | replace: '+(852)', '852'  }}" class="btn btn-success mr-3">
-          <!-- <svg class="stroke-current inline-block w-6 h-6 mr-2 " viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M44 24C44 35.0457 35.0457 44 24 44C18.0265 44 4 44 4 44C4 44 4 29.0722 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24Z" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 18L32 18" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 26H32" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 34H24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> -->
-          <svg class="stroke-current inline-block w-6 h-6 mr-2 fill-current" viewBox="0 0 48 48" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 26.7117 4.53967 29.2974 5.51747 31.6554C6.02232 32.8729 6.64396 34.0297 7.36843 35.1119C7.61157 35.4751 7.15543 37.7711 6 42C10.2289 40.8446 12.5249 40.3884 12.8881 40.6316C13.9703 41.356 15.1271 41.9777 16.3446 42.4825C18.7026 43.4603 21.2883 44 24 44Z"
-              fill="#25D366" stroke="" stroke-width="4" stroke-linejoin="round" />
-            <path
-              d="M19.4401 14C19.8845 14 20.2939 14.241 20.5096 14.6295L22.006 17.3249C22.2019 17.6778 22.2111 18.1047 22.0305 18.4658L21 21C21 21 21.2517 23.2517 23 25C24.7484 26.7483 27 27 27 27L29.5266 25.9625C29.8879 25.7818 30.315 25.7911 30.6681 25.9874L33.3711 27.4902C33.7593 27.7061 34 28.1153 34 28.5594V31.6625C34 33.2428 32.5321 34.3842 31.0348 33.8789C27.9595 32.8413 23.1858 30.8656 20.1601 27.8398C17.1345 24.8142 15.1587 20.0405 14.121 16.9652C13.6158 15.4679 14.7572 14 16.3375 14H19.4401Z"
-              stroke-width="0" stroke-linejoin="round" /></svg>
-          Whatsapp
-        </a>
-        <a href="mailto:{{site.email}}" class="btn btn-neutral">
-          <!-- <svg class="stroke-current inline-block w-6 h-6 mr-2 " viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M44 24V9H24H4V24V39H24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M44 34L30 34" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M39 29L44 34L39 39" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 9L24 24L44 9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg> -->
-          <svg class="stroke-current inline-block w-6 h-6 mr-2 " viewBox="0 0 48 48" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 39H44V24V9H24H4V24V39Z" fill="none" stroke-width="4" stroke-linejoin="round" />
-            <path d="M4 9L24 24L44 9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M24 9H4V24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M44 24V9H24" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" /></svg>
-          E-mail
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section id="contact2" class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-10 -mb-24 lg:-mb-36">
   <div class="flex flex-col overflow-hidden lg:flex-row sm:mx-auto">
 
-    <div class="order-1 lg:order-2 flex flex-col justify-center p-8 transition-shadow duration-200 bg-base-300 rounded shadow-lg lg:p-16 lg:pl-10 lg:pb-20 lg:w-1/2">
+    <div class="order-1 lg:order-2 flex flex-col justify-center p-8 transition-shadow duration-200 bg-base-200 rounded shadow-lg lg:p-16 lg:pl-10 lg:w-1/2">
       <div>
         <p
-          class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-gray-100 uppercase rounded-full bg-blue-500">
+          class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-gray-100 uppercase rounded bg-blue-700">
           Thank you for your visit
         </p>
       </div>

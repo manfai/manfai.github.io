@@ -28,7 +28,7 @@ introduction: >- # this means to ignore newlines until "baseurl:"
   Today I'm just doing my part in getting away from a platform that should be forgotten. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://manfai.me" # the base hostname & protocol for your site, e.g. http://example.com
-daisyui_theme: corporate
+daisyui_theme: lofi
 
 email: iam@manfai.me
 name: Man Wing Fai

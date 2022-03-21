@@ -7,7 +7,7 @@ title:  "PLK Virtual Sports Challenge"
 date:   2020-03-15 11:27:42 +0800
 categories: "website platform frontend backend"
 description: "The aims to invite people of all ages to be on the move whenever and wherever they like."
----
+--- 
 #### JY Grandmark Presents: PLK 2020 Virtual Sports Challenge – Let’s Get Moving!
 The spirit of giving transcends space, time and age. Likewise, physical exercises are fun to do by young and old alike anytime, anywhere – sports and charity make a good match indeed! Now, not only will you stay fit and happy as you do your favourite sport, you will also make a difference to the life of the people in need. Don’t miss the chance to send good vibes and blessings to the community at large.
 

@@ -2,15 +2,13 @@
 layout: default
 icon: "platform"
 status: "completed"
-title:  "VRace24 Project"
+title:  "VRace24"
 date:   2019-01-19 10:35:22 +0800
 categories: "website platform frontend backend"
 description: "The aims to invite people of all ages to be on the move whenever and wherever they like."
 ---
 <div class="relative flex flex-col-reverse px-4 py-16 mx-auto lg:block lg:flex-col lg:py-32 xl:py-48 md:px-8 sm:max-w-xl md:max-w-full">
-    <div class="z-0 flex justify-center h-full -mx-4 overflow-hidden lg:pt-24 lg:pb-16 lg:pr-8 xl:pr-0 lg:w-1/2 lg:absolute lg:justify-end lg:bottom-0 lg:left-0 lg:items-center">
-      <img src="/assets/images/projects/vrace.png" class="object-cover object-right w-full h-auto lg:w-auto lg:h-full" alt="" />
-    </div>
+
     <div class="relative flex justify-end max-w-xl mx-auto xl:pr-32 lg:max-w-screen-xl">
       <div class="mb-16 lg:pr-5 lg:max-w-lg lg:mb-0">
         <div class="max-w-xl mb-6">
@@ -56,6 +54,9 @@ description: "The aims to invite people of all ages to be on the move whenever a
         </form>
       </div>
     </div>
+    <div class="z-0 flex justify-center h-full -mx-4 overflow-hidden lg:pt-24 lg:pb-16 lg:pr-8 xl:pr-0 lg:w-1/2 lg:absolute lg:justify-end lg:bottom-0 lg:left-0 lg:items-center">
+      <img src="/assets/images/projects/vrace.png" class="object-cover object-right w-full h-auto lg:w-auto lg:h-full" alt="" />
+    </div>
   </div>
 
 <section class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -65,33 +66,37 @@ description: "The aims to invite people of all ages to be on the move whenever a
         Technial Parts
         </p>
     </div>
-    <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-        There are three part of platofrm
-    </h2>
-    <p class="text-base text-gray-700 md:text-lg">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.
-    </p>
-    </div>
-    <div class="grid gap-5 mb-8 md:grid-cols-2 lg:grid-cols-3">
+      <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+          There are three part of platofrm
+      </h2>
+      <p class="text-base text-gray-700 md:text-lg">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae.
+      </p>
+  </div>
         
       <div class="grid gap-5 mb-8 indicator md:grid-cols-2 lg:grid-cols-3">
-        {% for project in site.projects.vrace24 reversed %}     
-            <a href="{{ project.url | remove:'.html' }}" class=" p-5 duration-300 transform bg-blue-300 rounded shadow hover:-translate-y-2 hover:shadow-xl">
-                <!-- <div class="indicator-item badge badge-secondary"></div>  -->
-                <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full">
-                    <svg class="w-9 h-9 stroke-current" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 40L4 17L14 22L24 8L34 22L44 17L39 40H9Z" fill="#4B6BFB" stroke="#333" stroke-width="4" stroke-linejoin="round"/><path d="M24 33C26.2091 33 28 31.2091 28 29C28 26.7909 26.2091 25 24 25C21.7909 25 20 26.7909 20 29C20 31.2091 21.7909 33 24 33Z" fill="#4B6BFB" stroke="#333" stroke-width="4" stroke-linejoin="round"/></svg>
-                </div>
-                <h6 class="mb-2 font-bold leading-5">{{ project.title }}</h6>
-                <p class="mb-2 text-sm text-base-content">
-                    {{ project.description }}
-                </p>
-                <p class="text-sm text-primary font-semibold transition-colors hover:underline">View detail</p>
-            </a>
+        {% for project in site.projects reversed %}
+        {% if project.path contains 'vrace24' %}
+        {% assign ext = project.path | split: "." | last %} 
+        {% if ext != 'html' %}
+        <div class="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
+          <div class="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
+            <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
+              <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
+                points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
+            </svg>
+          </div>
+          <h6 class="mb-2 font-semibold leading-5">{{project.title}}</h6>
+          <p class="text-sm text-gray-900">
+            Baseball ipsum dolor sit amet cellar rubber win hack tossed. Slugging catcher slide bench league, left fielder
+            nubber.
+          </p>
+        </div>
+        {% endif %}
+        {% endif %}
         {% endfor %}
-
-    </div>
-
       </div>
+
 </section>
 
 
@@ -108,7 +113,7 @@ description: "The aims to invite people of all ages to be on the move whenever a
     <div class="flex flex-col items-center">
     <img class="object-cover w-20 h-20 mb-2 rounded-full shadow" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Person" />
     <div class="flex flex-col items-center">
-        <p class="text-lg font-bold">ManFai</p>
+        <p class="text-lg font-bold">Me (ManFai)</p>
         <p class="text-sm text-gray-800">Developer</p>
     </div>
     </div>
