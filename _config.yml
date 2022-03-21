@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: MWF's Portfolio
+title: MANFAI.ME
 description: >-
   I pursued my Bachelors in Multimedia Computing from Coventry University. 
   About my profession, now I am web programmer where I work on various programming languages ​​such as 
@@ -28,7 +28,7 @@ introduction: >- # this means to ignore newlines until "baseurl:"
   Today I'm just doing my part in getting away from a platform that should be forgotten. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://manfai.me" # the base hostname & protocol for your site, e.g. http://example.com
-daisyui_theme: corporate
+daisyui_theme: lofi
 
 email: iam@manfai.me
 name: Man Wing Fai
