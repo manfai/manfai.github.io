@@ -1,3 +1,15 @@
+- position: Technology Officer
+  company: ECBento Hong Kong Ltd.
+  type: Full-Time
+  salary: 20K
+  duties: 
+    - Develop System & Platform
+    - Provided technical assistance on website and hosting.
+    - Develop API for Backend sidebar
+    - Design Database (MySQL)
+    - Build an API in PHP
+  start_date: Jan 2022
+
 - position: Senior Programmer
   company: ECBento Hong Kong Ltd.
   type: Full-Time

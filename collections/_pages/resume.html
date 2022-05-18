@@ -84,15 +84,7 @@ title: MWF's Resume
       </div>
     </div>
   <div class="grid gap-6 md:grid-cols-1 lg:grid-cols-4">
-      <!-- <div class="relative md:col-span-2 lg:col-span-2">
-          <img
-            class="inset-0 object-cover object-center w-full h-56 rounded shadow-lg lg:absolute lg:h-full"
-            src="/assets/images/IMG_3770.jpg"
-            alt=""
-          />
-        </div> -->
       <div class="grid gap-6 md:grid-cols-2 md:col-span-2 lg:col-span-4">
-
       {% for certificate in site.data.certificates %}
       <div class="flex">
       <div class="hidden md:block z-10 w-1/3 lg:pt-5">
@@ -150,7 +142,12 @@ title: MWF's Resume
             My Experience
           </p>
           <p class="text-2xl font-extralight text-deep-purple-accent-400 sm:text-xl">
-            +5 Years
+            <script>
+              var dob = new Date('{{site.dob| date: "%Y" }}', '{{site.dob| date: "%m" }}', '{{site.dob| date: "%d" }}');
+              var diff_ms = Date.now() - dob.getTime();
+              var age_dt = new Date(diff_ms);
+              document.write('+'+Math.abs(age_dt.getUTCFullYear() - 1970));
+            </script> Years
           </p>
         </div>
         <div>
