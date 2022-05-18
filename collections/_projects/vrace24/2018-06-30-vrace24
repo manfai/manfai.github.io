@@ -111,14 +111,14 @@ description: "The aims to invite people of all ages to be on the move whenever a
 </div>
 <div class="grid gap-10 mx-auto lg:max-w-screen-lg grid-cols-2 lg:grid-cols-4">
     <div class="flex flex-col items-center">
-    <img class="object-cover w-20 h-20 mb-2 rounded-full shadow" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Person" />
+    <img class="object-cover w-20 h-20 mb-2 rounded-full shadow" src="https://icon-library.com/images/default-profile-icon/default-profile-icon-16.jpg" alt="Person" />
     <div class="flex flex-col items-center">
         <p class="text-lg font-bold">Me (ManFai)</p>
         <p class="text-sm text-gray-800">Developer</p>
     </div>
     </div>
     <div class="flex flex-col items-center">
-    <img class="object-cover w-20 h-20 mb-2 rounded-full shadow" src="https://images.pexels.com/photos/2381069/pexels-photo-2381069.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="Person" />
+    <img class="object-cover w-20 h-20 mb-2 rounded-full shadow" src="https://icon-library.com/images/default-profile-icon/default-profile-icon-16.jpg" alt="Person" />
     <div class="flex flex-col items-center">
         <p class="text-lg font-bold">Peter</p>
         <p class="text-sm text-gray-800">Developer</p>
