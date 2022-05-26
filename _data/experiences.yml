@@ -1,7 +1,7 @@
 - position: Technology Officer
-  company: ECBento Hong Kong Ltd.
+  company: Restore Hong Kong Ltd.
   type: Full-Time
-  salary: 20K
+  salary: 22K
   duties: 
     - Develop System & Platform
     - Provided technical assistance on website and hosting.
@@ -9,6 +9,7 @@
     - Design Database (MySQL)
     - Build an API in PHP
   start_date: Jan 2022
+  end_date: Present
 
 - position: Senior Programmer
   company: ECBento Hong Kong Ltd.
