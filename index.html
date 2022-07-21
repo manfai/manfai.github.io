@@ -1,8 +1,8 @@
 ---
 layout: default
-title: MWF's Website
-smile_icon: smile.png
-sleep_icon: sleep.png
+title: 關於我
+smile_icon: man-wing-fai-smileing-memoji.png
+sleep_icon: man-wing-fai-sleeping-memoji.png
 ---
 <section class="relative px-4 pt-8 pb-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-10">
   <div class="px-4 pt-32 md:pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
@@ -10,36 +10,20 @@ sleep_icon: sleep.png
       <div class="flex flex-col sm:text-center sm:mb-0">
         <a href="/" class="z-10 mb-6 mx-auto">
           <div class="flex items-center justify-center rounded-full shadow-2xl">
-            <div class="avatar">
-              <div class="rounded-full w-56 md:w-72 h-56 md:h-72 bg-blue-300 ring ring-blue-700 ring-offset-blue-900 ring-offset-8">
+            <div class="avatar mt-0 md:mt-12 lg:mt-0">
+              <div class="bg-tranparent rounded-full w-56 md:w-72 lg:w-96 h-56 md:h-72 lg:h-96 ring ring-blue-700 ring-offset-blue-900 ring-offset-8">
                 <label class="swap swap-rotate text-9xl">
-  
                   <!-- this hidden checkbox controls the state -->
                   <input id="onoff" type="checkbox"/>
-                  
-                  <div class="swap-on"><img id="sleep_icon" src="/assets/images/{{page.sleep_icon}}"></div>
-                  <div class="swap-off"><img id="smart_icon" src="/assets/images/{{page.smile_icon}}"></div>
+                  <div class="swap-on"><img  id="sleep_icon" alt="a freelancer is sleeping now" title="I'm sleeping now." src="/assets/images/{{page.sleep_icon}}"></div>
+                  <div class="swap-off"><img id="smart_icon" alt="a freelancer feeling happy on coding" title="Hello, world!" src="/assets/images/{{page.smile_icon}}"></div>
                 </label>
-                <!-- <img id="sleep_icon" src="/assets/images/{{page.sleep_icon}}">
-                <img id="smart_icon" src="/assets/images/{{page.smile_icon}}"> -->
               </div>
             </div>
           </div>
         </a>
-
-        <script>
-          var now = new Date();
-          var hour = now.getHours();
-          console.log(hour);
-          if (hour >= 22 || hour <= 7) {
-            document.getElementById('onoff').checked = true;
-          } else {
-            document.getElementById('onoff').checked = false;
-          }
-        </script>
-
         <div class="z-10 text-base-content max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-          <h2 class="font-black max-w-lg mb-3 text-3xl leading-none tracking-tight sm:text-4xl md:mx-auto">
+          <h1 class="font-black max-w-lg mb-3 text-3xl leading-none tracking-tight sm:text-4xl md:mx-auto">
             <span class="relative inline-block">
               <svg viewBox="0 0 52 24" fill="currentColor"
                 class="absolute text-primray top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
@@ -59,7 +43,7 @@ sleep_icon: sleep.png
               <div class="absolute inset-0 transform -skew-x-12 bg-blue-700"></div>
               <span class="relative text-primary-content font-mono">Developer</span>
             </span>
-          </h2>
+          </h1>
         </div>
       </div>
     </div>
@@ -337,16 +321,16 @@ sleep_icon: sleep.png
     <div class="lg:col-span-6 flex items-center justify-center -mx-4">
       <div class="flex flex-col items-end px-3">
         <img class="object-cover object-right mb-6 rounded shadow-lg h-40 sm:h-48 xl:h-60 w-40 sm:w-48 xl:w-60"
-          src="/assets/images/2015-02.jpg" alt="" />
+          src="/assets/images/2015-02.jpg" alt="在香港電台的第五台節目-新紫荊廣場中接受訪問" title="在香港電台的第五台節目-新紫荊廣場中接受訪問" />
         <img class="object-cover w-28 h-28 rounded shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40"
-          src="/assets/images/2016-02.jpg" alt="" />
+          src="/assets/images/2016-02.jpg" alt="四位獲獎的同學成功進入決賽" title="四位獲獎的同學成功進入決賽" />
       </div>
       <div class="px-3">
         <div class="relative w-full transition-shadow duration-300 hover:shadow-xl">
           <img class="object-cover object-top w-52 h-52 rounded shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
-            src="/assets/images/2016-01.jpg" alt="" />
+            src="/assets/images/2016-01.jpg" alt="兩位組員在第一屆創科展中「年輕人對年輕人的科普學堂」中發表演講和分享心得。" title="在創科展上分享獲獎心得" />
           <a target="_blank" href="https://www.youtube.com/watch?v=4uDs80RWdck" aria-label="Play Video"
-            class="hidden absolute inset-0 flex items-center bg-gray-900 bg-opacity-40 justify-center w-full h-full transition-colors duration-300 group">
+            class="absolute inset-0 flex items-center bg-gray-900 bg-opacity-40 justify-center w-full h-full transition-colors duration-300 group">
             <div
               class="bg-opacity-50 hover:bg-gray-100 flex items-center justify-center w-16 h-16 transition duration-300 transform bg-gray-50 rounded-full shadow-2xl group-hover:scale-110">
               <svg class="w-10 text-opacity-50 text-black" fill="currentColor" viewBox="0 0 24 24">
@@ -391,8 +375,8 @@ sleep_icon: sleep.png
         <span class="font-bold">Residence:</span> {{site.residence}} <br>
       </p>
       <p class="mb-5 text-base-content">
-        <span class="font-bold">I look forward to meeting with you and discussing my qualifications in more
-          detail.</span> If you have any further queries, please do not hesitate to contact me.
+        <b class="font-bold">I look forward to meeting with you and discussing any projects you may have in mind.</b> 
+        If you have any further queries, please do not hesitate to contact me.
       </p>
       <!-- <p class="mb-5 text-base-content">
         <span class="font-bold">Address:</span> Yeun Long
@@ -423,7 +407,18 @@ sleep_icon: sleep.png
       </div>
     </div>
     <div class="order-2 lg:order-1 relative lg:w-1/2 overflow-hidden">
-      <img src="/assets/images/smile_macbook.png" alt="" class="object-cover object-bottom max-w-md w-full mx-auto lg:absolute lg:bottom-2 lg:left-1/2 lg:transform lg:-translate-x-1/2" />
+      <img src="/assets/images/man-wing-fai-with-macbook-memoji.png" alt="A freelancer using macbook for website development." class="object-cover object-bottom max-w-md w-full mx-auto lg:absolute lg:bottom-2 lg:left-1/2 lg:transform lg:-translate-x-1/2" />
     </div>
   </div>
 </section>
+
+<script>
+  var now = new Date();
+  var hour = now.getHours();
+  console.log(hour);
+  if (hour >= 22 || hour <= 7) {
+    document.getElementById('onoff').checked = true;
+  } else {
+    document.getElementById('onoff').checked = false;
+  }
+</script>

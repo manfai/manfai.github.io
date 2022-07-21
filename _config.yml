@@ -19,10 +19,10 @@
 # in the templates via {{ site.myvariable }}.
 
 title: MANFAI.ME
+tagline: 一個熱愛編寫網站的狂熱分子
+# Discuss any projects you may have in mind
 description: >-
-  I pursued my Bachelors in Multimedia Computing from Coventry University. 
-  About my profession, now I am web programmer where I work on various programming languages ​​such as 
-  PHP, JavaScript, Jquery, Vue.js, Node.js, Python.
+  I am a full stack web developer with an emphasis on responsive web design. Practical layouts and smooth UX experiences are very important to me. I work with my clients to optimize a website that is fast and well optimized. Please feel free to contact me to discuss any projects you may have in mind.
 introduction: >- # this means to ignore newlines until "baseurl:"
   Jekyll is a website generator that's designed for building minimal, static blogs to be hosted on GitHub Pages.
   Today I'm just doing my part in getting away from a platform that should be forgotten. 
@@ -30,9 +30,11 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://manfai.me" # the base hostname & protocol for your site, e.g. http://example.com
 daisyui_theme: lofi
 
+author: Man Wing Fai (Mann)
 email: iam@manfai.me
-name: Man Wing Fai
-bio: I pursued my Bachelors in Multimedia Computing from Coventry University. About my profession, now I am web programmer where I work on various programming languages ​​such as PHP, JavaScript, Jquery, Vue.js, Node.js, Python.
+name: Man Wing Fai (Mann)
+bio: I am small but mighty & deliver results
+
 last_name: Man
 first_name: Wing Fai
 phone: +(852) 9351 7034
@@ -43,6 +45,20 @@ address: Yuen Long
 citizenship: China/PRC
 residence: Hong Kong
 
+logo: /assets/images/man-wing-fai-smileing-memoji.png
+
+twitter:
+  username: manfai106
+  card: >- 
+    I am a Full stack web developer with with an emphasis on responsive web design.
+
+social:
+  name: Man Wing Fai (Mann)
+  links:
+    - https://twitter.com/manfai106
+    - https://www.linkedin.com/in/wingfai-man
+    - https://github.com/manfai
+
 twitter_username: manfai106
 github_username:  manfai
 linkedin_username:  wingfai-man
@@ -51,10 +67,10 @@ linkedin_username:  wingfai-man
 # theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-postcss
   - jekyll-seo-tag
   - jekyll-sitemap
-  
+  - jekyll-postcss
+
 sass:
   load_paths:
     - _sass
