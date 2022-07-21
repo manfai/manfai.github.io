@@ -19,7 +19,8 @@
 # in the templates via {{ site.myvariable }}.
 
 title: MANFAI.ME
-tagline: 一個熱愛編寫網站的狂熱分子
+tagline: Discuss any projects you may have in mind
+# 一個熱愛編寫網站的狂熱分子
 # Discuss any projects you may have in mind
 description: >-
   I am a full stack web developer with an emphasis on responsive web design. Practical layouts and smooth UX experiences are very important to me. I work with my clients to optimize a website that is fast and well optimized. Please feel free to contact me to discuss any projects you may have in mind.
