@@ -52,6 +52,10 @@ twitter:
   username: manfai106
   card: >- 
     I am a Full stack web developer with with an emphasis on responsive web design.
+github:
+  username:  manfai
+linkedin:
+  username:  wingfai-man
 
 social:
   name: Man Wing Fai (Mann)
@@ -60,10 +64,6 @@ social:
     - https://www.linkedin.com/in/wingfai-man
     - https://github.com/manfai
 
-twitter_username: manfai106
-github_username:  manfai
-linkedin_username:  wingfai-man
-
 # Build settings
 # theme: minima
 plugins:
@@ -71,6 +71,12 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-postcss
+  - jekyll-polyglot
+
+languages: ["en", "hk"]
+default_lang: "en"
+exclude_from_localization: ["assets/css", "assets/img"]
+parallel_localization: true
 
 sass:
   load_paths:
