@@ -19,17 +19,16 @@
 # in the templates via {{ site.myvariable }}.
 
 title: MANFAI.ME
-tagline: Discuss any projects you may have in mind
-# 一個熱愛編寫網站的狂熱分子
-# Discuss any projects you may have in mind
-description: >-
-  I am a full stack web developer with an emphasis on responsive web design. Practical layouts and smooth UX experiences are very important to me. I work with my clients to optimize a website that is fast and well optimized. Please feel free to contact me to discuss any projects you may have in mind.
+tagline: >- # A short description (e.g., A blog dedicated to reviewing cat gifs), used as part of the title tag like Ben's Awesome Site | A blog dedicated to reviewing cat gifs instead of Ben's Awesome Site | Long description about a blog dedicated to reviewing cat gifs that would be used when page.title is not defined.
+  Discuss any projects you may have in mind
+description: >- #A longer description used for the description meta tag. Also used as fallback for pages that don't provide their own description and also as part of the page's title tag if neither page.title nor site.tagline has been defined.
+  I am a full stack web developer with an emphasis on responsive web design. Practical layouts and smooth UX experiences are very important to me. I’m interested in freelance opportunities – especially ambitious or large projects. Please feel free to contact me to discuss any projects you may have in mind.
 introduction: >- # this means to ignore newlines until "baseurl:"
   Jekyll is a website generator that's designed for building minimal, static blogs to be hosted on GitHub Pages.
   Today I'm just doing my part in getting away from a platform that should be forgotten. 
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://manfai.me" # the base hostname & protocol for your site, e.g. http://example.com
-daisyui_theme: lofi
 
 author: Man Wing Fai (Mann)
 email: iam@manfai.me
@@ -53,6 +52,12 @@ twitter:
   card: >- 
     I am a Full stack web developer with with an emphasis on responsive web design.
 
+github:
+  username:  manfai
+
+linkedin:
+  username:  wingfai-man
+
 social:
   name: Man Wing Fai (Mann)
   links:
@@ -60,12 +65,11 @@ social:
     - https://www.linkedin.com/in/wingfai-man
     - https://github.com/manfai
 
-twitter_username: manfai106
-github_username:  manfai
-linkedin_username:  wingfai-man
 
 # Build settings
 # theme: minima
+daisyui_theme: lofi
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
