@@ -1,10 +1,9 @@
 ---
 layout: default
+permalink: "/"
 title: MWF's Profile
-smile_icon: man-wing-fai-smileing-memoji.png
-sleep_icon: man-wing-fai-sleeping-memoji.png
+lang: en
 ---
-
 <section class="relative px-4 pt-8 pb-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-10">
   <div class="px-4 pt-32 md:pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
     <div class="max-w-xl sm:mx-auto lg:max-w-2xl">
@@ -16,8 +15,8 @@ sleep_icon: man-wing-fai-sleeping-memoji.png
                 <label class="swap swap-rotate text-9xl">
                   <!-- this hidden checkbox controls the state -->
                   <input id="onoff" type="checkbox"/>
-                  <div class="swap-on"><img  id="sleep_icon" alt="a freelancer is sleeping now" title="I'm sleeping now." src="/assets/images/{{page.sleep_icon}}"></div>
-                  <div class="swap-off"><img id="smart_icon" alt="a freelancer feeling happy on coding" title="Hello, world!" src="/assets/images/{{page.smile_icon}}"></div>
+                  <div class="swap-on"><img  id="sleep_icon" alt="a freelancer is sleeping now" title="I'm sleeping now." src="/assets/images/man-wing-fai-sleeping-memoji.png"></div>
+                  <div class="swap-off"><img id="smart_icon" alt="a freelancer feeling happy on coding" title="Hello, world!" src="/assets/images/man-wing-fai-smileing-memoji.png"></div>
                 </label>
               </div>
             </div>
@@ -204,11 +203,7 @@ sleep_icon: man-wing-fai-sleeping-memoji.png
     {% endfor %}
   </div>
 </section>
-<style>
-  abbr { 
-    display: inline;
-  }
-</style>
+
 <section
   class="px-4 pt-16 pb-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-20 lg:pb-16">
   <div class="grid gap-10 lg:grid-cols-12">

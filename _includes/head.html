@@ -1,7 +1,8 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{{page.title}} | {{site.tagline}} | {{site.title}}</title>
+<!-- <title>{{page.title}} | {{site.tagline}} | {{site.title}}</title> -->
+<title>{{page.title}} | {{site.data.l10n.tagline}} | {{ site.data.l10n.title }}</title>
 <meta http-equiv="Content-Language" content="{{site.active_lang}}">
 <!-- <link rel="stylesheet" href="/assets/css/main.css"> -->
 <!-- <link href="/assets/css/tailwind.min.css" rel="stylesheet" type="text/css" /> -->
@@ -23,13 +24,22 @@
 <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
 <link href="https://fonts.cdnfonts.com/css/segoe-ui-4" rel="stylesheet">
 -->
+
 <style>
+    @font-face {
+        font-family: nanifont;
+        src: url(https://cdn.jsdelivr.net/gh/max32002/nanifont@1.036/webfont/NaniFont-Regular.woff2) format("woff2")
+        , url(https://cdn.jsdelivr.net/gh/max32002/nanifont@1.036/webfont/NaniFont-Regular.woff) format("woff");
+    }
     /* html,body{
         font-family: "SegoeUI", sans-serif!important;
         font-weight: 500!important;
     } */
     .font-permanent-marker{
         font-family: 'Permanent Marker', sans-serif;
+    }
+    .font-nanifont{
+        font-family: nanifont, sans-serif;
     }
 </style> 
 

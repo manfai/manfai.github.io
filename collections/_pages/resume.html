@@ -105,6 +105,7 @@ title: MWF's Resume
     
   </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
   <div class="grid gap-24 row-gap-8 lg:grid-cols-5">
@@ -127,7 +128,113 @@ title: MWF's Resume
         </p>
       </div>
     </div>
-    <div class="grid border border-gray-700 divide-gray-700 divide-y rounded lg:col-span-3 sm:grid-cols-2 sm:divide-y-0 sm:divide-x">
+
+    <div class="grid lg:col-span-3 sm:grid-cols-2 gap-3">
+      <div class="stats bg-blue-700 text-primary-content shadow">
+  
+        <div class="stat">
+          <div class="stat-title">Language Skills</div>
+          <div class="stat-value">Cantonese</div>
+          <div class="stat-desc">Mandarin, English</div>
+        </div>
+        
+      </div>
+      <div class="stats bg-blue-700 text-primary-content shadow">
+  
+        <div class="stat">
+          <div class="stat-title">Operating System</div>
+          <div class="stat-value">macOS</div>
+          <div class="stat-desc">Window, Linux</div>
+        </div>
+        
+      </div>
+      <div class="stats bg-blue-700 text-primary-content shadow">
+  
+        <div class="stat">
+          <div class="stat-title">My Experience</div>
+          <div class="stat-value">+6 Years</div>
+          <div class="stat-desc">In IT industry</div>
+        </div>
+        
+      </div>
+      <div class="stats bg-blue-700 text-primary-content shadow">
+  
+        <div class="stat">
+          <div class="stat-title">Extra Skills</div>
+          <div class="stat-value">Design</div>
+          <div class="stat-desc">For Graphic, UI, Layout, Website</div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- <div class="grid grid-cols-4 gap-3 col-span-5">
+      <div class="card"><canvas id="language"></canvas></div>
+      <div class="card col-span-2"><canvas id="framework"></canvas></div>
+    </div>
+
+    <script>
+      const ctx = document.getElementById('language');
+    
+      new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+          labels: [
+            'PHP',
+            'MYSQL',
+            'HTML/CSS',
+            'Javascript',
+            'Jquery',
+            'Vue.js',
+            'Alpine.js',
+            'Python',
+          ],
+          datasets: [{
+            label: 'My First Dataset',
+            data: [100, 50, 100],
+            backgroundColor: [
+              'rgb(54, 99, 132)',
+              'rgb(54, 162, 235)',
+              'rgb(54, 205, 86)'
+            ],
+            hoverOffset: 4
+          }]
+        }
+      });
+    </script>
+
+    <script>
+      const ctx2 = document.getElementById('framework');
+    
+      new Chart(ctx2, {
+        type: 'bar',
+        data: {
+          labels: [
+            'Laravel',
+            'Wordpress',
+            'Jekyll',
+            'Tailwindcss',
+            'iOS/Android',
+          ],
+          datasets: [{
+            label: 'My First Dataset',
+            data: [11, 16, 7, 3, 14],
+            backgroundColor: [
+              'rgb(255, 99, 132)',
+              'rgb(75, 192, 192)',
+              'rgb(255, 205, 86)',
+              'rgb(201, 203, 207)',
+              'rgb(54, 162, 235)'
+            ]
+          }]
+        },
+        options: {
+          indexAxis: 'y',
+        }
+      });
+    </script> -->
+    <!-- <div class="grid border border-gray-700 divide-gray-700 divide-y rounded lg:col-span-3 sm:grid-cols-2 sm:divide-y-0 sm:divide-x">
+   
       <div class="flex flex-col justify-between p-10">
         <div>
           <p class="text-lg font-semibold text-gray-800 sm:text-base">
@@ -183,6 +290,6 @@ title: MWF's Resume
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
