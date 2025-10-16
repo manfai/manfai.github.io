@@ -75,13 +75,15 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-postcss
+  - jekyll-redirect-from 
 
 sass:
   load_paths:
     - _sass
     - node_modules
 
-include: ['_pages', 'node_modules/tailwindcss']
+# include: ['_pages', 'node_modules/tailwindcss']
+include: ['node_modules/tailwindcss']
 
 excerpt_separator: <!--more-->
 permalink: pretty
@@ -89,19 +91,19 @@ collections_dir: collections
 collections:
   pages:
     output: true
-    permalink: /:path
+    permalink: /:path/
   experiences:
     output: true
-    permalink: /:collection/:year/:month/:title:output_ext
+    permalink: /:collection/:year/:month/:title/
   projects:
     output: true
-    permalink: /portfolio/:title:output_ext
+    permalink: /portfolio/:title/
   achievements:
     output: true
-    permalink: /achievement/:year/:month/:title:output_ext
+    permalink: /achievement/:year/:month/:title/
   quotation:
     output: true
-    permalink: /quotation/:title:output_ext
+    permalink: /quotation/:title/
 
 defaults:
   - scope:
